@@ -1,4 +1,5 @@
 // model names
+export const MODEL_NAME_PREDEFINE = 'Predefine';
 export const MODEL_NAME_UNIT = 'Predefine';
 export const MODEL_NAME_ADMINISTRATIVELEVEL = 'Predefine';
 export const MODEL_NAME_FEATURETYPE = 'Predefine';
@@ -12,14 +13,15 @@ export const MODEL_NAME_EVENTTYPE = 'Predefine';
 export const MODEL_NAME_EVENTFUNCTION = 'Predefine';
 export const MODEL_NAME_EVENTACTION = 'Predefine';
 export const MODEL_NAME_EVENTQUESTION = 'Predefine';
+export const MODEL_NAME_PERMISSION = 'Permission';
+export const MODEL_NAME_ROLE = 'Predefine';
+export const MODEL_NAME_ADMINISTRATIVEAREA = 'Predefine';
+export const MODEL_NAME_PARTY = 'Party';
+export const MODEL_NAME_FEATURE = 'Predefine';
 export const MODEL_NAME_EVENTCATALOGUE = 'Predefine';
 export const MODEL_NAME_NOTIFICATIONTEMPLATE = 'Predefine';
-export const MODEL_NAME_PARTY = 'Party';
-export const MODEL_NAME_PERMISSION = 'Permission';
-export const MODEL_NAME_PREDEFINE = 'Predefine';
-export const MODEL_NAME_ROLE = 'Predefine';
 export const MODEL_NAME_EVENT = 'Event';
-export const MODEL_NAME_EVENT_CHANGELOG = 'EventChangeLog';
+export const MODEL_NAME_EVENTCHANGELOG = 'EventChangeLog';
 
 // collection names
 export const COLLECTION_NAME_EVENT = 'events';
