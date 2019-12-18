@@ -89,7 +89,41 @@ import {
   PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
   PREDEFINE_BUCKETS,
   // paths
+  PATH_NAME_UNIT,
+  PATH_NAME_ADMINISTRATIVELEVEL,
+  PATH_NAME_FEATURETYPE,
+  PATH_NAME_EVENTINDICATOR,
+  PATH_NAME_EVENTSEVERITY,
+  PATH_NAME_EVENTCERTAINTY,
+  PATH_NAME_PARTYGROUP,
+  PATH_NAME_PARTYGROUPS,
+  PATH_NAME_PARTYROLE,
+  PATH_NAME_PARTYROLES,
+  PATH_NAME_EVENTGROUP,
+  PATH_NAME_EVENTGROUPS,
+  PATH_NAME_EVENTTYPE,
+  PATH_NAME_EVENTFUNCTION,
+  PATH_NAME_EVENTACTION,
+  PATH_NAME_EVENTQUESTION,
+  PATH_NAME_EVENTQUESTION_NEED,
+  PATH_NAME_EVENTQUESTION_EFFECT,
+  PATH_NAME_PERMISSIONS,
+  PATH_NAME_ROLE,
+  PATH_NAME_ROLES,
+  PATH_NAME_ADMINISTRATIVEAREA,
+  PATH_NAME_ADMINISTRATIVEAREAS,
+  PATH_NAME_PARTY,
+  PATH_NAME_PARTY_FOCAL,
+  PATH_NAME_PARTY_FOCALS,
+  PATH_NAME_PARTY_AGENCY,
+  PATH_NAME_PARTY_AGENCIES,
+  PATH_NAME_PARTY_CUSTODIAN,
+  PATH_NAME_PARTY_CUSTODIANS,
+  PATH_NAME_FEATURE,
+  PATH_NAME_NOTIFICATIONTEMPLATE,
   PATH_NAME_EVENT,
+  PATH_NAME_EVENTCHANGELOG,
+  PATH_NAME_EVENTCHANGELOGS,
 } from '../src';
 
 describe('internals', () => {
@@ -241,6 +275,40 @@ describe('internals', () => {
   });
 
   it('should expose path names', () => {
+    expect(PATH_NAME_UNIT).to.be.equal('unit');
+    expect(PATH_NAME_ADMINISTRATIVELEVEL).to.be.equal('level');
+    expect(PATH_NAME_FEATURETYPE).to.be.equal('type');
+    expect(PATH_NAME_EVENTINDICATOR).to.be.equal('indicator');
+    expect(PATH_NAME_EVENTSEVERITY).to.be.equal('severity');
+    expect(PATH_NAME_EVENTCERTAINTY).to.be.equal('certainty');
+    expect(PATH_NAME_PARTYGROUP).to.be.equal('group');
+    expect(PATH_NAME_PARTYGROUPS).to.be.equal('groups');
+    expect(PATH_NAME_PARTYROLE).to.be.equal('role');
+    expect(PATH_NAME_PARTYROLES).to.be.equal('roles');
+    expect(PATH_NAME_EVENTGROUP).to.be.equal('group');
+    expect(PATH_NAME_EVENTGROUPS).to.be.equal('groups');
+    expect(PATH_NAME_EVENTTYPE).to.be.equal('type');
+    expect(PATH_NAME_EVENTFUNCTION).to.be.equal('function');
+    expect(PATH_NAME_EVENTACTION).to.be.equal('action');
+    expect(PATH_NAME_EVENTQUESTION).to.be.equal('question');
+    expect(PATH_NAME_EVENTQUESTION_NEED).to.be.equal('need');
+    expect(PATH_NAME_EVENTQUESTION_EFFECT).to.be.equal('effect');
+    expect(PATH_NAME_PERMISSIONS).to.be.equal('permissions');
+    expect(PATH_NAME_ROLE).to.be.equal('role');
+    expect(PATH_NAME_ROLES).to.be.equal('roles');
+    expect(PATH_NAME_ADMINISTRATIVEAREA).to.be.equal('area');
+    expect(PATH_NAME_ADMINISTRATIVEAREAS).to.be.equal('areas');
+    expect(PATH_NAME_PARTY).to.be.equal('party');
+    expect(PATH_NAME_PARTY_FOCAL).to.be.equal('focal');
+    expect(PATH_NAME_PARTY_FOCALS).to.be.equal('focals');
+    expect(PATH_NAME_PARTY_AGENCY).to.be.equal('agency');
+    expect(PATH_NAME_PARTY_AGENCIES).to.be.equal('agencies');
+    expect(PATH_NAME_PARTY_CUSTODIAN).to.be.equal('custodian');
+    expect(PATH_NAME_PARTY_CUSTODIANS).to.be.equal('custodians');
+    expect(PATH_NAME_FEATURE).to.be.equal('feature');
+    expect(PATH_NAME_NOTIFICATIONTEMPLATE).to.be.equal('template');
     expect(PATH_NAME_EVENT).to.be.equal('event');
+    expect(PATH_NAME_EVENTCHANGELOG).to.be.equal('changelog');
+    expect(PATH_NAME_EVENTCHANGELOGS).to.be.equal('changelogs');
   });
 });

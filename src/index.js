@@ -48,9 +48,6 @@ export const COLLECTION_NAME_NOTIFICATIONTEMPLATE = 'predefines';
 export const COLLECTION_NAME_EVENT = 'events';
 export const COLLECTION_NAME_EVENTCHANGELOG = 'eventchangelogs';
 
-// path names
-export const PATH_NAME_EVENT = 'event';
-
 // predefine namespaces
 export const PREDEFINE_NAMESPACE_UNIT = 'Unit';
 export const PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL = 'AdministrativeLevel';
@@ -130,6 +127,43 @@ export const PREDEFINE_BUCKETS = [
   PREDEFINE_BUCKET_EVENTCATALOGUE,
   PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
 ];
+
+// path names
+export const PATH_NAME_UNIT = 'unit';
+export const PATH_NAME_ADMINISTRATIVELEVEL = 'level';
+export const PATH_NAME_FEATURETYPE = 'type';
+export const PATH_NAME_EVENTINDICATOR = 'indicator';
+export const PATH_NAME_EVENTSEVERITY = 'severity';
+export const PATH_NAME_EVENTCERTAINTY = 'certainty';
+export const PATH_NAME_PARTYGROUP = 'group';
+export const PATH_NAME_PARTYGROUPS = 'groups';
+export const PATH_NAME_PARTYROLE = 'role';
+export const PATH_NAME_PARTYROLES = 'roles';
+export const PATH_NAME_EVENTGROUP = 'group';
+export const PATH_NAME_EVENTGROUPS = 'groups';
+export const PATH_NAME_EVENTTYPE = 'type';
+export const PATH_NAME_EVENTFUNCTION = 'function';
+export const PATH_NAME_EVENTACTION = 'action';
+export const PATH_NAME_EVENTQUESTION = 'question';
+export const PATH_NAME_EVENTQUESTION_NEED = 'need';
+export const PATH_NAME_EVENTQUESTION_EFFECT = 'effect';
+export const PATH_NAME_PERMISSIONS = 'permissions';
+export const PATH_NAME_ROLE = 'role';
+export const PATH_NAME_ROLES = 'roles';
+export const PATH_NAME_ADMINISTRATIVEAREA = 'area';
+export const PATH_NAME_ADMINISTRATIVEAREAS = 'areas';
+export const PATH_NAME_PARTY = 'party';
+export const PATH_NAME_PARTY_FOCAL = 'focal';
+export const PATH_NAME_PARTY_FOCALS = 'focals';
+export const PATH_NAME_PARTY_AGENCY = 'agency';
+export const PATH_NAME_PARTY_AGENCIES = 'agencies';
+export const PATH_NAME_PARTY_CUSTODIAN = 'custodian';
+export const PATH_NAME_PARTY_CUSTODIANS = 'custodians';
+export const PATH_NAME_FEATURE = 'feature';
+export const PATH_NAME_NOTIFICATIONTEMPLATE = 'template';
+export const PATH_NAME_EVENT = 'event';
+export const PATH_NAME_EVENTCHANGELOG = 'changelog';
+export const PATH_NAME_EVENTCHANGELOGS = 'changelogs';
 
 // population options
 export const POPULATION_MAX_DEPTH = 1;
