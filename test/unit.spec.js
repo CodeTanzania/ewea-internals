@@ -125,8 +125,12 @@ import {
   PATH_NAME_EVENTCHANGELOG,
   PATH_NAME_EVENTCHANGELOGS,
   PREDEFINE_RELATIONS,
+  // relations
   EVENT_RELATIONS,
   EVENT_CHANGELOG_RELATIONS,
+  // population
+  POPULATION_MAX_DEPTH,
+  POPULATION_DEFAULT,
 } from '../src';
 
 describe('internals', () => {
@@ -359,5 +363,10 @@ describe('internals', () => {
     expect(EVENT_CHANGELOG_RELATIONS.agencies).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.focals).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.template).to.exist.and.be.an('object');
+  });
+
+  it('should expose population options', () => {
+    expect(POPULATION_MAX_DEPTH).to.be.equal(1);
+    expect(POPULATION_DEFAULT).to.be.eql({ maxDepth: POPULATION_MAX_DEPTH });
   });
 });
