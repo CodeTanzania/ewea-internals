@@ -1,3 +1,5 @@
+import { join, stringify } from '@lykmapipo/common';
+
 // model names
 export const MODEL_NAME_PREDEFINE = 'Predefine';
 export const MODEL_NAME_UNIT = 'Predefine';
@@ -215,3 +217,8 @@ export const EVENT_CHANGELOG_RELATIONS = {
 // population options
 export const POPULATION_MAX_DEPTH = 1;
 export const POPULATION_DEFAULT = { maxDepth: POPULATION_MAX_DEPTH };
+
+// setup env
+process.env.PREDEFINE_NAMESPACES = join(PREDEFINE_NAMESPACES, ',');
+process.env.PREDEFINE_RELATIONS_IGNORED = join(PREDEFINE_NAMESPACES, ',');
+process.env.PREDEFINE_RELATIONS = stringify(PREDEFINE_RELATIONS);

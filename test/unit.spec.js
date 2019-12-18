@@ -1,4 +1,5 @@
 import { expect } from '@lykmapipo/test-helpers';
+import { getStrings, getObject } from '@lykmapipo/env';
 import {
   // models
   MODEL_NAME_PREDEFINE,
@@ -368,5 +369,22 @@ describe('internals', () => {
   it('should expose population options', () => {
     expect(POPULATION_MAX_DEPTH).to.be.equal(1);
     expect(POPULATION_DEFAULT).to.be.eql({ maxDepth: POPULATION_MAX_DEPTH });
+  });
+
+  it('should set predefine namespaces', () => {
+    expect(process.env.PREDEFINE_NAMESPACES).to.exist;
+    expect(getStrings('PREDEFINE_NAMESPACES')).to.be.eql(PREDEFINE_NAMESPACES);
+  });
+
+  it('should set predefine ignored relations', () => {
+    expect(process.env.PREDEFINE_RELATIONS_IGNORED).to.exist;
+    expect(getStrings('PREDEFINE_RELATIONS_IGNORED')).to.be.eql(
+      PREDEFINE_NAMESPACES
+    );
+  });
+
+  it('should set predefine relations', () => {
+    expect(process.env.PREDEFINE_RELATIONS).to.exist;
+    expect(getObject('PREDEFINE_RELATIONS')).to.eql(PREDEFINE_RELATIONS);
   });
 });
