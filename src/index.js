@@ -183,6 +183,15 @@ export const PREDEFINE_RELATIONS = {
   custodians: { ref: 'Party', array: true },
 };
 
+// event relations
+export const EVENT_RELATIONS = {
+  group: { ref: 'Predefine', namespace: 'EventGroup' },
+  type: { ref: 'Predefine', namespace: 'EventType' },
+  certainty: { ref: 'Predefine', namespace: 'EventCertainty' },
+  severity: { ref: 'Predefine', namespace: 'EventSeverity' },
+  areas: { ref: 'Predefine', namespace: 'AdministrativeArea', array: true },
+};
+
 // population options
 export const POPULATION_MAX_DEPTH = 1;
 export const POPULATION_DEFAULT = { maxDepth: POPULATION_MAX_DEPTH };

@@ -125,6 +125,7 @@ import {
   PATH_NAME_EVENTCHANGELOG,
   PATH_NAME_EVENTCHANGELOGS,
   PREDEFINE_RELATIONS,
+  EVENT_RELATIONS,
 } from '../src';
 
 describe('internals', () => {
@@ -329,5 +330,14 @@ describe('internals', () => {
     expect(PREDEFINE_RELATIONS.focals).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.agencies).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.custodians).to.exist.and.be.an('object');
+  });
+
+  it('should expose event relations definition', () => {
+    expect(EVENT_RELATIONS).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.group).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.type).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.certainty).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.severity).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.areas).to.exist.and.be.an('object');
   });
 });
