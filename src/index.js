@@ -165,6 +165,24 @@ export const PATH_NAME_EVENT = 'event';
 export const PATH_NAME_EVENTCHANGELOG = 'changelog';
 export const PATH_NAME_EVENTCHANGELOGS = 'changelogs';
 
+// predefine relations
+export const PREDEFINE_RELATIONS = {
+  permissions: { ref: 'Permission', array: true },
+  roles: { ref: 'Predefine', namespace: 'PartyRole', array: true },
+  groups: { ref: 'Predefine', namespace: 'PartyGroup', array: true },
+  group: { ref: 'Predefine', namespace: 'EventGroup' },
+  type: { ref: 'Predefine', namespace: ['EventType', 'FeatureType'] },
+  function: { ref: 'Predefine', namespace: 'EventFunction' },
+  action: { ref: 'Predefine', namespace: 'EventAction' },
+  level: { ref: 'Predefine', namespace: 'AdministrativeLevel' },
+  area: { ref: 'Predefine', namespace: 'AdministrativeArea' },
+  indicator: { ref: 'Predefine', namespace: 'EventIndicator' },
+  unit: { ref: 'Predefine', namespace: 'Unit' },
+  agencies: { ref: 'Party', array: true },
+  focals: { ref: 'Party', array: true },
+  custodians: { ref: 'Party', array: true },
+};
+
 // population options
 export const POPULATION_MAX_DEPTH = 1;
 export const POPULATION_DEFAULT = { maxDepth: POPULATION_MAX_DEPTH };

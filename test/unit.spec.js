@@ -124,6 +124,7 @@ import {
   PATH_NAME_EVENT,
   PATH_NAME_EVENTCHANGELOG,
   PATH_NAME_EVENTCHANGELOGS,
+  PREDEFINE_RELATIONS,
 } from '../src';
 
 describe('internals', () => {
@@ -310,5 +311,23 @@ describe('internals', () => {
     expect(PATH_NAME_EVENT).to.be.equal('event');
     expect(PATH_NAME_EVENTCHANGELOG).to.be.equal('changelog');
     expect(PATH_NAME_EVENTCHANGELOGS).to.be.equal('changelogs');
+  });
+
+  it('should expose predefine relations definition', () => {
+    expect(PREDEFINE_RELATIONS).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.permissions).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.roles).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.groups).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.group).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.type).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.function).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.action).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.level).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.area).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.indicator).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.unit).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.focals).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.agencies).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.custodians).to.exist.and.be.an('object');
   });
 });
