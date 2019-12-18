@@ -192,6 +192,26 @@ export const EVENT_RELATIONS = {
   areas: { ref: 'Predefine', namespace: 'AdministrativeArea', array: true },
 };
 
+// event changelog relations
+export const EVENT_CHANGELOG_RELATIONS = {
+  initiator: { ref: 'Party' },
+  verifier: { ref: 'Party' },
+  group: { ref: 'Predefine', namespace: 'EventGroup' },
+  type: { ref: 'Predefine', namespace: 'EventType' },
+  event: { ref: 'Event' },
+  function: { ref: 'Predefine', namespace: 'EventFunction' },
+  action: { ref: 'Predefine', namespace: 'EventAction' },
+  indicator: { ref: 'Predefine', namespace: 'EventAction' },
+  need: { ref: 'Predefine', namespace: 'EventQuestion' },
+  effect: { ref: 'Predefine', namespace: 'EventQuestion' },
+  areas: { ref: 'Predefine', namespace: 'AdministrativeArea', array: true },
+  groups: { ref: 'Predefine', namespace: 'PartyGroup', array: true },
+  roles: { ref: 'Predefine', namespace: 'PartyRole', array: true },
+  agencies: { ref: 'Party', array: true },
+  focals: { ref: 'Party', array: true },
+  template: { ref: 'Predefine', namespace: 'NotificationTemplate' },
+};
+
 // population options
 export const POPULATION_MAX_DEPTH = 1;
 export const POPULATION_DEFAULT = { maxDepth: POPULATION_MAX_DEPTH };

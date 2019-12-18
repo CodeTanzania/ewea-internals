@@ -126,6 +126,7 @@ import {
   PATH_NAME_EVENTCHANGELOGS,
   PREDEFINE_RELATIONS,
   EVENT_RELATIONS,
+  EVENT_CHANGELOG_RELATIONS,
 } from '../src';
 
 describe('internals', () => {
@@ -339,5 +340,24 @@ describe('internals', () => {
     expect(EVENT_RELATIONS.certainty).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.severity).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.areas).to.exist.and.be.an('object');
+  });
+
+  it('should expose event changelog relations definition', () => {
+    expect(EVENT_CHANGELOG_RELATIONS).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.initiator).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.verifier).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.group).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.type).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.event).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.function).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.action).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.indicator).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.need).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.effect).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.areas).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.roles).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.agencies).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.focals).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.template).to.exist.and.be.an('object');
   });
 });
