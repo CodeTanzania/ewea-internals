@@ -24,7 +24,29 @@ export const MODEL_NAME_EVENT = 'Event';
 export const MODEL_NAME_EVENTCHANGELOG = 'EventChangeLog';
 
 // collection names
+export const COLLECTION_NAME_PREDEFINE = 'predefines';
+export const COLLECTION_NAME_UNIT = 'predefines';
+export const COLLECTION_NAME_ADMINISTRATIVELEVEL = 'predefines';
+export const COLLECTION_NAME_FEATURETYPE = 'predefines';
+export const COLLECTION_NAME_EVENTINDICATOR = 'predefines';
+export const COLLECTION_NAME_EVENTSEVERITY = 'predefines';
+export const COLLECTION_NAME_EVENTCERTAINTY = 'predefines';
+export const COLLECTION_NAME_PARTYGROUP = 'predefines';
+export const COLLECTION_NAME_PARTYROLE = 'predefines';
+export const COLLECTION_NAME_EVENTGROUP = 'predefines';
+export const COLLECTION_NAME_EVENTTYPE = 'predefines';
+export const COLLECTION_NAME_EVENTFUNCTION = 'predefines';
+export const COLLECTION_NAME_EVENTACTION = 'predefines';
+export const COLLECTION_NAME_EVENTQUESTION = 'predefines';
+export const COLLECTION_NAME_PERMISSION = 'permissions';
+export const COLLECTION_NAME_ROLE = 'predefines';
+export const COLLECTION_NAME_ADMINISTRATIVEAREA = 'predefines';
+export const COLLECTION_NAME_PARTY = 'parties';
+export const COLLECTION_NAME_FEATURE = 'predefines';
+export const COLLECTION_NAME_EVENTCATALOGUE = 'predefines';
+export const COLLECTION_NAME_NOTIFICATIONTEMPLATE = 'predefines';
 export const COLLECTION_NAME_EVENT = 'events';
+export const COLLECTION_NAME_EVENTCHANGELOG = 'eventchangelogs';
 
 // path names
 export const PATH_NAME_EVENT = 'event';
