@@ -127,6 +127,7 @@ import {
   PATH_NAME_EVENTCHANGELOGS,
   PREDEFINE_RELATIONS,
   // relations
+  PARTY_RELATIONS,
   EVENT_RELATIONS,
   EVENT_CHANGELOG_RELATIONS,
   // population
@@ -336,6 +337,14 @@ describe('internals', () => {
     expect(PREDEFINE_RELATIONS.focals).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.agencies).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.custodians).to.exist.and.be.an('object');
+  });
+
+  it('should expose party relations definition', () => {
+    expect(PARTY_RELATIONS).to.exist.and.be.an('object');
+    expect(PARTY_RELATIONS.party).to.exist.and.be.an('object');
+    expect(PARTY_RELATIONS.group).to.exist.and.be.an('object');
+    expect(PARTY_RELATIONS.area).to.exist.and.be.an('object');
+    expect(PARTY_RELATIONS.role).to.exist.and.be.an('object');
   });
 
   it('should expose event relations definition', () => {
