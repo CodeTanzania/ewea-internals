@@ -185,6 +185,14 @@ export const PREDEFINE_RELATIONS = {
   custodians: { ref: 'Party', array: true },
 };
 
+// party relations
+export const PARTY_RELATIONS = {
+  party: { ref: 'Party' },
+  group: { ref: 'Predefine', namespace: 'PartyGroup' },
+  area: { ref: 'Predefine', namespace: 'AdministrativeArea' },
+  role: { ref: 'Predefine', namespace: 'PartyRole' },
+};
+
 // event relations
 export const EVENT_RELATIONS = {
   group: { ref: 'Predefine', namespace: 'EventGroup' },
