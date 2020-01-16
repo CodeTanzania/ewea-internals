@@ -1,3 +1,13 @@
+#### 0.2.0 (2020-01-16)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([e135b1dc](https://github.com/CodeTanzania/ewea-internals/commit/e135b1dcb475898ce84b220897165b01b7f1385c))
+
+##### New Features
+
+*  add party relations ([b81057db](https://github.com/CodeTanzania/ewea-internals/commit/b81057dbeaad9fe45bdfa9abf27b85e0b34d689e))
+
 #### 0.1.1 (2020-01-14)
 
 ##### Chores
