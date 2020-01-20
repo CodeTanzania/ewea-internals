@@ -1,3 +1,9 @@
+#### 0.3.0 (2020-01-20)
+
+##### New Features
+
+* **predefines:**  add status & urgency ([781aec83](https://github.com/CodeTanzania/ewea-internals/commit/781aec830d0d73f1b34307ecf5cc631b130335f5))
+
 #### 0.2.1 (2020-01-20)
 
 ##### Chores
