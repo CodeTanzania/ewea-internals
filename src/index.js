@@ -8,6 +8,8 @@ export const MODEL_NAME_FEATURETYPE = 'Predefine';
 export const MODEL_NAME_EVENTINDICATOR = 'Predefine';
 export const MODEL_NAME_EVENTSEVERITY = 'Predefine';
 export const MODEL_NAME_EVENTCERTAINTY = 'Predefine';
+export const MODEL_NAME_EVENTSTATUS = 'Predefine';
+export const MODEL_NAME_EVENTURGENCY = 'Predefine';
 export const MODEL_NAME_PARTYGROUP = 'Predefine';
 export const MODEL_NAME_PARTYROLE = 'Predefine';
 export const MODEL_NAME_EVENTGROUP = 'Predefine';
@@ -33,6 +35,8 @@ export const COLLECTION_NAME_FEATURETYPE = 'predefines';
 export const COLLECTION_NAME_EVENTINDICATOR = 'predefines';
 export const COLLECTION_NAME_EVENTSEVERITY = 'predefines';
 export const COLLECTION_NAME_EVENTCERTAINTY = 'predefines';
+export const COLLECTION_NAME_EVENTURGENCY = 'predefines';
+export const COLLECTION_NAME_EVENTSTATUS = 'predefines';
 export const COLLECTION_NAME_PARTYGROUP = 'predefines';
 export const COLLECTION_NAME_PARTYROLE = 'predefines';
 export const COLLECTION_NAME_EVENTGROUP = 'predefines';
@@ -57,6 +61,8 @@ export const PREDEFINE_NAMESPACE_FEATURETYPE = 'FeatureType';
 export const PREDEFINE_NAMESPACE_EVENTINDICATOR = 'EventIndicator';
 export const PREDEFINE_NAMESPACE_EVENTSEVERITY = 'EventSeverity';
 export const PREDEFINE_NAMESPACE_EVENTCERTAINTY = 'EventCertainty';
+export const PREDEFINE_NAMESPACE_EVENTSTATUS = 'EventStatus';
+export const PREDEFINE_NAMESPACE_EVENTURGENCY = 'EventUrgency';
 export const PREDEFINE_NAMESPACE_PARTYGROUP = 'PartyGroup';
 export const PREDEFINE_NAMESPACE_PARTYROLE = 'PartyRole';
 export const PREDEFINE_NAMESPACE_EVENTGROUP = 'EventGroup';
@@ -76,6 +82,8 @@ export const PREDEFINE_NAMESPACES = [
   PREDEFINE_NAMESPACE_EVENTINDICATOR,
   PREDEFINE_NAMESPACE_EVENTSEVERITY,
   PREDEFINE_NAMESPACE_EVENTCERTAINTY,
+  PREDEFINE_NAMESPACE_EVENTSTATUS,
+  PREDEFINE_NAMESPACE_EVENTURGENCY,
   PREDEFINE_NAMESPACE_PARTYGROUP,
   PREDEFINE_NAMESPACE_PARTYROLE,
   PREDEFINE_NAMESPACE_EVENTGROUP,
@@ -97,6 +105,8 @@ export const PREDEFINE_BUCKET_FEATURETYPE = 'featuretypes';
 export const PREDEFINE_BUCKET_EVENTINDICATOR = 'eventindicators';
 export const PREDEFINE_BUCKET_EVENTSEVERITY = 'eventseverities';
 export const PREDEFINE_BUCKET_EVENTCERTAINTY = 'eventcertainties';
+export const PREDEFINE_BUCKET_EVENTSTATUS = 'eventstatuses';
+export const PREDEFINE_BUCKET_EVENTURGENCY = 'eventurgencies';
 export const PREDEFINE_BUCKET_PARTYGROUP = 'partygroups';
 export const PREDEFINE_BUCKET_PARTYROLE = 'partyroles';
 export const PREDEFINE_BUCKET_EVENTGROUP = 'eventgroups';
@@ -116,6 +126,8 @@ export const PREDEFINE_BUCKETS = [
   PREDEFINE_BUCKET_EVENTINDICATOR,
   PREDEFINE_BUCKET_EVENTSEVERITY,
   PREDEFINE_BUCKET_EVENTCERTAINTY,
+  PREDEFINE_BUCKET_EVENTSTATUS,
+  PREDEFINE_BUCKET_EVENTURGENCY,
   PREDEFINE_BUCKET_PARTYGROUP,
   PREDEFINE_BUCKET_PARTYROLE,
   PREDEFINE_BUCKET_EVENTGROUP,
@@ -137,6 +149,8 @@ export const PATH_NAME_FEATURETYPE = 'type';
 export const PATH_NAME_EVENTINDICATOR = 'indicator';
 export const PATH_NAME_EVENTSEVERITY = 'severity';
 export const PATH_NAME_EVENTCERTAINTY = 'certainty';
+export const PATH_NAME_EVENTSTATUS = 'status';
+export const PATH_NAME_EVENTURGENCY = 'urgency';
 export const PATH_NAME_PARTYGROUP = 'group';
 export const PATH_NAME_PARTYGROUPS = 'groups';
 export const PATH_NAME_PARTYROLE = 'role';
@@ -199,6 +213,8 @@ export const EVENT_RELATIONS = {
   type: { ref: 'Predefine', namespace: 'EventType' },
   certainty: { ref: 'Predefine', namespace: 'EventCertainty' },
   severity: { ref: 'Predefine', namespace: 'EventSeverity' },
+  status: { ref: 'Predefine', namespace: 'EventStatus' },
+  urgency: { ref: 'Predefine', namespace: 'EventUrgency' },
   areas: { ref: 'Predefine', namespace: 'AdministrativeArea', array: true },
 };
 

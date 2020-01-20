@@ -9,6 +9,8 @@ import {
   MODEL_NAME_EVENTINDICATOR,
   MODEL_NAME_EVENTSEVERITY,
   MODEL_NAME_EVENTCERTAINTY,
+  MODEL_NAME_EVENTSTATUS,
+  MODEL_NAME_EVENTURGENCY,
   MODEL_NAME_PARTYGROUP,
   MODEL_NAME_PARTYROLE,
   MODEL_NAME_EVENTGROUP,
@@ -33,6 +35,8 @@ import {
   COLLECTION_NAME_EVENTINDICATOR,
   COLLECTION_NAME_EVENTSEVERITY,
   COLLECTION_NAME_EVENTCERTAINTY,
+  COLLECTION_NAME_EVENTSTATUS,
+  COLLECTION_NAME_EVENTURGENCY,
   COLLECTION_NAME_PARTYGROUP,
   COLLECTION_NAME_PARTYROLE,
   COLLECTION_NAME_EVENTGROUP,
@@ -56,6 +60,8 @@ import {
   PREDEFINE_NAMESPACE_EVENTINDICATOR,
   PREDEFINE_NAMESPACE_EVENTSEVERITY,
   PREDEFINE_NAMESPACE_EVENTCERTAINTY,
+  PREDEFINE_NAMESPACE_EVENTSTATUS,
+  PREDEFINE_NAMESPACE_EVENTURGENCY,
   PREDEFINE_NAMESPACE_PARTYGROUP,
   PREDEFINE_NAMESPACE_PARTYROLE,
   PREDEFINE_NAMESPACE_EVENTGROUP,
@@ -76,6 +82,8 @@ import {
   PREDEFINE_BUCKET_EVENTINDICATOR,
   PREDEFINE_BUCKET_EVENTSEVERITY,
   PREDEFINE_BUCKET_EVENTCERTAINTY,
+  PREDEFINE_BUCKET_EVENTSTATUS,
+  PREDEFINE_BUCKET_EVENTURGENCY,
   PREDEFINE_BUCKET_PARTYGROUP,
   PREDEFINE_BUCKET_PARTYROLE,
   PREDEFINE_BUCKET_EVENTGROUP,
@@ -96,6 +104,8 @@ import {
   PATH_NAME_EVENTINDICATOR,
   PATH_NAME_EVENTSEVERITY,
   PATH_NAME_EVENTCERTAINTY,
+  PATH_NAME_EVENTSTATUS,
+  PATH_NAME_EVENTURGENCY,
   PATH_NAME_PARTYGROUP,
   PATH_NAME_PARTYGROUPS,
   PATH_NAME_PARTYROLE,
@@ -144,6 +154,8 @@ describe('internals', () => {
     expect(MODEL_NAME_EVENTINDICATOR).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTSEVERITY).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTCERTAINTY).to.be.equal('Predefine');
+    expect(MODEL_NAME_EVENTSTATUS).to.be.equal('Predefine');
+    expect(MODEL_NAME_EVENTURGENCY).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYGROUP).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYROLE).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTGROUP).to.be.equal('Predefine');
@@ -170,6 +182,8 @@ describe('internals', () => {
     expect(COLLECTION_NAME_EVENTINDICATOR).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTSEVERITY).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTCERTAINTY).to.be.equal('predefines');
+    expect(COLLECTION_NAME_EVENTSTATUS).to.be.equal('predefines');
+    expect(COLLECTION_NAME_EVENTURGENCY).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYGROUP).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYROLE).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTGROUP).to.be.equal('predefines');
@@ -198,6 +212,8 @@ describe('internals', () => {
     expect(PREDEFINE_NAMESPACE_EVENTINDICATOR).to.be.equal('EventIndicator');
     expect(PREDEFINE_NAMESPACE_EVENTSEVERITY).to.be.equal('EventSeverity');
     expect(PREDEFINE_NAMESPACE_EVENTCERTAINTY).to.be.equal('EventCertainty');
+    expect(PREDEFINE_NAMESPACE_EVENTSTATUS).to.be.equal('EventStatus');
+    expect(PREDEFINE_NAMESPACE_EVENTURGENCY).to.be.equal('EventUrgency');
     expect(PREDEFINE_NAMESPACE_PARTYGROUP).to.be.equal('PartyGroup');
     expect(PREDEFINE_NAMESPACE_PARTYROLE).to.be.equal('PartyRole');
     expect(PREDEFINE_NAMESPACE_EVENTGROUP).to.be.equal('EventGroup');
@@ -221,6 +237,8 @@ describe('internals', () => {
       PREDEFINE_NAMESPACE_EVENTINDICATOR,
       PREDEFINE_NAMESPACE_EVENTSEVERITY,
       PREDEFINE_NAMESPACE_EVENTCERTAINTY,
+      PREDEFINE_NAMESPACE_EVENTSTATUS,
+      PREDEFINE_NAMESPACE_EVENTURGENCY,
       PREDEFINE_NAMESPACE_PARTYGROUP,
       PREDEFINE_NAMESPACE_PARTYROLE,
       PREDEFINE_NAMESPACE_EVENTGROUP,
@@ -245,6 +263,8 @@ describe('internals', () => {
     expect(PREDEFINE_BUCKET_EVENTINDICATOR).to.be.equal('eventindicators');
     expect(PREDEFINE_BUCKET_EVENTSEVERITY).to.be.equal('eventseverities');
     expect(PREDEFINE_BUCKET_EVENTCERTAINTY).to.be.equal('eventcertainties');
+    expect(PREDEFINE_BUCKET_EVENTSTATUS).to.be.equal('eventstatuses');
+    expect(PREDEFINE_BUCKET_EVENTURGENCY).to.be.equal('eventurgencies');
     expect(PREDEFINE_BUCKET_PARTYGROUP).to.be.equal('partygroups');
     expect(PREDEFINE_BUCKET_PARTYROLE).to.be.equal('partyroles');
     expect(PREDEFINE_BUCKET_EVENTGROUP).to.be.equal('eventgroups');
@@ -268,6 +288,8 @@ describe('internals', () => {
       PREDEFINE_BUCKET_EVENTINDICATOR,
       PREDEFINE_BUCKET_EVENTSEVERITY,
       PREDEFINE_BUCKET_EVENTCERTAINTY,
+      PREDEFINE_BUCKET_EVENTSTATUS,
+      PREDEFINE_BUCKET_EVENTURGENCY,
       PREDEFINE_BUCKET_PARTYGROUP,
       PREDEFINE_BUCKET_PARTYROLE,
       PREDEFINE_BUCKET_EVENTGROUP,
@@ -290,6 +312,8 @@ describe('internals', () => {
     expect(PATH_NAME_EVENTINDICATOR).to.be.equal('indicator');
     expect(PATH_NAME_EVENTSEVERITY).to.be.equal('severity');
     expect(PATH_NAME_EVENTCERTAINTY).to.be.equal('certainty');
+    expect(PATH_NAME_EVENTSTATUS).to.be.equal('status');
+    expect(PATH_NAME_EVENTURGENCY).to.be.equal('urgency');
     expect(PATH_NAME_PARTYGROUP).to.be.equal('group');
     expect(PATH_NAME_PARTYGROUPS).to.be.equal('groups');
     expect(PATH_NAME_PARTYROLE).to.be.equal('role');
@@ -351,8 +375,10 @@ describe('internals', () => {
     expect(EVENT_RELATIONS).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.group).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.type).to.exist.and.be.an('object');
-    expect(EVENT_RELATIONS.certainty).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.severity).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.certainty).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.status).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.urgency).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.areas).to.exist.and.be.an('object');
   });
 
