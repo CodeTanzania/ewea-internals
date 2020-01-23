@@ -366,6 +366,7 @@ describe('internals', () => {
   it('should expose party relations definition', () => {
     expect(PARTY_RELATIONS).to.exist.and.be.an('object');
     expect(PARTY_RELATIONS.party).to.exist.and.be.an('object');
+    expect(PARTY_RELATIONS.agency).to.exist.and.be.an('object');
     expect(PARTY_RELATIONS.group).to.exist.and.be.an('object');
     expect(PARTY_RELATIONS.area).to.exist.and.be.an('object');
     expect(PARTY_RELATIONS.role).to.exist.and.be.an('object');

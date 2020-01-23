@@ -202,6 +202,7 @@ const PREDEFINE_RELATIONS = {
 // party relations
 const PARTY_RELATIONS = {
   party: { ref: 'Party' },
+  agency: { ref: 'Party', path: 'party' },
   group: { ref: 'Predefine', namespace: 'PartyGroup' },
   area: { ref: 'Predefine', namespace: 'AdministrativeArea' },
   role: { ref: 'Predefine', namespace: 'PartyRole' },
