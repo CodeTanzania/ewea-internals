@@ -1,3 +1,14 @@
+#### 0.4.0 (2020-01-23)
+
+##### Chores
+
+* **releas:**  compile latest source ([0fc33012](https://github.com/CodeTanzania/ewea-internals/commit/0fc33012a9085c3c7c6af801782b3ece330cffd6))
+* **deps:**  force latest version & audit fix ([2ac281c8](https://github.com/CodeTanzania/ewea-internals/commit/2ac281c8a59dbdf3d83dab4052bc64f8361a9bff))
+
+##### Bug Fixes
+
+*  add agency party relation ([09ce3830](https://github.com/CodeTanzania/ewea-internals/commit/09ce38304480934fa68da5dd44cbd7931f82ccd7))
+
 #### 0.3.0 (2020-01-20)
 
 ##### New Features
