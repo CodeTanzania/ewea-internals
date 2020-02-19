@@ -1,3 +1,10 @@
+#### 0.5.0 (2020-02-19)
+
+##### New Features
+
+*  expose event level ([30e83cc2](https://github.com/CodeTanzania/ewea-internals/commit/30e83cc2a351d5dabf39e0e904b01c00d28800bf))
+*  expose event question topic ([b742a53b](https://github.com/CodeTanzania/ewea-internals/commit/b742a53bae65b553e017e1360f8b2252db33210a))
+
 #### 0.4.2 (2020-02-17)
 
 ##### Chores
