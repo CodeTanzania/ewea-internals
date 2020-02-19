@@ -6,6 +6,7 @@ export const MODEL_NAME_UNIT = 'Predefine';
 export const MODEL_NAME_ADMINISTRATIVELEVEL = 'Predefine';
 export const MODEL_NAME_FEATURETYPE = 'Predefine';
 export const MODEL_NAME_EVENTINDICATOR = 'Predefine';
+export const MODEL_NAME_EVENTTOPIC = 'Predefine';
 export const MODEL_NAME_EVENTSEVERITY = 'Predefine';
 export const MODEL_NAME_EVENTCERTAINTY = 'Predefine';
 export const MODEL_NAME_EVENTSTATUS = 'Predefine';
@@ -33,6 +34,7 @@ export const COLLECTION_NAME_UNIT = 'predefines';
 export const COLLECTION_NAME_ADMINISTRATIVELEVEL = 'predefines';
 export const COLLECTION_NAME_FEATURETYPE = 'predefines';
 export const COLLECTION_NAME_EVENTINDICATOR = 'predefines';
+export const COLLECTION_NAME_EVENTTOPIC = 'predefines';
 export const COLLECTION_NAME_EVENTSEVERITY = 'predefines';
 export const COLLECTION_NAME_EVENTCERTAINTY = 'predefines';
 export const COLLECTION_NAME_EVENTURGENCY = 'predefines';
@@ -59,6 +61,7 @@ export const PREDEFINE_NAMESPACE_UNIT = 'Unit';
 export const PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL = 'AdministrativeLevel';
 export const PREDEFINE_NAMESPACE_FEATURETYPE = 'FeatureType';
 export const PREDEFINE_NAMESPACE_EVENTINDICATOR = 'EventIndicator';
+export const PREDEFINE_NAMESPACE_EVENTTOPIC = 'EventTopic';
 export const PREDEFINE_NAMESPACE_EVENTSEVERITY = 'EventSeverity';
 export const PREDEFINE_NAMESPACE_EVENTCERTAINTY = 'EventCertainty';
 export const PREDEFINE_NAMESPACE_EVENTSTATUS = 'EventStatus';
@@ -80,6 +83,7 @@ export const PREDEFINE_NAMESPACES = [
   PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL,
   PREDEFINE_NAMESPACE_FEATURETYPE,
   PREDEFINE_NAMESPACE_EVENTINDICATOR,
+  PREDEFINE_NAMESPACE_EVENTTOPIC,
   PREDEFINE_NAMESPACE_EVENTSEVERITY,
   PREDEFINE_NAMESPACE_EVENTCERTAINTY,
   PREDEFINE_NAMESPACE_EVENTSTATUS,
@@ -103,6 +107,7 @@ export const PREDEFINE_BUCKET_UNIT = 'units';
 export const PREDEFINE_BUCKET_ADMINISTRATIVELEVEL = 'administrativelevels';
 export const PREDEFINE_BUCKET_FEATURETYPE = 'featuretypes';
 export const PREDEFINE_BUCKET_EVENTINDICATOR = 'eventindicators';
+export const PREDEFINE_BUCKET_EVENTTOPIC = 'eventtopics';
 export const PREDEFINE_BUCKET_EVENTSEVERITY = 'eventseverities';
 export const PREDEFINE_BUCKET_EVENTCERTAINTY = 'eventcertainties';
 export const PREDEFINE_BUCKET_EVENTSTATUS = 'eventstatuses';
@@ -124,6 +129,7 @@ export const PREDEFINE_BUCKETS = [
   PREDEFINE_BUCKET_ADMINISTRATIVELEVEL,
   PREDEFINE_BUCKET_FEATURETYPE,
   PREDEFINE_BUCKET_EVENTINDICATOR,
+  PREDEFINE_BUCKET_EVENTTOPIC,
   PREDEFINE_BUCKET_EVENTSEVERITY,
   PREDEFINE_BUCKET_EVENTCERTAINTY,
   PREDEFINE_BUCKET_EVENTSTATUS,
@@ -147,6 +153,7 @@ export const PATH_NAME_UNIT = 'unit';
 export const PATH_NAME_ADMINISTRATIVELEVEL = 'level';
 export const PATH_NAME_FEATURETYPE = 'type';
 export const PATH_NAME_EVENTINDICATOR = 'indicator';
+export const PATH_NAME_EVENTTOPIC = 'topic';
 export const PATH_NAME_EVENTSEVERITY = 'severity';
 export const PATH_NAME_EVENTCERTAINTY = 'certainty';
 export const PATH_NAME_EVENTSTATUS = 'status';
@@ -193,6 +200,7 @@ export const PREDEFINE_RELATIONS = {
   level: { ref: 'Predefine', namespace: 'AdministrativeLevel' },
   area: { ref: 'Predefine', namespace: 'AdministrativeArea' },
   indicator: { ref: 'Predefine', namespace: 'EventIndicator' },
+  topic: { ref: 'Predefine', namespace: 'EventTopic' },
   unit: { ref: 'Predefine', namespace: 'Unit' },
   agencies: { ref: 'Party', array: true },
   focals: { ref: 'Party', array: true },
@@ -228,7 +236,8 @@ export const EVENT_CHANGELOG_RELATIONS = {
   event: { ref: 'Event' },
   function: { ref: 'Predefine', namespace: 'EventFunction' },
   action: { ref: 'Predefine', namespace: 'EventAction' },
-  indicator: { ref: 'Predefine', namespace: 'EventAction' },
+  indicator: { ref: 'Predefine', namespace: 'EventIndicator' },
+  topic: { ref: 'Predefine', namespace: 'EventTopic' },
   need: { ref: 'Predefine', namespace: 'EventQuestion' },
   effect: { ref: 'Predefine', namespace: 'EventQuestion' },
   areas: { ref: 'Predefine', namespace: 'AdministrativeArea', array: true },
