@@ -7,6 +7,8 @@ import {
   MODEL_NAME_ADMINISTRATIVELEVEL,
   MODEL_NAME_FEATURETYPE,
   MODEL_NAME_EVENTINDICATOR,
+  MODEL_NAME_EVENTTOPIC,
+  MODEL_NAME_EVENTLEVEL,
   MODEL_NAME_EVENTSEVERITY,
   MODEL_NAME_EVENTCERTAINTY,
   MODEL_NAME_EVENTSTATUS,
@@ -33,6 +35,8 @@ import {
   COLLECTION_NAME_ADMINISTRATIVELEVEL,
   COLLECTION_NAME_FEATURETYPE,
   COLLECTION_NAME_EVENTINDICATOR,
+  COLLECTION_NAME_EVENTTOPIC,
+  COLLECTION_NAME_EVENTLEVEL,
   COLLECTION_NAME_EVENTSEVERITY,
   COLLECTION_NAME_EVENTCERTAINTY,
   COLLECTION_NAME_EVENTSTATUS,
@@ -58,6 +62,8 @@ import {
   PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL,
   PREDEFINE_NAMESPACE_FEATURETYPE,
   PREDEFINE_NAMESPACE_EVENTINDICATOR,
+  PREDEFINE_NAMESPACE_EVENTTOPIC,
+  PREDEFINE_NAMESPACE_EVENTLEVEL,
   PREDEFINE_NAMESPACE_EVENTSEVERITY,
   PREDEFINE_NAMESPACE_EVENTCERTAINTY,
   PREDEFINE_NAMESPACE_EVENTSTATUS,
@@ -80,6 +86,8 @@ import {
   PREDEFINE_BUCKET_ADMINISTRATIVELEVEL,
   PREDEFINE_BUCKET_FEATURETYPE,
   PREDEFINE_BUCKET_EVENTINDICATOR,
+  PREDEFINE_BUCKET_EVENTTOPIC,
+  PREDEFINE_BUCKET_EVENTLEVEL,
   PREDEFINE_BUCKET_EVENTSEVERITY,
   PREDEFINE_BUCKET_EVENTCERTAINTY,
   PREDEFINE_BUCKET_EVENTSTATUS,
@@ -102,6 +110,8 @@ import {
   PATH_NAME_ADMINISTRATIVELEVEL,
   PATH_NAME_FEATURETYPE,
   PATH_NAME_EVENTINDICATOR,
+  PATH_NAME_EVENTTOPIC,
+  PATH_NAME_EVENTLEVEL,
   PATH_NAME_EVENTSEVERITY,
   PATH_NAME_EVENTCERTAINTY,
   PATH_NAME_EVENTSTATUS,
@@ -152,6 +162,8 @@ describe('internals', () => {
     expect(MODEL_NAME_ADMINISTRATIVELEVEL).to.be.equal('Predefine');
     expect(MODEL_NAME_FEATURETYPE).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTINDICATOR).to.be.equal('Predefine');
+    expect(MODEL_NAME_EVENTTOPIC).to.be.equal('Predefine');
+    expect(MODEL_NAME_EVENTLEVEL).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTSEVERITY).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTCERTAINTY).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTSTATUS).to.be.equal('Predefine');
@@ -180,6 +192,8 @@ describe('internals', () => {
     expect(COLLECTION_NAME_ADMINISTRATIVELEVEL).to.be.equal('predefines');
     expect(COLLECTION_NAME_FEATURETYPE).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTINDICATOR).to.be.equal('predefines');
+    expect(COLLECTION_NAME_EVENTTOPIC).to.be.equal('predefines');
+    expect(COLLECTION_NAME_EVENTLEVEL).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTSEVERITY).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTCERTAINTY).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTSTATUS).to.be.equal('predefines');
@@ -210,6 +224,8 @@ describe('internals', () => {
     );
     expect(PREDEFINE_NAMESPACE_FEATURETYPE).to.be.equal('FeatureType');
     expect(PREDEFINE_NAMESPACE_EVENTINDICATOR).to.be.equal('EventIndicator');
+    expect(PREDEFINE_NAMESPACE_EVENTTOPIC).to.be.equal('EventTopic');
+    expect(PREDEFINE_NAMESPACE_EVENTLEVEL).to.be.equal('EventLevel');
     expect(PREDEFINE_NAMESPACE_EVENTSEVERITY).to.be.equal('EventSeverity');
     expect(PREDEFINE_NAMESPACE_EVENTCERTAINTY).to.be.equal('EventCertainty');
     expect(PREDEFINE_NAMESPACE_EVENTSTATUS).to.be.equal('EventStatus');
@@ -235,6 +251,8 @@ describe('internals', () => {
       PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL,
       PREDEFINE_NAMESPACE_FEATURETYPE,
       PREDEFINE_NAMESPACE_EVENTINDICATOR,
+      PREDEFINE_NAMESPACE_EVENTTOPIC,
+      PREDEFINE_NAMESPACE_EVENTLEVEL,
       PREDEFINE_NAMESPACE_EVENTSEVERITY,
       PREDEFINE_NAMESPACE_EVENTCERTAINTY,
       PREDEFINE_NAMESPACE_EVENTSTATUS,
@@ -261,6 +279,8 @@ describe('internals', () => {
     );
     expect(PREDEFINE_BUCKET_FEATURETYPE).to.be.equal('featuretypes');
     expect(PREDEFINE_BUCKET_EVENTINDICATOR).to.be.equal('eventindicators');
+    expect(PREDEFINE_BUCKET_EVENTTOPIC).to.be.equal('eventtopics');
+    expect(PREDEFINE_BUCKET_EVENTLEVEL).to.be.equal('eventlevels');
     expect(PREDEFINE_BUCKET_EVENTSEVERITY).to.be.equal('eventseverities');
     expect(PREDEFINE_BUCKET_EVENTCERTAINTY).to.be.equal('eventcertainties');
     expect(PREDEFINE_BUCKET_EVENTSTATUS).to.be.equal('eventstatuses');
@@ -286,6 +306,8 @@ describe('internals', () => {
       PREDEFINE_BUCKET_ADMINISTRATIVELEVEL,
       PREDEFINE_BUCKET_FEATURETYPE,
       PREDEFINE_BUCKET_EVENTINDICATOR,
+      PREDEFINE_BUCKET_EVENTTOPIC,
+      PREDEFINE_BUCKET_EVENTLEVEL,
       PREDEFINE_BUCKET_EVENTSEVERITY,
       PREDEFINE_BUCKET_EVENTCERTAINTY,
       PREDEFINE_BUCKET_EVENTSTATUS,
@@ -310,6 +332,8 @@ describe('internals', () => {
     expect(PATH_NAME_ADMINISTRATIVELEVEL).to.be.equal('level');
     expect(PATH_NAME_FEATURETYPE).to.be.equal('type');
     expect(PATH_NAME_EVENTINDICATOR).to.be.equal('indicator');
+    expect(PATH_NAME_EVENTTOPIC).to.be.equal('topic');
+    expect(PATH_NAME_EVENTLEVEL).to.be.equal('level');
     expect(PATH_NAME_EVENTSEVERITY).to.be.equal('severity');
     expect(PATH_NAME_EVENTCERTAINTY).to.be.equal('certainty');
     expect(PATH_NAME_EVENTSTATUS).to.be.equal('status');
@@ -357,6 +381,7 @@ describe('internals', () => {
     expect(PREDEFINE_RELATIONS.level).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.area).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.indicator).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.topic).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.unit).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.focals).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.agencies).to.exist.and.be.an('object');
@@ -393,6 +418,7 @@ describe('internals', () => {
     expect(EVENT_CHANGELOG_RELATIONS.function).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.action).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.indicator).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.topic).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.need).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.effect).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.areas).to.exist.and.be.an('object');
