@@ -1,3 +1,17 @@
+#### 0.5.0 (2020-02-22)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([9e3e31c4](https://github.com/CodeTanzania/ewea-internals/commit/9e3e31c4d14a3172c70a577086d183a1e179e612))
+
+##### New Features
+
+*  add level field to event relations ([8bb79f72](https://github.com/CodeTanzania/ewea-internals/commit/8bb79f721987164652fb6ba7d80b28b5eb64327b))
+
+##### Refactors
+
+*  rename EventCatalogue to EventActionCatalogue ([356d5bf9](https://github.com/CodeTanzania/ewea-internals/commit/356d5bf908a9365e61645b4810a1b4404aeed997))
+
 #### 0.5.0 (2020-02-19)
 
 ##### New Features
