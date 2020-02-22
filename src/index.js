@@ -24,7 +24,7 @@ export const MODEL_NAME_ROLE = 'Predefine';
 export const MODEL_NAME_ADMINISTRATIVEAREA = 'Predefine';
 export const MODEL_NAME_PARTY = 'Party';
 export const MODEL_NAME_FEATURE = 'Predefine';
-export const MODEL_NAME_EVENTCATALOGUE = 'Predefine';
+export const MODEL_NAME_EVENTACTIONCATALOGUE = 'Predefine';
 export const MODEL_NAME_NOTIFICATIONTEMPLATE = 'Predefine';
 export const MODEL_NAME_EVENT = 'Event';
 export const MODEL_NAME_EVENTCHANGELOG = 'EventChangeLog';
@@ -53,7 +53,7 @@ export const COLLECTION_NAME_ROLE = 'predefines';
 export const COLLECTION_NAME_ADMINISTRATIVEAREA = 'predefines';
 export const COLLECTION_NAME_PARTY = 'parties';
 export const COLLECTION_NAME_FEATURE = 'predefines';
-export const COLLECTION_NAME_EVENTCATALOGUE = 'predefines';
+export const COLLECTION_NAME_EVENTACTIONCATALOGUE = 'predefines';
 export const COLLECTION_NAME_NOTIFICATIONTEMPLATE = 'predefines';
 export const COLLECTION_NAME_EVENT = 'events';
 export const COLLECTION_NAME_EVENTCHANGELOG = 'eventchangelogs';
@@ -79,7 +79,7 @@ export const PREDEFINE_NAMESPACE_EVENTQUESTION = 'EventQuestion';
 export const PREDEFINE_NAMESPACE_ROLE = 'Role';
 export const PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA = 'AdministrativeArea';
 export const PREDEFINE_NAMESPACE_FEATURE = 'Feature';
-export const PREDEFINE_NAMESPACE_EVENTCATALOGUE = 'EventCatalogue';
+export const PREDEFINE_NAMESPACE_EVENTACTIONCATALOGUE = 'EventActionCatalogue';
 export const PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE = 'NotificationTemplate';
 export const PREDEFINE_NAMESPACES = [
   PREDEFINE_NAMESPACE_UNIT,
@@ -102,7 +102,7 @@ export const PREDEFINE_NAMESPACES = [
   PREDEFINE_NAMESPACE_ROLE,
   PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
   PREDEFINE_NAMESPACE_FEATURE,
-  PREDEFINE_NAMESPACE_EVENTCATALOGUE,
+  PREDEFINE_NAMESPACE_EVENTACTIONCATALOGUE,
   PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE,
 ];
 
@@ -127,7 +127,7 @@ export const PREDEFINE_BUCKET_EVENTQUESTION = 'eventquestions';
 export const PREDEFINE_BUCKET_ROLE = 'role';
 export const PREDEFINE_BUCKET_ADMINISTRATIVEAREA = 'administrativeareas';
 export const PREDEFINE_BUCKET_FEATURE = 'features';
-export const PREDEFINE_BUCKET_EVENTCATALOGUE = 'eventcatalogues';
+export const PREDEFINE_BUCKET_EVENTACTIONCATALOGUE = 'eventcatalogues';
 export const PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE = 'notificationtemplates';
 export const PREDEFINE_BUCKETS = [
   PREDEFINE_BUCKET_UNIT,
@@ -150,7 +150,7 @@ export const PREDEFINE_BUCKETS = [
   PREDEFINE_BUCKET_ROLE,
   PREDEFINE_BUCKET_ADMINISTRATIVEAREA,
   PREDEFINE_BUCKET_FEATURE,
-  PREDEFINE_BUCKET_EVENTCATALOGUE,
+  PREDEFINE_BUCKET_EVENTACTIONCATALOGUE,
   PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
 ];
 
@@ -227,8 +227,9 @@ export const PARTY_RELATIONS = {
 export const EVENT_RELATIONS = {
   group: { ref: 'Predefine', namespace: 'EventGroup' },
   type: { ref: 'Predefine', namespace: 'EventType' },
-  certainty: { ref: 'Predefine', namespace: 'EventCertainty' },
+  level: { ref: 'Predefine', namespace: 'EventLevel' },
   severity: { ref: 'Predefine', namespace: 'EventSeverity' },
+  certainty: { ref: 'Predefine', namespace: 'EventCertainty' },
   status: { ref: 'Predefine', namespace: 'EventStatus' },
   urgency: { ref: 'Predefine', namespace: 'EventUrgency' },
   areas: { ref: 'Predefine', namespace: 'AdministrativeArea', array: true },
