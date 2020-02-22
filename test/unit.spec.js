@@ -401,6 +401,7 @@ describe('internals', () => {
     expect(EVENT_RELATIONS).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.group).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.type).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.level).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.severity).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.certainty).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.status).to.exist.and.be.an('object');

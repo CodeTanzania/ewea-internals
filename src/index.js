@@ -228,6 +228,7 @@ export const EVENT_RELATIONS = {
   group: { ref: 'Predefine', namespace: 'EventGroup' },
   type: { ref: 'Predefine', namespace: 'EventType' },
   certainty: { ref: 'Predefine', namespace: 'EventCertainty' },
+  level: { ref: 'Predefine', namespace: 'EventLevel' },
   severity: { ref: 'Predefine', namespace: 'EventSeverity' },
   status: { ref: 'Predefine', namespace: 'EventStatus' },
   urgency: { ref: 'Predefine', namespace: 'EventUrgency' },
