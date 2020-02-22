@@ -1,7 +1,8 @@
-#### 0.5.0 (2020-02-22)
+#### 0.6.0 (2020-02-22)
 
 ##### Chores
 
+* **release:**  compile latest source & release notes ([de2681a6](https://github.com/CodeTanzania/ewea-internals/commit/de2681a63cfe5f3246298ecd7d9035b8af95df04))
 * **deps:**  force latest version & audit fix ([9e3e31c4](https://github.com/CodeTanzania/ewea-internals/commit/9e3e31c4d14a3172c70a577086d183a1e179e612))
 
 ##### New Features
