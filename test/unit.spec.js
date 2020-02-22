@@ -25,7 +25,7 @@ import {
   MODEL_NAME_ADMINISTRATIVEAREA,
   MODEL_NAME_PARTY,
   MODEL_NAME_FEATURE,
-  MODEL_NAME_EVENTCATALOGUE,
+  MODEL_NAME_EVENTACTIONCATALOGUE,
   MODEL_NAME_NOTIFICATIONTEMPLATE,
   MODEL_NAME_EVENT,
   MODEL_NAME_EVENTCHANGELOG,
@@ -53,7 +53,7 @@ import {
   COLLECTION_NAME_ADMINISTRATIVEAREA,
   COLLECTION_NAME_PARTY,
   COLLECTION_NAME_FEATURE,
-  COLLECTION_NAME_EVENTCATALOGUE,
+  COLLECTION_NAME_EVENTACTIONCATALOGUE,
   COLLECTION_NAME_NOTIFICATIONTEMPLATE,
   COLLECTION_NAME_EVENT,
   COLLECTION_NAME_EVENTCHANGELOG,
@@ -78,7 +78,7 @@ import {
   PREDEFINE_NAMESPACE_ROLE,
   PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
   PREDEFINE_NAMESPACE_FEATURE,
-  PREDEFINE_NAMESPACE_EVENTCATALOGUE,
+  PREDEFINE_NAMESPACE_EVENTACTIONCATALOGUE,
   PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE,
   PREDEFINE_NAMESPACES,
   // buckets
@@ -102,7 +102,7 @@ import {
   PREDEFINE_BUCKET_ROLE,
   PREDEFINE_BUCKET_ADMINISTRATIVEAREA,
   PREDEFINE_BUCKET_FEATURE,
-  PREDEFINE_BUCKET_EVENTCATALOGUE,
+  PREDEFINE_BUCKET_EVENTACTIONCATALOGUE,
   PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
   PREDEFINE_BUCKETS,
   // paths
@@ -180,7 +180,7 @@ describe('internals', () => {
     expect(MODEL_NAME_ADMINISTRATIVEAREA).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTY).to.be.equal('Party');
     expect(MODEL_NAME_FEATURE).to.be.equal('Predefine');
-    expect(MODEL_NAME_EVENTCATALOGUE).to.be.equal('Predefine');
+    expect(MODEL_NAME_EVENTACTIONCATALOGUE).to.be.equal('Predefine');
     expect(MODEL_NAME_NOTIFICATIONTEMPLATE).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENT).to.be.equal('Event');
     expect(MODEL_NAME_EVENTCHANGELOG).to.be.equal('EventChangeLog');
@@ -210,7 +210,7 @@ describe('internals', () => {
     expect(COLLECTION_NAME_ADMINISTRATIVEAREA).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTY).to.be.equal('parties');
     expect(COLLECTION_NAME_FEATURE).to.be.equal('predefines');
-    expect(COLLECTION_NAME_EVENTCATALOGUE).to.be.equal('predefines');
+    expect(COLLECTION_NAME_EVENTACTIONCATALOGUE).to.be.equal('predefines');
     expect(COLLECTION_NAME_NOTIFICATIONTEMPLATE).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENT).to.be.equal('events');
     expect(COLLECTION_NAME_EVENTCHANGELOG).to.be.equal('eventchangelogs');
@@ -242,7 +242,9 @@ describe('internals', () => {
       'AdministrativeArea'
     );
     expect(PREDEFINE_NAMESPACE_FEATURE).to.be.equal('Feature');
-    expect(PREDEFINE_NAMESPACE_EVENTCATALOGUE).to.be.equal('EventCatalogue');
+    expect(PREDEFINE_NAMESPACE_EVENTACTIONCATALOGUE).to.be.equal(
+      'EventActionCatalogue'
+    );
     expect(PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE).to.be.equal(
       'NotificationTemplate'
     );
@@ -267,7 +269,7 @@ describe('internals', () => {
       PREDEFINE_NAMESPACE_ROLE,
       PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
       PREDEFINE_NAMESPACE_FEATURE,
-      PREDEFINE_NAMESPACE_EVENTCATALOGUE,
+      PREDEFINE_NAMESPACE_EVENTACTIONCATALOGUE,
       PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE,
     ]);
   });
@@ -297,7 +299,9 @@ describe('internals', () => {
       'administrativeareas'
     );
     expect(PREDEFINE_BUCKET_FEATURE).to.be.equal('features');
-    expect(PREDEFINE_BUCKET_EVENTCATALOGUE).to.be.equal('eventcatalogues');
+    expect(PREDEFINE_BUCKET_EVENTACTIONCATALOGUE).to.be.equal(
+      'eventcatalogues'
+    );
     expect(PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE).to.be.equal(
       'notificationtemplates'
     );
@@ -322,7 +326,7 @@ describe('internals', () => {
       PREDEFINE_BUCKET_ROLE,
       PREDEFINE_BUCKET_ADMINISTRATIVEAREA,
       PREDEFINE_BUCKET_FEATURE,
-      PREDEFINE_BUCKET_EVENTCATALOGUE,
+      PREDEFINE_BUCKET_EVENTACTIONCATALOGUE,
       PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
     ]);
   });
