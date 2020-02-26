@@ -10,6 +10,11 @@ export const OPTION_PARTY_AUTOPOPULATE = {
   maxDepth: POPULATION_MAX_DEPTH,
 };
 
+export const OPTION_PERMISSION_AUTOPOPULATE = {
+  select: { resource: 1, action: 1, wildcard: 1 },
+  maxDepth: POPULATION_MAX_DEPTH,
+};
+
 // model names
 export const MODEL_NAME_PREDEFINE = 'Predefine';
 export const MODEL_NAME_UNIT = 'Predefine';
@@ -207,7 +212,11 @@ export const PATH_NAME_EVENTCHANGELOGS = 'changelogs';
 
 // predefine relations
 export const PREDEFINE_RELATIONS = {
-  permissions: { ref: 'Permission', array: true },
+  permissions: {
+    ref: 'Permission',
+    array: true,
+    autopopulate: OPTION_PERMISSION_AUTOPOPULATE,
+  },
   roles: { ref: 'Predefine', namespace: 'PartyRole', array: true },
   groups: { ref: 'Predefine', namespace: 'PartyGroup', array: true },
   group: { ref: 'Predefine', namespace: 'EventGroup' },
