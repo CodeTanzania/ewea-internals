@@ -1,5 +1,15 @@
 import { join, stringify } from '@lykmapipo/common';
 
+// population options
+export const POPULATION_MAX_DEPTH = 1;
+
+export const POPULATION_DEFAULT = { maxDepth: POPULATION_MAX_DEPTH };
+
+export const OPTION_PARTY_AUTOPOPULATE = {
+  select: { name: 1, email: 1, mobile: 1, abbreviation: 1 },
+  maxDepth: POPULATION_MAX_DEPTH,
+};
+
 // model names
 export const MODEL_NAME_PREDEFINE = 'Predefine';
 export const MODEL_NAME_UNIT = 'Predefine';
@@ -209,9 +219,21 @@ export const PREDEFINE_RELATIONS = {
   indicator: { ref: 'Predefine', namespace: 'EventIndicator' },
   topic: { ref: 'Predefine', namespace: 'EventTopic' },
   unit: { ref: 'Predefine', namespace: 'Unit' },
-  agencies: { ref: 'Party', array: true },
-  focals: { ref: 'Party', array: true },
-  custodians: { ref: 'Party', array: true },
+  agencies: {
+    ref: 'Party',
+    array: true,
+    autopopulate: OPTION_PARTY_AUTOPOPULATE,
+  },
+  focals: {
+    ref: 'Party',
+    array: true,
+    autopopulate: OPTION_PARTY_AUTOPOPULATE,
+  },
+  custodians: {
+    ref: 'Party',
+    array: true,
+    autopopulate: OPTION_PARTY_AUTOPOPULATE,
+  },
 };
 
 // party relations
@@ -255,10 +277,6 @@ export const EVENT_CHANGELOG_RELATIONS = {
   focals: { ref: 'Party', array: true },
   template: { ref: 'Predefine', namespace: 'NotificationTemplate' },
 };
-
-// population options
-export const POPULATION_MAX_DEPTH = 1;
-export const POPULATION_DEFAULT = { maxDepth: POPULATION_MAX_DEPTH };
 
 // setup env
 process.env.PREDEFINE_NAMESPACES = join(PREDEFINE_NAMESPACES, ',');

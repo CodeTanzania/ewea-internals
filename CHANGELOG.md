@@ -1,3 +1,9 @@
+#### 0.6.1 (2020-02-26)
+
+##### Bug Fixes
+
+*  ensure reletion populations ([29ac0b7e](https://github.com/CodeTanzania/ewea-internals/commit/29ac0b7e3045db9ca4ade1d3b0b3ffabd63c6159))
+
 #### 0.6.0 (2020-02-22)
 
 ##### Chores
