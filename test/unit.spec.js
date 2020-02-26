@@ -154,6 +154,7 @@ import {
   POPULATION_MAX_DEPTH,
   POPULATION_DEFAULT,
   OPTION_PARTY_AUTOPOPULATE,
+  OPTION_PERMISSION_AUTOPOPULATE,
 } from '../src';
 
 describe('internals', () => {
@@ -439,6 +440,10 @@ describe('internals', () => {
     expect(POPULATION_DEFAULT).to.be.eql({ maxDepth: POPULATION_MAX_DEPTH });
     expect(OPTION_PARTY_AUTOPOPULATE).to.be.eql({
       select: { name: 1, email: 1, mobile: 1, abbreviation: 1 },
+      maxDepth: POPULATION_MAX_DEPTH,
+    });
+    expect(OPTION_PERMISSION_AUTOPOPULATE).to.be.eql({
+      select: { resource: 1, action: 1, wildcard: 1 },
       maxDepth: POPULATION_MAX_DEPTH,
     });
   });

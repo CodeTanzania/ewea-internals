@@ -1,3 +1,9 @@
+#### 0.6.2 (2020-02-26)
+
+##### New Features
+
+* **relations:**  ensure permission population options ([11ec2015](https://github.com/CodeTanzania/ewea-internals/commit/11ec2015f0ef98f79cf66e03aab14ad21891c1f7))
+
 #### 0.6.1 (2020-02-26)
 
 ##### Bug Fixes
