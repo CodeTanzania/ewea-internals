@@ -153,6 +153,7 @@ import {
   // population
   POPULATION_MAX_DEPTH,
   POPULATION_DEFAULT,
+  OPTION_PARTY_AUTOPOPULATE,
 } from '../src';
 
 describe('internals', () => {
@@ -436,6 +437,10 @@ describe('internals', () => {
   it('should expose population options', () => {
     expect(POPULATION_MAX_DEPTH).to.be.equal(1);
     expect(POPULATION_DEFAULT).to.be.eql({ maxDepth: POPULATION_MAX_DEPTH });
+    expect(OPTION_PARTY_AUTOPOPULATE).to.be.eql({
+      select: { name: 1, email: 1, mobile: 1, abbreviation: 1 },
+      maxDepth: POPULATION_MAX_DEPTH,
+    });
   });
 
   it('should set predefine namespaces', () => {
