@@ -27,6 +27,7 @@ export const MODEL_NAME_EVENTSEVERITY = 'Predefine';
 export const MODEL_NAME_EVENTCERTAINTY = 'Predefine';
 export const MODEL_NAME_EVENTSTATUS = 'Predefine';
 export const MODEL_NAME_EVENTURGENCY = 'Predefine';
+export const MODEL_NAME_EVENTRESPONSE = 'Predefine';
 export const MODEL_NAME_PARTYGROUP = 'Predefine';
 export const MODEL_NAME_PARTYROLE = 'Predefine';
 export const MODEL_NAME_EVENTGROUP = 'Predefine';
@@ -54,8 +55,9 @@ export const COLLECTION_NAME_EVENTTOPIC = 'predefines';
 export const COLLECTION_NAME_EVENTLEVEL = 'predefines';
 export const COLLECTION_NAME_EVENTSEVERITY = 'predefines';
 export const COLLECTION_NAME_EVENTCERTAINTY = 'predefines';
-export const COLLECTION_NAME_EVENTURGENCY = 'predefines';
 export const COLLECTION_NAME_EVENTSTATUS = 'predefines';
+export const COLLECTION_NAME_EVENTURGENCY = 'predefines';
+export const COLLECTION_NAME_EVENTRESPONSE = 'predefines';
 export const COLLECTION_NAME_PARTYGROUP = 'predefines';
 export const COLLECTION_NAME_PARTYROLE = 'predefines';
 export const COLLECTION_NAME_EVENTGROUP = 'predefines';
@@ -84,6 +86,7 @@ export const PREDEFINE_NAMESPACE_EVENTSEVERITY = 'EventSeverity';
 export const PREDEFINE_NAMESPACE_EVENTCERTAINTY = 'EventCertainty';
 export const PREDEFINE_NAMESPACE_EVENTSTATUS = 'EventStatus';
 export const PREDEFINE_NAMESPACE_EVENTURGENCY = 'EventUrgency';
+export const PREDEFINE_NAMESPACE_EVENTRESPONSE = 'EventResponse';
 export const PREDEFINE_NAMESPACE_PARTYGROUP = 'PartyGroup';
 export const PREDEFINE_NAMESPACE_PARTYROLE = 'PartyRole';
 export const PREDEFINE_NAMESPACE_EVENTGROUP = 'EventGroup';
@@ -107,6 +110,7 @@ export const PREDEFINE_NAMESPACES = [
   PREDEFINE_NAMESPACE_EVENTCERTAINTY,
   PREDEFINE_NAMESPACE_EVENTSTATUS,
   PREDEFINE_NAMESPACE_EVENTURGENCY,
+  PREDEFINE_NAMESPACE_EVENTRESPONSE,
   PREDEFINE_NAMESPACE_PARTYGROUP,
   PREDEFINE_NAMESPACE_PARTYROLE,
   PREDEFINE_NAMESPACE_EVENTGROUP,
@@ -132,6 +136,7 @@ export const PREDEFINE_BUCKET_EVENTSEVERITY = 'eventseverities';
 export const PREDEFINE_BUCKET_EVENTCERTAINTY = 'eventcertainties';
 export const PREDEFINE_BUCKET_EVENTSTATUS = 'eventstatuses';
 export const PREDEFINE_BUCKET_EVENTURGENCY = 'eventurgencies';
+export const PREDEFINE_BUCKET_EVENTRESPONSE = 'eventresponses';
 export const PREDEFINE_BUCKET_PARTYGROUP = 'partygroups';
 export const PREDEFINE_BUCKET_PARTYROLE = 'partyroles';
 export const PREDEFINE_BUCKET_EVENTGROUP = 'eventgroups';
@@ -155,6 +160,7 @@ export const PREDEFINE_BUCKETS = [
   PREDEFINE_BUCKET_EVENTCERTAINTY,
   PREDEFINE_BUCKET_EVENTSTATUS,
   PREDEFINE_BUCKET_EVENTURGENCY,
+  PREDEFINE_BUCKET_EVENTRESPONSE,
   PREDEFINE_BUCKET_PARTYGROUP,
   PREDEFINE_BUCKET_PARTYROLE,
   PREDEFINE_BUCKET_EVENTGROUP,
@@ -180,6 +186,7 @@ export const PATH_NAME_EVENTSEVERITY = 'severity';
 export const PATH_NAME_EVENTCERTAINTY = 'certainty';
 export const PATH_NAME_EVENTSTATUS = 'status';
 export const PATH_NAME_EVENTURGENCY = 'urgency';
+export const PATH_NAME_EVENTRESPONSE = 'response';
 export const PATH_NAME_PARTYGROUP = 'group';
 export const PATH_NAME_PARTYGROUPS = 'groups';
 export const PATH_NAME_PARTYROLE = 'role';
@@ -263,6 +270,7 @@ export const EVENT_RELATIONS = {
   certainty: { ref: 'Predefine', namespace: 'EventCertainty' },
   status: { ref: 'Predefine', namespace: 'EventStatus' },
   urgency: { ref: 'Predefine', namespace: 'EventUrgency' },
+  response: { ref: 'Predefine', namespace: 'EventResponse' },
   areas: { ref: 'Predefine', namespace: 'AdministrativeArea', array: true },
 };
 
@@ -275,8 +283,10 @@ export const EVENT_CHANGELOG_RELATIONS = {
   event: { ref: 'Event' },
   function: { ref: 'Predefine', namespace: 'EventFunction' },
   action: { ref: 'Predefine', namespace: 'EventAction' },
+  catalogue: { ref: 'Predefine', namespace: 'EventActionCatalogue' },
   indicator: { ref: 'Predefine', namespace: 'EventIndicator' },
   topic: { ref: 'Predefine', namespace: 'EventTopic' },
+  question: { ref: 'Predefine', namespace: 'EventQuestion' },
   need: { ref: 'Predefine', namespace: 'EventQuestion' },
   effect: { ref: 'Predefine', namespace: 'EventQuestion' },
   areas: { ref: 'Predefine', namespace: 'AdministrativeArea', array: true },
