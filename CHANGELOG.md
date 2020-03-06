@@ -1,3 +1,9 @@
+#### 0.7.0 (2020-03-06)
+
+##### New Features
+
+*  add event response namespace ([d799f7e3](https://github.com/CodeTanzania/ewea-internals/commit/d799f7e35840528f66e87101e3a85d29c9288b82))
+
 #### 0.6.2 (2020-02-26)
 
 ##### New Features
