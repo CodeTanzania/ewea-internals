@@ -1,3 +1,16 @@
+#### 0.7.1 (2020-04-08)
+
+##### Chores
+
+* **deps:**
+  *  force latest version & audit fix ([fbddba4c](https://github.com/CodeTanzania/ewea-internals/commit/fbddba4c41f9f42adef00c5f591559f1bfc5bd6f))
+  *  force latest version & audit fix ([f32198af](https://github.com/CodeTanzania/ewea-internals/commit/f32198afb9bb55e535450095a02ac3dc81e2c93a))
+  *  bump acorn from 7.1.0 to 7.1.1 ([3018426a](https://github.com/CodeTanzania/ewea-internals/commit/3018426a0662f5d684dd5d41314fb3ba106fae5e))
+
+##### Other Changes
+
+* //github.com/CodeTanzania/ewea-internals into develop ([184db0cf](https://github.com/CodeTanzania/ewea-internals/commit/184db0cf2cc1c0b80b21434c1bc1fe5b0647c7f1))
+
 #### 0.7.0 (2020-03-06)
 
 ##### New Features
