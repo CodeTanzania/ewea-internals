@@ -1,3 +1,16 @@
+#### 0.8.0 (2020-04-13)
+
+##### Chores
+
+* **deps:**
+  *  force latest version & audit fix ([afbc38be](https://github.com/CodeTanzania/ewea-internals/commit/afbc38be577e7add228cea13b7e5d455cdb1e248))
+  *  force latest version & audit fix ([71190e3a](https://github.com/CodeTanzania/ewea-internals/commit/71190e3a2b4200e465107b14da9266c8e0e13365))
+
+##### New Features
+
+*  expose defaults names map ([509a43ff](https://github.com/CodeTanzania/ewea-internals/commit/509a43ffb867fe50ae9eaf30cc678a3c4751857a))
+*  add default name for predefines ([d2ade0f2](https://github.com/CodeTanzania/ewea-internals/commit/d2ade0f2d62314bee444ceae508c8aac109ec51e))
+
 #### 0.7.1 (2020-04-08)
 
 ##### Chores
