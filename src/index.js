@@ -217,6 +217,30 @@ export const PATH_NAME_EVENT = 'event';
 export const PATH_NAME_EVENTCHANGELOG = 'changelog';
 export const PATH_NAME_EVENTCHANGELOGS = 'changelogs';
 
+// default names
+export const DEFAULT_UNIT_NAME = undefined;
+export const DEFAULT_ADMINISTRATIVELEVEL_NAME = undefined;
+export const DEFAULT_FEATURETYPE_NAME = undefined;
+export const DEFAULT_EVENTINDICATOR_NAME = undefined;
+export const DEFAULT_EVENTTOPIC_NAME = undefined;
+export const DEFAULT_EVENTLEVEL_NAME = 'White';
+export const DEFAULT_EVENTSEVERITY_NAME = 'Unknown';
+export const DEFAULT_EVENTCERTAINTY_NAME = 'Unknown';
+export const DEFAULT_EVENTSTATUS_NAME = 'Actual';
+export const DEFAULT_EVENTURGENCY_NAME = 'Unknown';
+export const DEFAULT_EVENTRESPONSE_NAME = 'None';
+export const DEFAULT_PARTYGROUP_NAME = 'Unknown';
+export const DEFAULT_PARTYROLE_NAME = 'Unknown';
+export const DEFAULT_EVENTGROUP_NAME = undefined;
+export const DEFAULT_EVENTTYPE_NAME = undefined;
+export const DEFAULT_EVENTFUNCTION_NAME = undefined;
+export const DEFAULT_EVENTACTION_NAME = undefined;
+export const DEFAULT_EVENTQUESTION_NAME = undefined;
+export const DEFAULT_ADMINISTRATIVEAREA_NAME = undefined;
+export const DEFAULT_FEATURE_NAME = undefined;
+export const DEFAULT_EVENTACTIONCATALOGUE_NAME = undefined;
+export const DEFAULT_NOTIFICATIONTEMPLATE_NAME = undefined;
+
 // predefine relations
 export const PREDEFINE_RELATIONS = {
   permissions: {
