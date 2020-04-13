@@ -174,6 +174,7 @@ import {
   DEFAULT_FEATURE_NAME,
   DEFAULT_EVENTACTIONCATALOGUE_NAME,
   DEFAULT_NOTIFICATIONTEMPLATE_NAME,
+  DEFAULT_NAMES,
   // relations
   PARTY_RELATIONS,
   EVENT_RELATIONS,
@@ -434,6 +435,29 @@ describe('internals', () => {
     expect(DEFAULT_FEATURE_NAME).to.be.equal(undefined);
     expect(DEFAULT_EVENTACTIONCATALOGUE_NAME).to.be.equal(undefined);
     expect(DEFAULT_NOTIFICATIONTEMPLATE_NAME).to.be.equal(undefined);
+    expect(DEFAULT_NAMES).to.be.eql({
+      Unit: undefined,
+      AdministrativeLevel: undefined,
+      FeatureType: undefined,
+      EventIndicator: undefined,
+      EventTopic: undefined,
+      EventLevel: 'White',
+      EventSeverity: 'Unknown',
+      EventCertainty: 'Unknown',
+      EventStatus: 'Actual',
+      EventUrgency: 'Unknown',
+      EventResponse: 'None',
+      PartyGroup: 'Unknown',
+      PartyRole: 'Unknown',
+      EventGroup: undefined,
+      EventType: undefined,
+      EventFunction: undefined,
+      EventAction: undefined,
+      EventQuestion: undefined,
+      AdministrativeArea: undefined,
+      EventActionCatalogue: undefined,
+      NotificationTemplate: undefined,
+    });
   });
 
   it('should expose predefine relations definition', () => {
