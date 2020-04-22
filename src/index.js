@@ -267,6 +267,7 @@ export const DEFAULT_NAMES = {
 
 // predefine relations
 export const PREDEFINE_RELATIONS = {
+  parent: { ref: 'Predefine', namespace: PREDEFINE_NAMESPACES },
   permissions: {
     ref: 'Permission',
     array: true,

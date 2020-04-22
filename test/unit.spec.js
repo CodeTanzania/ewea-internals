@@ -462,6 +462,7 @@ describe('internals', () => {
 
   it('should expose predefine relations definition', () => {
     expect(PREDEFINE_RELATIONS).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.parent).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.permissions).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.roles).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.groups).to.exist.and.be.an('object');
