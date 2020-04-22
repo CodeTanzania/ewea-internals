@@ -2,16 +2,6 @@
 
 ##### Chores
 
-* **deps:**  force latest version & audit fix ([5fc1223e](https://github.com/CodeTanzania/ewea-internals/commit/5fc1223ef87778d8a3a3263b74438df9f92ba55c))
-
-##### Bug Fixes
-
-*  ensure parent in predefine relations ([5780021b](https://github.com/CodeTanzania/ewea-internals/commit/5780021bc09819582bf79c751ee08fd742d2702e))
-
-#### 0.8.1 (2020-04-22)
-
-##### Chores
-
 * **deps:**  force latest version & audit fix ([a2a04bd8](https://github.com/CodeTanzania/ewea-internals/commit/a2a04bd88a74acc47d4c1e5a3360ac79d2c26a47))
 
 #### 0.8.0 (2020-04-13)
