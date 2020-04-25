@@ -152,29 +152,29 @@ import {
   PATH_NAME_EVENTCHANGELOGS,
   PREDEFINE_RELATIONS,
   // default names
-  DEFAULT_UNIT_NAME,
-  DEFAULT_ADMINISTRATIVELEVEL_NAME,
-  DEFAULT_FEATURETYPE_NAME,
-  DEFAULT_EVENTINDICATOR_NAME,
-  DEFAULT_EVENTTOPIC_NAME,
-  DEFAULT_EVENTLEVEL_NAME,
-  DEFAULT_EVENTSEVERITY_NAME,
-  DEFAULT_EVENTCERTAINTY_NAME,
-  DEFAULT_EVENTSTATUS_NAME,
-  DEFAULT_EVENTURGENCY_NAME,
-  DEFAULT_EVENTRESPONSE_NAME,
-  DEFAULT_PARTYGROUP_NAME,
-  DEFAULT_PARTYROLE_NAME,
-  DEFAULT_EVENTGROUP_NAME,
-  DEFAULT_EVENTTYPE_NAME,
-  DEFAULT_EVENTFUNCTION_NAME,
-  DEFAULT_EVENTACTION_NAME,
-  DEFAULT_EVENTQUESTION_NAME,
-  DEFAULT_ADMINISTRATIVEAREA_NAME,
-  DEFAULT_FEATURE_NAME,
-  DEFAULT_EVENTACTIONCATALOGUE_NAME,
-  DEFAULT_NOTIFICATIONTEMPLATE_NAME,
-  DEFAULT_NAMES,
+  PREDEFINE_UNIT_NAME,
+  PREDEFINE_ADMINISTRATIVELEVEL_NAME,
+  PREDEFINE_FEATURETYPE_NAME,
+  PREDEFINE_EVENTINDICATOR_NAME,
+  PREDEFINE_EVENTTOPIC_NAME,
+  PREDEFINE_EVENTLEVEL_NAME,
+  PREDEFINE_EVENTSEVERITY_NAME,
+  PREDEFINE_EVENTCERTAINTY_NAME,
+  PREDEFINE_EVENTSTATUS_NAME,
+  PREDEFINE_EVENTURGENCY_NAME,
+  PREDEFINE_EVENTRESPONSE_NAME,
+  PREDEFINE_PARTYGROUP_NAME,
+  PREDEFINE_PARTYROLE_NAME,
+  PREDEFINE_EVENTGROUP_NAME,
+  PREDEFINE_EVENTTYPE_NAME,
+  PREDEFINE_EVENTFUNCTION_NAME,
+  PREDEFINE_EVENTACTION_NAME,
+  PREDEFINE_EVENTQUESTION_NAME,
+  PREDEFINE_ADMINISTRATIVEAREA_NAME,
+  PREDEFINE_FEATURE_NAME,
+  PREDEFINE_EVENTACTIONCATALOGUE_NAME,
+  PREDEFINE_NOTIFICATIONTEMPLATE_NAME,
+  PREDEFINE_DEFAULTS,
   // relations
   PARTY_RELATIONS,
   EVENT_RELATIONS,
@@ -413,29 +413,29 @@ describe('internals', () => {
 
   it('should expose predefine default names', () => {
     // default names
-    expect(DEFAULT_UNIT_NAME).to.be.equal(undefined);
-    expect(DEFAULT_ADMINISTRATIVELEVEL_NAME).to.be.equal(undefined);
-    expect(DEFAULT_FEATURETYPE_NAME).to.be.equal(undefined);
-    expect(DEFAULT_EVENTINDICATOR_NAME).to.be.equal(undefined);
-    expect(DEFAULT_EVENTTOPIC_NAME).to.be.equal(undefined);
-    expect(DEFAULT_EVENTLEVEL_NAME).to.be.equal('White');
-    expect(DEFAULT_EVENTSEVERITY_NAME).to.be.equal('Unknown');
-    expect(DEFAULT_EVENTCERTAINTY_NAME).to.be.equal('Unknown');
-    expect(DEFAULT_EVENTSTATUS_NAME).to.be.equal('Actual');
-    expect(DEFAULT_EVENTURGENCY_NAME).to.be.equal('Unknown');
-    expect(DEFAULT_EVENTRESPONSE_NAME).to.be.equal('None');
-    expect(DEFAULT_PARTYGROUP_NAME).to.be.equal('Unknown');
-    expect(DEFAULT_PARTYROLE_NAME).to.be.equal('Unknown');
-    expect(DEFAULT_EVENTGROUP_NAME).to.be.equal(undefined);
-    expect(DEFAULT_EVENTTYPE_NAME).to.be.equal(undefined);
-    expect(DEFAULT_EVENTFUNCTION_NAME).to.be.equal(undefined);
-    expect(DEFAULT_EVENTACTION_NAME).to.be.equal(undefined);
-    expect(DEFAULT_EVENTQUESTION_NAME).to.be.equal(undefined);
-    expect(DEFAULT_ADMINISTRATIVEAREA_NAME).to.be.equal(undefined);
-    expect(DEFAULT_FEATURE_NAME).to.be.equal(undefined);
-    expect(DEFAULT_EVENTACTIONCATALOGUE_NAME).to.be.equal(undefined);
-    expect(DEFAULT_NOTIFICATIONTEMPLATE_NAME).to.be.equal(undefined);
-    expect(DEFAULT_NAMES).to.be.eql({
+    expect(PREDEFINE_UNIT_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_ADMINISTRATIVELEVEL_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_FEATURETYPE_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_EVENTINDICATOR_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_EVENTTOPIC_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_EVENTLEVEL_NAME).to.be.equal('White');
+    expect(PREDEFINE_EVENTSEVERITY_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTCERTAINTY_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTSTATUS_NAME).to.be.equal('Actual');
+    expect(PREDEFINE_EVENTURGENCY_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTRESPONSE_NAME).to.be.equal('None');
+    expect(PREDEFINE_PARTYGROUP_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_PARTYROLE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTGROUP_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_EVENTTYPE_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_EVENTFUNCTION_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_EVENTACTION_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_EVENTQUESTION_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_ADMINISTRATIVEAREA_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_FEATURE_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_EVENTACTIONCATALOGUE_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_NOTIFICATIONTEMPLATE_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_DEFAULTS).to.be.eql({
       Unit: undefined,
       AdministrativeLevel: undefined,
       FeatureType: undefined,
