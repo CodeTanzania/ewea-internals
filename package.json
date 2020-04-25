@@ -1,6 +1,6 @@
 {
   "name": "@codetanzania/ewea-internals",
-  "version": "0.8.2",
+  "version": "0.9.0",
   "description": "Default presets for EWEA",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -66,13 +66,13 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/travis-cli": "^8.3.5",
-    "@lykmapipo/env": "^0.17.1",
-    "@lykmapipo/mongoose-common": "^0.31.1",
-    "@lykmapipo/mongoose-test-helpers": "^0.7.42",
-    "@lykmapipo/test-helpers": "^0.5.15",
+    "@lykmapipo/env": "^0.17.2",
+    "@lykmapipo/mongoose-common": "^0.32.0",
+    "@lykmapipo/mongoose-test-helpers": "^0.7.43",
+    "@lykmapipo/test-helpers": "^0.5.16",
     "chai": "^4.2.0",
     "commitizen": "^4.0.4",
-    "coveralls": "^3.0.13",
+    "coveralls": "^3.1.0",
     "cz-conventional-changelog": "^3.1.0",
     "doxdox": "^3.0.0",
     "eslint": "^6.8.0",
@@ -94,13 +94,13 @@
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
     "rollup": "^2.7.2",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.4"
   },
   "peerDependencies": {
     "mongoose": ">=5.9.10"
   },
   "dependencies": {
-    "@lykmapipo/common": ">=0.31.1",
+    "@lykmapipo/common": ">=0.32.0",
     "async": ">=3.2.0",
     "lodash": ">=4.17.15"
   },

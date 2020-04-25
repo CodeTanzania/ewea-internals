@@ -1,3 +1,13 @@
+#### 0.9.0 (2020-04-25)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([e3f8fcbf](https://github.com/CodeTanzania/ewea-internals/commit/e3f8fcbf373d5d5d0aff07940c81e858b837e413))
+
+##### Refactors
+
+*  use predefine over default ([f4fb98b8](https://github.com/CodeTanzania/ewea-internals/commit/f4fb98b8e7e0f4c96e8f89e9fa7e10910212e393))
+
 #### 0.8.2 (2020-04-22)
 
 ##### Chores
