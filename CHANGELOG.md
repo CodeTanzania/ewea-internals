@@ -1,3 +1,13 @@
+#### 0.11.0 (2020-04-25)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([b78803c5](https://github.com/CodeTanzania/ewea-internals/commit/b78803c5435c8401375859409a27b6c6d2bd7111))
+
+##### New Features
+
+*  use common constants than string ([e81c263d](https://github.com/CodeTanzania/ewea-internals/commit/e81c263d723d0612d74ba0415f925f7fec26ea92))
+
 #### 0.10.0 (2020-04-25)
 
 ##### Chores
