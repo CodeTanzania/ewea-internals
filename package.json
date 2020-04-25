@@ -1,6 +1,6 @@
 {
   "name": "@codetanzania/ewea-internals",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Default presets for EWEA",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -100,7 +100,7 @@
     "mongoose": ">=5.9.10"
   },
   "dependencies": {
-    "@lykmapipo/common": ">=0.32.1",
+    "@lykmapipo/common": ">=0.33.0",
     "async": ">=3.2.0",
     "lodash": ">=4.17.15"
   },
