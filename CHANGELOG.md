@@ -1,3 +1,13 @@
+#### 0.10.0 (2020-04-25)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([2d6abeb4](https://github.com/CodeTanzania/ewea-internals/commit/2d6abeb4930ca9c53a74510421840d98cc8241a8))
+
+##### New Features
+
+*  ensure unit relation in changelog ([f1ce2129](https://github.com/CodeTanzania/ewea-internals/commit/f1ce2129e14b036594501fef61090583c94b7782))
+
 #### 0.9.0 (2020-04-25)
 
 ##### Chores
