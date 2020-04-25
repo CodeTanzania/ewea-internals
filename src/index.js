@@ -343,6 +343,7 @@ export const EVENT_CHANGELOG_RELATIONS = {
   roles: { ref: 'Predefine', namespace: 'PartyRole', array: true },
   agencies: { ref: 'Party', array: true },
   focals: { ref: 'Party', array: true },
+  unit: { ref: 'Predefine', namespace: 'Unit' },
   template: { ref: 'Predefine', namespace: 'NotificationTemplate' },
 };
 

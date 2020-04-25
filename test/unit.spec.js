@@ -521,6 +521,7 @@ describe('internals', () => {
     expect(EVENT_CHANGELOG_RELATIONS.roles).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.agencies).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.focals).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.unit).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.template).to.exist.and.be.an('object');
   });
 
