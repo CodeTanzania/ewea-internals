@@ -1,3 +1,13 @@
+#### 0.12.0 (2020-05-03)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([a01d028f](https://github.com/CodeTanzania/ewea-internals/commit/a01d028f48da122142747e0813d8f6d6c5329e7a))
+
+##### New Features
+
+*  add vehicle namespaces ([6a24b7b6](https://github.com/CodeTanzania/ewea-internals/commit/6a24b7b642555fe8a48e870e31d7303deb8fad56))
+
 #### 0.11.0 (2020-04-25)
 
 ##### Chores
