@@ -14,8 +14,13 @@ import {
   MODEL_NAME_EVENTSTATUS,
   MODEL_NAME_EVENTURGENCY,
   MODEL_NAME_EVENTRESPONSE,
+  MODEL_NAME_PARTYOWNERSHIP,
   MODEL_NAME_PARTYGROUP,
   MODEL_NAME_PARTYROLE,
+  MODEL_NAME_VEHICLETYPE,
+  MODEL_NAME_VEHICLEMODEL,
+  MODEL_NAME_VEHICLEMAKE,
+  MODEL_NAME_VEHICLE,
   MODEL_NAME_EVENTGROUP,
   MODEL_NAME_EVENTTYPE,
   MODEL_NAME_EVENTFUNCTION,
@@ -43,8 +48,13 @@ import {
   COLLECTION_NAME_EVENTSTATUS,
   COLLECTION_NAME_EVENTURGENCY,
   COLLECTION_NAME_EVENTRESPONSE,
+  COLLECTION_NAME_PARTYOWNERSHIP,
   COLLECTION_NAME_PARTYGROUP,
   COLLECTION_NAME_PARTYROLE,
+  COLLECTION_NAME_VEHICLETYPE,
+  COLLECTION_NAME_VEHICLEMODEL,
+  COLLECTION_NAME_VEHICLEMAKE,
+  COLLECTION_NAME_VEHICLE,
   COLLECTION_NAME_EVENTGROUP,
   COLLECTION_NAME_EVENTTYPE,
   COLLECTION_NAME_EVENTFUNCTION,
@@ -71,8 +81,13 @@ import {
   PREDEFINE_NAMESPACE_EVENTSTATUS,
   PREDEFINE_NAMESPACE_EVENTURGENCY,
   PREDEFINE_NAMESPACE_EVENTRESPONSE,
+  PREDEFINE_NAMESPACE_PARTYOWNERSHIP,
   PREDEFINE_NAMESPACE_PARTYGROUP,
   PREDEFINE_NAMESPACE_PARTYROLE,
+  PREDEFINE_NAMESPACE_VEHICLETYPE,
+  PREDEFINE_NAMESPACE_VEHICLEMODEL,
+  PREDEFINE_NAMESPACE_VEHICLEMAKE,
+  PREDEFINE_NAMESPACE_VEHICLE,
   PREDEFINE_NAMESPACE_EVENTGROUP,
   PREDEFINE_NAMESPACE_EVENTTYPE,
   PREDEFINE_NAMESPACE_EVENTFUNCTION,
@@ -96,8 +111,13 @@ import {
   PREDEFINE_BUCKET_EVENTSTATUS,
   PREDEFINE_BUCKET_EVENTURGENCY,
   PREDEFINE_BUCKET_EVENTRESPONSE,
+  PREDEFINE_BUCKET_PARTYOWNERSHIP,
   PREDEFINE_BUCKET_PARTYGROUP,
   PREDEFINE_BUCKET_PARTYROLE,
+  PREDEFINE_BUCKET_VEHICLETYPE,
+  PREDEFINE_BUCKET_VEHICLEMODEL,
+  PREDEFINE_BUCKET_VEHICLEMAKE,
+  PREDEFINE_BUCKET_VEHICLE,
   PREDEFINE_BUCKET_EVENTGROUP,
   PREDEFINE_BUCKET_EVENTTYPE,
   PREDEFINE_BUCKET_EVENTFUNCTION,
@@ -121,9 +141,14 @@ import {
   PATH_NAME_EVENTSTATUS,
   PATH_NAME_EVENTURGENCY,
   PATH_NAME_EVENTRESPONSE,
+  PATH_NAME_PARTYOWNERSHIP,
   PATH_NAME_PARTYGROUP,
   PATH_NAME_PARTYGROUPS,
   PATH_NAME_PARTYROLE,
+  PATH_NAME_VEHICLETYPE,
+  PATH_NAME_VEHICLEMODEL,
+  PATH_NAME_VEHICLEMAKE,
+  PATH_NAME_VEHICLE,
   PATH_NAME_PARTYROLES,
   PATH_NAME_EVENTGROUP,
   PATH_NAME_EVENTGROUPS,
@@ -163,8 +188,13 @@ import {
   PREDEFINE_EVENTSTATUS_NAME,
   PREDEFINE_EVENTURGENCY_NAME,
   PREDEFINE_EVENTRESPONSE_NAME,
+  PREDEFINE_PARTYOWNERSHIP_NAME,
   PREDEFINE_PARTYGROUP_NAME,
   PREDEFINE_PARTYROLE_NAME,
+  PREDEFINE_VEHICLETYPE_NAME,
+  PREDEFINE_VEHICLEMODEL_NAME,
+  PREDEFINE_VEHICLEMAKE_NAME,
+  PREDEFINE_VEHICLE_NAME,
   PREDEFINE_EVENTGROUP_NAME,
   PREDEFINE_EVENTTYPE_NAME,
   PREDEFINE_EVENTFUNCTION_NAME,
@@ -200,8 +230,13 @@ describe('internals', () => {
     expect(MODEL_NAME_EVENTSTATUS).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTURGENCY).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTRESPONSE).to.be.equal('Predefine');
+    expect(MODEL_NAME_PARTYOWNERSHIP).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYGROUP).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYROLE).to.be.equal('Predefine');
+    expect(MODEL_NAME_VEHICLETYPE).to.be.equal('Predefine');
+    expect(MODEL_NAME_VEHICLEMODEL).to.be.equal('Predefine');
+    expect(MODEL_NAME_VEHICLEMAKE).to.be.equal('Predefine');
+    expect(MODEL_NAME_VEHICLE).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTGROUP).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTTYPE).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTFUNCTION).to.be.equal('Predefine');
@@ -231,8 +266,13 @@ describe('internals', () => {
     expect(COLLECTION_NAME_EVENTSTATUS).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTURGENCY).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTRESPONSE).to.be.equal('predefines');
+    expect(COLLECTION_NAME_PARTYOWNERSHIP).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYGROUP).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYROLE).to.be.equal('predefines');
+    expect(COLLECTION_NAME_VEHICLETYPE).to.be.equal('predefines');
+    expect(COLLECTION_NAME_VEHICLEMODEL).to.be.equal('predefines');
+    expect(COLLECTION_NAME_VEHICLEMAKE).to.be.equal('predefines');
+    expect(COLLECTION_NAME_VEHICLE).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTGROUP).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTTYPE).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTFUNCTION).to.be.equal('predefines');
@@ -264,8 +304,13 @@ describe('internals', () => {
     expect(PREDEFINE_NAMESPACE_EVENTSTATUS).to.be.equal('EventStatus');
     expect(PREDEFINE_NAMESPACE_EVENTURGENCY).to.be.equal('EventUrgency');
     expect(PREDEFINE_NAMESPACE_EVENTRESPONSE).to.be.equal('EventResponse');
+    expect(PREDEFINE_NAMESPACE_PARTYOWNERSHIP).to.be.equal('PartyOwnership');
     expect(PREDEFINE_NAMESPACE_PARTYGROUP).to.be.equal('PartyGroup');
     expect(PREDEFINE_NAMESPACE_PARTYROLE).to.be.equal('PartyRole');
+    expect(PREDEFINE_NAMESPACE_VEHICLETYPE).to.be.equal('VehicleType');
+    expect(PREDEFINE_NAMESPACE_VEHICLEMODEL).to.be.equal('VehicleModel');
+    expect(PREDEFINE_NAMESPACE_VEHICLEMAKE).to.be.equal('VehicleMake');
+    expect(PREDEFINE_NAMESPACE_VEHICLE).to.be.equal('Vehicle');
     expect(PREDEFINE_NAMESPACE_EVENTGROUP).to.be.equal('EventGroup');
     expect(PREDEFINE_NAMESPACE_EVENTTYPE).to.be.equal('EventType');
     expect(PREDEFINE_NAMESPACE_EVENTFUNCTION).to.be.equal('EventFunction');
@@ -294,8 +339,13 @@ describe('internals', () => {
       PREDEFINE_NAMESPACE_EVENTSTATUS,
       PREDEFINE_NAMESPACE_EVENTURGENCY,
       PREDEFINE_NAMESPACE_EVENTRESPONSE,
+      PREDEFINE_NAMESPACE_PARTYOWNERSHIP,
       PREDEFINE_NAMESPACE_PARTYGROUP,
       PREDEFINE_NAMESPACE_PARTYROLE,
+      PREDEFINE_NAMESPACE_VEHICLETYPE,
+      PREDEFINE_NAMESPACE_VEHICLEMODEL,
+      PREDEFINE_NAMESPACE_VEHICLEMAKE,
+      PREDEFINE_NAMESPACE_VEHICLE,
       PREDEFINE_NAMESPACE_EVENTGROUP,
       PREDEFINE_NAMESPACE_EVENTTYPE,
       PREDEFINE_NAMESPACE_EVENTFUNCTION,
@@ -323,8 +373,13 @@ describe('internals', () => {
     expect(PREDEFINE_BUCKET_EVENTSTATUS).to.be.equal('eventstatuses');
     expect(PREDEFINE_BUCKET_EVENTURGENCY).to.be.equal('eventurgencies');
     expect(PREDEFINE_BUCKET_EVENTRESPONSE).to.be.equal('eventresponses');
+    expect(PREDEFINE_BUCKET_PARTYOWNERSHIP).to.be.equal('partyownerships');
     expect(PREDEFINE_BUCKET_PARTYGROUP).to.be.equal('partygroups');
     expect(PREDEFINE_BUCKET_PARTYROLE).to.be.equal('partyroles');
+    expect(PREDEFINE_BUCKET_VEHICLETYPE).to.be.equal('vehicletypes');
+    expect(PREDEFINE_BUCKET_VEHICLEMODEL).to.be.equal('vehiclemodels');
+    expect(PREDEFINE_BUCKET_VEHICLEMAKE).to.be.equal('vehiclemakes');
+    expect(PREDEFINE_BUCKET_VEHICLE).to.be.equal('vehicles');
     expect(PREDEFINE_BUCKET_EVENTGROUP).to.be.equal('eventgroups');
     expect(PREDEFINE_BUCKET_EVENTTYPE).to.be.equal('eventtypes');
     expect(PREDEFINE_BUCKET_EVENTFUNCTION).to.be.equal('eventfunctions');
@@ -353,8 +408,13 @@ describe('internals', () => {
       PREDEFINE_BUCKET_EVENTSTATUS,
       PREDEFINE_BUCKET_EVENTURGENCY,
       PREDEFINE_BUCKET_EVENTRESPONSE,
+      PREDEFINE_BUCKET_PARTYOWNERSHIP,
       PREDEFINE_BUCKET_PARTYGROUP,
       PREDEFINE_BUCKET_PARTYROLE,
+      PREDEFINE_BUCKET_VEHICLETYPE,
+      PREDEFINE_BUCKET_VEHICLEMODEL,
+      PREDEFINE_BUCKET_VEHICLEMAKE,
+      PREDEFINE_BUCKET_VEHICLE,
       PREDEFINE_BUCKET_EVENTGROUP,
       PREDEFINE_BUCKET_EVENTTYPE,
       PREDEFINE_BUCKET_EVENTFUNCTION,
@@ -381,9 +441,14 @@ describe('internals', () => {
     expect(PATH_NAME_EVENTURGENCY).to.be.equal('urgency');
     expect(PATH_NAME_EVENTRESPONSE).to.be.equal('response');
     expect(PATH_NAME_PARTYGROUP).to.be.equal('group');
+    expect(PATH_NAME_PARTYOWNERSHIP).to.be.equal('ownership');
     expect(PATH_NAME_PARTYGROUPS).to.be.equal('groups');
     expect(PATH_NAME_PARTYROLE).to.be.equal('role');
     expect(PATH_NAME_PARTYROLES).to.be.equal('roles');
+    expect(PATH_NAME_VEHICLETYPE).to.be.equal('type');
+    expect(PATH_NAME_VEHICLEMODEL).to.be.equal('model');
+    expect(PATH_NAME_VEHICLEMAKE).to.be.equal('make');
+    expect(PATH_NAME_VEHICLE).to.be.equal('vehicle');
     expect(PATH_NAME_EVENTGROUP).to.be.equal('group');
     expect(PATH_NAME_EVENTGROUPS).to.be.equal('groups');
     expect(PATH_NAME_EVENTTYPE).to.be.equal('type');
@@ -424,8 +489,13 @@ describe('internals', () => {
     expect(PREDEFINE_EVENTSTATUS_NAME).to.be.equal('Actual');
     expect(PREDEFINE_EVENTURGENCY_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_EVENTRESPONSE_NAME).to.be.equal('None');
+    expect(PREDEFINE_PARTYOWNERSHIP_NAME).to.be.equal(undefined);
     expect(PREDEFINE_PARTYGROUP_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYROLE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_VEHICLETYPE_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_VEHICLEMODEL_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_VEHICLEMAKE_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_VEHICLE_NAME).to.be.equal(undefined);
     expect(PREDEFINE_EVENTGROUP_NAME).to.be.equal(undefined);
     expect(PREDEFINE_EVENTTYPE_NAME).to.be.equal(undefined);
     expect(PREDEFINE_EVENTFUNCTION_NAME).to.be.equal(undefined);
@@ -447,8 +517,13 @@ describe('internals', () => {
       EventStatus: 'Actual',
       EventUrgency: 'Unknown',
       EventResponse: 'None',
+      PartyOwnership: undefined,
       PartyGroup: 'Unknown',
       PartyRole: 'Unknown',
+      VehicleModel: undefined,
+      VehicleType: undefined,
+      VehicleMake: undefined,
+      Vehicle: undefined,
       EventGroup: undefined,
       EventType: undefined,
       EventFunction: undefined,
@@ -475,6 +550,10 @@ describe('internals', () => {
     expect(PREDEFINE_RELATIONS.indicator).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.topic).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.unit).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.model).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.make).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.ownership).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.owner).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.focals).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.agencies).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.custodians).to.exist.and.be.an('object');
