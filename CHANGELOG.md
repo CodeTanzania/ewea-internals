@@ -1,3 +1,13 @@
+#### 0.13.0 (2020-05-05)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([1335801a](https://github.com/CodeTanzania/ewea-internals/commit/1335801a08d6858083bc54f01b3a1ca8599c65b3))
+
+##### New Features
+
+*  add vehicle status namaspace ([e39be8de](https://github.com/CodeTanzania/ewea-internals/commit/e39be8de90d1f012c1574973d514534e49f3d166))
+
 #### 0.12.0 (2020-05-03)
 
 ##### Chores
