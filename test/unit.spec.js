@@ -37,6 +37,7 @@ import {
   MODEL_NAME_NOTIFICATIONTEMPLATE,
   MODEL_NAME_EVENT,
   MODEL_NAME_EVENTCHANGELOG,
+  MODEL_NAME_VEHICLEDISPATCH,
   // collections
   COLLECTION_NAME_PREDEFINE,
   COLLECTION_NAME_UNIT,
@@ -73,6 +74,7 @@ import {
   COLLECTION_NAME_NOTIFICATIONTEMPLATE,
   COLLECTION_NAME_EVENT,
   COLLECTION_NAME_EVENTCHANGELOG,
+  COLLECTION_NAME_VEHICLEDISPATCH,
   // namespaces
   PREDEFINE_NAMESPACE_UNIT,
   PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL,
@@ -221,6 +223,7 @@ import {
   PARTY_RELATIONS,
   EVENT_RELATIONS,
   EVENT_CHANGELOG_RELATIONS,
+  VEHICLE_DISPATCH_RELATIONS,
   // population
   POPULATION_MAX_DEPTH,
   POPULATION_DEFAULT,
@@ -265,6 +268,7 @@ describe('internals', () => {
     expect(MODEL_NAME_NOTIFICATIONTEMPLATE).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENT).to.be.equal('Event');
     expect(MODEL_NAME_EVENTCHANGELOG).to.be.equal('EventChangeLog');
+    expect(MODEL_NAME_VEHICLEDISPATCH).to.be.equal('VehicleDispatch');
   });
 
   it('should expose collection names', () => {
@@ -304,6 +308,7 @@ describe('internals', () => {
     expect(COLLECTION_NAME_EVENT).to.be.equal('events');
     expect(COLLECTION_NAME_EVENTCHANGELOG).to.be.equal('eventchangelogs');
     expect(COLLECTION_NAME_EVENTCHANGELOG).to.be.equal('eventchangelogs');
+    expect(COLLECTION_NAME_VEHICLEDISPATCH).to.be.equal('vehicledispatches');
   });
 
   it('should expose predefine namespaces', () => {
@@ -636,6 +641,14 @@ describe('internals', () => {
     expect(EVENT_CHANGELOG_RELATIONS.focals).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.unit).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.template).to.exist.and.be.an('object');
+  });
+
+  it('should expose vehicle dispatch relations definition', () => {
+    expect(VEHICLE_DISPATCH_RELATIONS).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.group).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.type).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.event).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.status).to.exist.and.be.an('object');
   });
 
   it('should expose population options', () => {
