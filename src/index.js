@@ -51,6 +51,7 @@ export const MODEL_NAME_EVENTACTIONCATALOGUE = 'Predefine';
 export const MODEL_NAME_NOTIFICATIONTEMPLATE = 'Predefine';
 export const MODEL_NAME_EVENT = 'Event';
 export const MODEL_NAME_EVENTCHANGELOG = 'EventChangeLog';
+export const MODEL_NAME_VEHICLEDISPATCH = 'VehicleDispatch';
 
 // collection names
 export const COLLECTION_NAME_PREDEFINE = 'predefines';
@@ -88,6 +89,7 @@ export const COLLECTION_NAME_EVENTACTIONCATALOGUE = 'predefines';
 export const COLLECTION_NAME_NOTIFICATIONTEMPLATE = 'predefines';
 export const COLLECTION_NAME_EVENT = 'events';
 export const COLLECTION_NAME_EVENTCHANGELOG = 'eventchangelogs';
+export const COLLECTION_NAME_VEHICLEDISPATCH = 'vehicledispatches';
 
 // predefine namespaces
 export const PREDEFINE_NAMESPACE_UNIT = 'Unit';
@@ -554,6 +556,20 @@ export const EVENT_CHANGELOG_RELATIONS = {
   template: {
     ref: MODEL_NAME_PREDEFINE,
     namespace: PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE,
+  },
+};
+
+// vehicle dispatch relations
+export const VEHICLE_DISPATCH_RELATIONS = {
+  group: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_EVENTGROUP,
+  },
+  type: { ref: MODEL_NAME_PREDEFINE, namespace: PREDEFINE_NAMESPACE_EVENTTYPE },
+  event: { ref: MODEL_NAME_EVENT },
+  status: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_VEHICLESTATUS,
   },
 };
 

@@ -1,3 +1,13 @@
+#### 0.15.0 (2020-05-05)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([87bf4e50](https://github.com/CodeTanzania/ewea-internals/commit/87bf4e50e8414fe2273045b55cd55368a720a08a))
+
+##### New Features
+
+*  add vehicle dispatch model, collection and relations ([623b0610](https://github.com/CodeTanzania/ewea-internals/commit/623b06106c10cb9acae901b98601741e76ce9d24))
+
 #### 0.14.0 (2020-05-05)
 
 ##### Chores
