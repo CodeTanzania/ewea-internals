@@ -20,6 +20,7 @@ import {
   MODEL_NAME_VEHICLETYPE,
   MODEL_NAME_VEHICLEMODEL,
   MODEL_NAME_VEHICLEMAKE,
+  MODEL_NAME_VEHICLESTATUS,
   MODEL_NAME_VEHICLE,
   MODEL_NAME_EVENTGROUP,
   MODEL_NAME_EVENTTYPE,
@@ -54,6 +55,7 @@ import {
   COLLECTION_NAME_VEHICLETYPE,
   COLLECTION_NAME_VEHICLEMODEL,
   COLLECTION_NAME_VEHICLEMAKE,
+  COLLECTION_NAME_VEHICLESTATUS,
   COLLECTION_NAME_VEHICLE,
   COLLECTION_NAME_EVENTGROUP,
   COLLECTION_NAME_EVENTTYPE,
@@ -87,6 +89,7 @@ import {
   PREDEFINE_NAMESPACE_VEHICLETYPE,
   PREDEFINE_NAMESPACE_VEHICLEMODEL,
   PREDEFINE_NAMESPACE_VEHICLEMAKE,
+  PREDEFINE_NAMESPACE_VEHICLESTATUS,
   PREDEFINE_NAMESPACE_VEHICLE,
   PREDEFINE_NAMESPACE_EVENTGROUP,
   PREDEFINE_NAMESPACE_EVENTTYPE,
@@ -117,6 +120,7 @@ import {
   PREDEFINE_BUCKET_VEHICLETYPE,
   PREDEFINE_BUCKET_VEHICLEMODEL,
   PREDEFINE_BUCKET_VEHICLEMAKE,
+  PREDEFINE_BUCKET_VEHICLESTATUS,
   PREDEFINE_BUCKET_VEHICLE,
   PREDEFINE_BUCKET_EVENTGROUP,
   PREDEFINE_BUCKET_EVENTTYPE,
@@ -148,6 +152,7 @@ import {
   PATH_NAME_VEHICLETYPE,
   PATH_NAME_VEHICLEMODEL,
   PATH_NAME_VEHICLEMAKE,
+  PATH_NAME_VEHICLESTATUS,
   PATH_NAME_VEHICLE,
   PATH_NAME_PARTYROLES,
   PATH_NAME_EVENTGROUP,
@@ -194,6 +199,7 @@ import {
   PREDEFINE_VEHICLETYPE_NAME,
   PREDEFINE_VEHICLEMODEL_NAME,
   PREDEFINE_VEHICLEMAKE_NAME,
+  PREDEFINE_VEHICLESTATUS_NAME,
   PREDEFINE_VEHICLE_NAME,
   PREDEFINE_EVENTGROUP_NAME,
   PREDEFINE_EVENTTYPE_NAME,
@@ -236,6 +242,7 @@ describe('internals', () => {
     expect(MODEL_NAME_VEHICLETYPE).to.be.equal('Predefine');
     expect(MODEL_NAME_VEHICLEMODEL).to.be.equal('Predefine');
     expect(MODEL_NAME_VEHICLEMAKE).to.be.equal('Predefine');
+    expect(MODEL_NAME_VEHICLESTATUS).to.be.equal('Predefine');
     expect(MODEL_NAME_VEHICLE).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTGROUP).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTTYPE).to.be.equal('Predefine');
@@ -272,6 +279,7 @@ describe('internals', () => {
     expect(COLLECTION_NAME_VEHICLETYPE).to.be.equal('predefines');
     expect(COLLECTION_NAME_VEHICLEMODEL).to.be.equal('predefines');
     expect(COLLECTION_NAME_VEHICLEMAKE).to.be.equal('predefines');
+    expect(COLLECTION_NAME_VEHICLESTATUS).to.be.equal('predefines');
     expect(COLLECTION_NAME_VEHICLE).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTGROUP).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTTYPE).to.be.equal('predefines');
@@ -310,6 +318,7 @@ describe('internals', () => {
     expect(PREDEFINE_NAMESPACE_VEHICLETYPE).to.be.equal('VehicleType');
     expect(PREDEFINE_NAMESPACE_VEHICLEMODEL).to.be.equal('VehicleModel');
     expect(PREDEFINE_NAMESPACE_VEHICLEMAKE).to.be.equal('VehicleMake');
+    expect(PREDEFINE_NAMESPACE_VEHICLESTATUS).to.be.equal('VehicleStatus');
     expect(PREDEFINE_NAMESPACE_VEHICLE).to.be.equal('Vehicle');
     expect(PREDEFINE_NAMESPACE_EVENTGROUP).to.be.equal('EventGroup');
     expect(PREDEFINE_NAMESPACE_EVENTTYPE).to.be.equal('EventType');
@@ -345,6 +354,7 @@ describe('internals', () => {
       PREDEFINE_NAMESPACE_VEHICLETYPE,
       PREDEFINE_NAMESPACE_VEHICLEMODEL,
       PREDEFINE_NAMESPACE_VEHICLEMAKE,
+      PREDEFINE_NAMESPACE_VEHICLESTATUS,
       PREDEFINE_NAMESPACE_VEHICLE,
       PREDEFINE_NAMESPACE_EVENTGROUP,
       PREDEFINE_NAMESPACE_EVENTTYPE,
@@ -379,6 +389,7 @@ describe('internals', () => {
     expect(PREDEFINE_BUCKET_VEHICLETYPE).to.be.equal('vehicletypes');
     expect(PREDEFINE_BUCKET_VEHICLEMODEL).to.be.equal('vehiclemodels');
     expect(PREDEFINE_BUCKET_VEHICLEMAKE).to.be.equal('vehiclemakes');
+    expect(PREDEFINE_BUCKET_VEHICLESTATUS).to.be.equal('vehiclestatuses');
     expect(PREDEFINE_BUCKET_VEHICLE).to.be.equal('vehicles');
     expect(PREDEFINE_BUCKET_EVENTGROUP).to.be.equal('eventgroups');
     expect(PREDEFINE_BUCKET_EVENTTYPE).to.be.equal('eventtypes');
@@ -414,6 +425,7 @@ describe('internals', () => {
       PREDEFINE_BUCKET_VEHICLETYPE,
       PREDEFINE_BUCKET_VEHICLEMODEL,
       PREDEFINE_BUCKET_VEHICLEMAKE,
+      PREDEFINE_BUCKET_VEHICLESTATUS,
       PREDEFINE_BUCKET_VEHICLE,
       PREDEFINE_BUCKET_EVENTGROUP,
       PREDEFINE_BUCKET_EVENTTYPE,
@@ -448,6 +460,7 @@ describe('internals', () => {
     expect(PATH_NAME_VEHICLETYPE).to.be.equal('type');
     expect(PATH_NAME_VEHICLEMODEL).to.be.equal('model');
     expect(PATH_NAME_VEHICLEMAKE).to.be.equal('make');
+    expect(PATH_NAME_VEHICLESTATUS).to.be.equal('status');
     expect(PATH_NAME_VEHICLE).to.be.equal('vehicle');
     expect(PATH_NAME_EVENTGROUP).to.be.equal('group');
     expect(PATH_NAME_EVENTGROUPS).to.be.equal('groups');
@@ -495,6 +508,7 @@ describe('internals', () => {
     expect(PREDEFINE_VEHICLETYPE_NAME).to.be.equal(undefined);
     expect(PREDEFINE_VEHICLEMODEL_NAME).to.be.equal(undefined);
     expect(PREDEFINE_VEHICLEMAKE_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_VEHICLESTATUS_NAME).to.be.equal(undefined);
     expect(PREDEFINE_VEHICLE_NAME).to.be.equal(undefined);
     expect(PREDEFINE_EVENTGROUP_NAME).to.be.equal(undefined);
     expect(PREDEFINE_EVENTTYPE_NAME).to.be.equal(undefined);
@@ -523,6 +537,7 @@ describe('internals', () => {
       VehicleModel: undefined,
       VehicleType: undefined,
       VehicleMake: undefined,
+      VehicleStatus: undefined,
       Vehicle: undefined,
       EventGroup: undefined,
       EventType: undefined,
@@ -552,6 +567,7 @@ describe('internals', () => {
     expect(PREDEFINE_RELATIONS.unit).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.model).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.make).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.status).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.ownership).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.owner).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.focals).to.exist.and.be.an('object');
