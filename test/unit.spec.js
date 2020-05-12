@@ -520,14 +520,14 @@ describe('internals', () => {
     expect(PREDEFINE_EVENTSTATUS_NAME).to.be.equal('Actual');
     expect(PREDEFINE_EVENTURGENCY_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_EVENTRESPONSE_NAME).to.be.equal('None');
-    expect(PREDEFINE_PARTYOWNERSHIP_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_PARTYOWNERSHIP_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYGROUP_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYROLE_NAME).to.be.equal('Unknown');
-    expect(PREDEFINE_PARTYGENDER_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_VEHICLETYPE_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_VEHICLEMODEL_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_VEHICLEMAKE_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_VEHICLESTATUS_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_PARTYGENDER_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_VEHICLETYPE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_VEHICLEMODEL_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_VEHICLEMAKE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_VEHICLESTATUS_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_VEHICLE_NAME).to.be.equal(undefined);
     expect(PREDEFINE_EVENTGROUP_NAME).to.be.equal(undefined);
     expect(PREDEFINE_EVENTTYPE_NAME).to.be.equal(undefined);
@@ -550,14 +550,14 @@ describe('internals', () => {
       EventStatus: 'Actual',
       EventUrgency: 'Unknown',
       EventResponse: 'None',
-      PartyOwnership: undefined,
+      PartyOwnership: 'Unknown',
       PartyGroup: 'Unknown',
       PartyRole: 'Unknown',
-      PartyGender: undefined,
-      VehicleModel: undefined,
-      VehicleType: undefined,
-      VehicleMake: undefined,
-      VehicleStatus: undefined,
+      PartyGender: 'Unknown',
+      VehicleModel: 'Unknown',
+      VehicleType: 'Unknown',
+      VehicleMake: 'Unknown',
+      VehicleStatus: 'Unknown',
       Vehicle: undefined,
       EventGroup: undefined,
       EventType: undefined,
