@@ -509,11 +509,11 @@ describe('internals', () => {
 
   it('should expose predefine default names', () => {
     // default names
-    expect(PREDEFINE_UNIT_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_ADMINISTRATIVELEVEL_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_FEATURETYPE_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_EVENTINDICATOR_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_EVENTTOPIC_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_UNIT_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_ADMINISTRATIVELEVEL_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_FEATURETYPE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTINDICATOR_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTTOPIC_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_EVENTLEVEL_NAME).to.be.equal('White');
     expect(PREDEFINE_EVENTSEVERITY_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_EVENTCERTAINTY_NAME).to.be.equal('Unknown');
@@ -528,22 +528,22 @@ describe('internals', () => {
     expect(PREDEFINE_VEHICLEMODEL_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_VEHICLEMAKE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_VEHICLESTATUS_NAME).to.be.equal('Unknown');
-    expect(PREDEFINE_VEHICLE_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_EVENTGROUP_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_EVENTTYPE_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_EVENTFUNCTION_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_EVENTACTION_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_EVENTQUESTION_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_ADMINISTRATIVEAREA_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_FEATURE_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_EVENTACTIONCATALOGUE_NAME).to.be.equal(undefined);
-    expect(PREDEFINE_NOTIFICATIONTEMPLATE_NAME).to.be.equal(undefined);
+    expect(PREDEFINE_VEHICLE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTGROUP_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTTYPE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTFUNCTION_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTACTION_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTQUESTION_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_ADMINISTRATIVEAREA_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_FEATURE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_EVENTACTIONCATALOGUE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_NOTIFICATIONTEMPLATE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_DEFAULTS).to.be.eql({
-      Unit: undefined,
-      AdministrativeLevel: undefined,
-      FeatureType: undefined,
-      EventIndicator: undefined,
-      EventTopic: undefined,
+      Unit: 'Unknown',
+      AdministrativeLevel: 'Unknown',
+      FeatureType: 'Unknown',
+      EventIndicator: 'Unknown',
+      EventTopic: 'Unknown',
       EventLevel: 'White',
       EventSeverity: 'Unknown',
       EventCertainty: 'Unknown',
@@ -558,15 +558,15 @@ describe('internals', () => {
       VehicleType: 'Unknown',
       VehicleMake: 'Unknown',
       VehicleStatus: 'Unknown',
-      Vehicle: undefined,
-      EventGroup: undefined,
-      EventType: undefined,
-      EventFunction: undefined,
-      EventAction: undefined,
-      EventQuestion: undefined,
-      AdministrativeArea: undefined,
-      EventActionCatalogue: undefined,
-      NotificationTemplate: undefined,
+      Vehicle: 'Unknown',
+      EventGroup: 'Unknown',
+      EventType: 'Unknown',
+      EventFunction: 'Unknown',
+      EventAction: 'Unknown',
+      EventQuestion: 'Unknown',
+      AdministrativeArea: 'Unknown',
+      EventActionCatalogue: 'Unknown',
+      NotificationTemplate: 'Unknown',
     });
   });
 
@@ -648,6 +648,48 @@ describe('internals', () => {
     expect(VEHICLE_DISPATCH_RELATIONS.group).to.exist.and.be.an('object');
     expect(VEHICLE_DISPATCH_RELATIONS.type).to.exist.and.be.an('object');
     expect(VEHICLE_DISPATCH_RELATIONS.event).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS['requester.facility']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['requester.area']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['victim.gender']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['victim.area']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['pickup.facility']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['requester.area']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['dropoff.facility']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['dropoff.area']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['carrier.type']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['carrier.owner']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['carrier.ownership']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS['carrier.vehicle']).to.exist.and.be.an(
+      'object'
+    );
+    expect(VEHICLE_DISPATCH_RELATIONS.crew).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.status).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.reporter).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.dispatcher).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.canceler).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.resolver).to.exist.and.be.an('object');
     expect(VEHICLE_DISPATCH_RELATIONS.status).to.exist.and.be.an('object');
   });
 

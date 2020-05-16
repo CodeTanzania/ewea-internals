@@ -269,11 +269,11 @@ export const PATH_NAME_EVENTCHANGELOG = 'changelog';
 export const PATH_NAME_EVENTCHANGELOGS = 'changelogs';
 
 // predefine defaults(name, number etc)
-export const PREDEFINE_UNIT_NAME = undefined;
-export const PREDEFINE_ADMINISTRATIVELEVEL_NAME = undefined;
-export const PREDEFINE_FEATURETYPE_NAME = undefined;
-export const PREDEFINE_EVENTINDICATOR_NAME = undefined;
-export const PREDEFINE_EVENTTOPIC_NAME = undefined;
+export const PREDEFINE_UNIT_NAME = 'Unknown';
+export const PREDEFINE_ADMINISTRATIVELEVEL_NAME = 'Unknown';
+export const PREDEFINE_FEATURETYPE_NAME = 'Unknown';
+export const PREDEFINE_EVENTINDICATOR_NAME = 'Unknown';
+export const PREDEFINE_EVENTTOPIC_NAME = 'Unknown';
 export const PREDEFINE_EVENTLEVEL_NAME = 'White';
 export const PREDEFINE_EVENTSEVERITY_NAME = 'Unknown';
 export const PREDEFINE_EVENTCERTAINTY_NAME = 'Unknown';
@@ -288,16 +288,16 @@ export const PREDEFINE_VEHICLETYPE_NAME = 'Unknown';
 export const PREDEFINE_VEHICLEMODEL_NAME = 'Unknown';
 export const PREDEFINE_VEHICLEMAKE_NAME = 'Unknown';
 export const PREDEFINE_VEHICLESTATUS_NAME = 'Unknown';
-export const PREDEFINE_VEHICLE_NAME = undefined;
-export const PREDEFINE_EVENTGROUP_NAME = undefined;
-export const PREDEFINE_EVENTTYPE_NAME = undefined;
-export const PREDEFINE_EVENTFUNCTION_NAME = undefined;
-export const PREDEFINE_EVENTACTION_NAME = undefined;
-export const PREDEFINE_EVENTQUESTION_NAME = undefined;
-export const PREDEFINE_ADMINISTRATIVEAREA_NAME = undefined;
-export const PREDEFINE_FEATURE_NAME = undefined;
-export const PREDEFINE_EVENTACTIONCATALOGUE_NAME = undefined;
-export const PREDEFINE_NOTIFICATIONTEMPLATE_NAME = undefined;
+export const PREDEFINE_VEHICLE_NAME = 'Unknown';
+export const PREDEFINE_EVENTGROUP_NAME = 'Unknown';
+export const PREDEFINE_EVENTTYPE_NAME = 'Unknown';
+export const PREDEFINE_EVENTFUNCTION_NAME = 'Unknown';
+export const PREDEFINE_EVENTACTION_NAME = 'Unknown';
+export const PREDEFINE_EVENTQUESTION_NAME = 'Unknown';
+export const PREDEFINE_ADMINISTRATIVEAREA_NAME = 'Unknown';
+export const PREDEFINE_FEATURE_NAME = 'Unknown';
+export const PREDEFINE_EVENTACTIONCATALOGUE_NAME = 'Unknown';
+export const PREDEFINE_NOTIFICATIONTEMPLATE_NAME = 'Unknown';
 export const PREDEFINE_DEFAULTS = {
   [PREDEFINE_NAMESPACE_UNIT]: PREDEFINE_UNIT_NAME,
   [PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL]: PREDEFINE_ADMINISTRATIVELEVEL_NAME,
@@ -567,10 +567,62 @@ export const VEHICLE_DISPATCH_RELATIONS = {
   },
   type: { ref: MODEL_NAME_PREDEFINE, namespace: PREDEFINE_NAMESPACE_EVENTTYPE },
   event: { ref: MODEL_NAME_EVENT },
+  'requester.facility': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_FEATURE,
+  },
+  'requester.area': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
+  },
+  'victim.gender': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_PARTYGENDER,
+  },
+  'victim.area': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
+  },
+  'pickup.facility': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_FEATURE,
+  },
+  'pickup.area': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
+  },
+  'dropoff.facility': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_FEATURE,
+  },
+  'dropoff.area': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
+  },
+  'carrier.type': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_VEHICLETYPE,
+  },
+  'carrier.owner': {
+    ref: MODEL_NAME_PARTY,
+  },
+  'carrier.ownership': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_PARTYOWNERSHIP,
+  },
+  'carrier.vehicle': {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_VEHICLE,
+  },
+  crew: { ref: MODEL_NAME_PARTY, array: true },
   status: {
     ref: MODEL_NAME_PREDEFINE,
     namespace: PREDEFINE_NAMESPACE_VEHICLESTATUS,
   },
+  reporter: { ref: MODEL_NAME_PARTY },
+  dispatcher: { ref: MODEL_NAME_PARTY },
+  canceler: { ref: MODEL_NAME_PARTY },
+  resolver: { ref: MODEL_NAME_PARTY },
 };
 
 // setup env
