@@ -628,6 +628,12 @@ describe('internals', () => {
     expect(EVENT_CHANGELOG_RELATIONS.verifier).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.group).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.type).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.level).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.severity).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.certainty).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.status).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.urgency).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.response).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.event).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.function).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.action).to.exist.and.be.an('object');
@@ -637,11 +643,12 @@ describe('internals', () => {
     expect(EVENT_CHANGELOG_RELATIONS.question).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.need).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.effect).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.unit).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.areas).to.exist.and.be.an('object');
+    expect(EVENT_CHANGELOG_RELATIONS.groups).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.roles).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.agencies).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.focals).to.exist.and.be.an('object');
-    expect(EVENT_CHANGELOG_RELATIONS.unit).to.exist.and.be.an('object');
     expect(EVENT_CHANGELOG_RELATIONS.template).to.exist.and.be.an('object');
   });
 

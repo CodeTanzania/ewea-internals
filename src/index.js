@@ -504,6 +504,30 @@ export const EVENT_CHANGELOG_RELATIONS = {
     namespace: PREDEFINE_NAMESPACE_EVENTGROUP,
   },
   type: { ref: MODEL_NAME_PREDEFINE, namespace: PREDEFINE_NAMESPACE_EVENTTYPE },
+  level: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_EVENTLEVEL,
+  },
+  severity: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_EVENTSEVERITY,
+  },
+  certainty: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_EVENTCERTAINTY,
+  },
+  status: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_EVENTSTATUS,
+  },
+  urgency: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_EVENTURGENCY,
+  },
+  response: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_EVENTRESPONSE,
+  },
   event: { ref: MODEL_NAME_EVENT },
   function: {
     ref: MODEL_NAME_PREDEFINE,
@@ -537,6 +561,7 @@ export const EVENT_CHANGELOG_RELATIONS = {
     ref: MODEL_NAME_PREDEFINE,
     namespace: PREDEFINE_NAMESPACE_EVENTQUESTION,
   },
+  unit: { ref: MODEL_NAME_PREDEFINE, namespace: PREDEFINE_NAMESPACE_UNIT },
   areas: {
     ref: MODEL_NAME_PREDEFINE,
     namespace: PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
@@ -554,7 +579,6 @@ export const EVENT_CHANGELOG_RELATIONS = {
   },
   agencies: { ref: MODEL_NAME_PARTY, array: true },
   focals: { ref: MODEL_NAME_PARTY, array: true },
-  unit: { ref: MODEL_NAME_PREDEFINE, namespace: PREDEFINE_NAMESPACE_UNIT },
   template: {
     ref: MODEL_NAME_PREDEFINE,
     namespace: PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE,
