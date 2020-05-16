@@ -491,6 +491,8 @@ export const EVENT_RELATIONS = {
     namespace: PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
     array: true,
   },
+  agencies: { ref: MODEL_NAME_PARTY, array: true },
+  focals: { ref: MODEL_NAME_PARTY, array: true },
 };
 
 // event changelog relations

@@ -618,6 +618,8 @@ describe('internals', () => {
     expect(EVENT_RELATIONS.urgency).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.response).to.exist.and.be.an('object');
     expect(EVENT_RELATIONS.areas).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.agencies).to.exist.and.be.an('object');
+    expect(EVENT_RELATIONS.focals).to.exist.and.be.an('object');
   });
 
   it('should expose event changelog relations definition', () => {
