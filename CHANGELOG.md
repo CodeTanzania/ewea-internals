@@ -1,3 +1,23 @@
+#### 0.16.0 (2020-05-16)
+
+##### Chores
+
+* **deps:**
+  *  force latest version & audit fix ([c669d88e](https://github.com/CodeTanzania/ewea-internals/commit/c669d88e0dd024924dbe235720b9d60cc2d16fae))
+  *  force latest version & audit fix ([9332e61a](https://github.com/CodeTanzania/ewea-internals/commit/9332e61a2e966eda66b68fd3492abdcea01925d6))
+  *  force latest version & audit fix ([50e88589](https://github.com/CodeTanzania/ewea-internals/commit/50e88589d86076ca82741ee87bad408af6f202af))
+
+##### New Features
+
+*  improve changelog relation definition ([898732fd](https://github.com/CodeTanzania/ewea-internals/commit/898732fddb5131f236ff2b44281adb4ccac21499))
+*  improve party relation definition ([7ca62c48](https://github.com/CodeTanzania/ewea-internals/commit/7ca62c48ff557149858a03d1c35ef786a2502635))
+*  improve dispatch relation definition ([86998575](https://github.com/CodeTanzania/ewea-internals/commit/86998575bcc7b0d03763b95b5cd7dca636ca198a))
+*  add predefine default names ([3ab88e62](https://github.com/CodeTanzania/ewea-internals/commit/3ab88e62e01764960c2712f8e05d34e976bf0d41))
+
+##### Tests
+
+*  fix default assertions ([70c44f14](https://github.com/CodeTanzania/ewea-internals/commit/70c44f14d30a2cfb30f62c3d9d9b6f15e3c0596d))
+
 #### 0.15.0 (2020-05-05)
 
 ##### Chores
