@@ -580,6 +580,7 @@ describe('internals', () => {
       EventAction: 'Unknown',
       EventQuestion: 'Unknown',
       AdministrativeArea: 'Unknown',
+      Feature: 'Unknown',
       EventActionCatalogue: 'Unknown',
       NotificationTemplate: 'Unknown',
     });
