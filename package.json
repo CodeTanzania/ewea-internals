@@ -1,6 +1,6 @@
 {
   "name": "@codetanzania/ewea-internals",
-  "version": "0.17.0",
+  "version": "0.17.1",
   "description": "Default presets for EWEA",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -85,7 +85,7 @@
     "generate-changelog": "^1.8.0",
     "handlebars": "^4.7.6",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.3",
+    "lint-staged": "^10.2.4",
     "lodash.template": "^4.5.0",
     "mocha": "^7.1.2",
     "mongoose": ">=5.9.14",
@@ -93,7 +93,7 @@
     "nyc": "^15.0.1",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
-    "rollup": "^2.10.2",
+    "rollup": "^2.10.3",
     "shelljs": "^0.8.4"
   },
   "peerDependencies": {
