@@ -18,6 +18,7 @@ export const OPTION_PERMISSION_AUTOPOPULATE = {
 // model names
 export const MODEL_NAME_PREDEFINE = 'Predefine';
 export const MODEL_NAME_UNIT = 'Predefine';
+export const MODEL_NAME_PRIORITY = 'Predefine';
 export const MODEL_NAME_ADMINISTRATIVELEVEL = 'Predefine';
 export const MODEL_NAME_FEATURETYPE = 'Predefine';
 export const MODEL_NAME_EVENTINDICATOR = 'Predefine';
@@ -56,6 +57,7 @@ export const MODEL_NAME_VEHICLEDISPATCH = 'VehicleDispatch';
 // collection names
 export const COLLECTION_NAME_PREDEFINE = 'predefines';
 export const COLLECTION_NAME_UNIT = 'predefines';
+export const COLLECTION_NAME_PRIORITY = 'predefines';
 export const COLLECTION_NAME_ADMINISTRATIVELEVEL = 'predefines';
 export const COLLECTION_NAME_FEATURETYPE = 'predefines';
 export const COLLECTION_NAME_EVENTINDICATOR = 'predefines';
@@ -93,6 +95,7 @@ export const COLLECTION_NAME_VEHICLEDISPATCH = 'vehicledispatches';
 
 // predefine namespaces
 export const PREDEFINE_NAMESPACE_UNIT = 'Unit';
+export const PREDEFINE_NAMESPACE_PRIORITY = 'Priority';
 export const PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL = 'AdministrativeLevel';
 export const PREDEFINE_NAMESPACE_FEATURETYPE = 'FeatureType';
 export const PREDEFINE_NAMESPACE_EVENTINDICATOR = 'EventIndicator';
@@ -124,6 +127,7 @@ export const PREDEFINE_NAMESPACE_EVENTACTIONCATALOGUE = 'EventActionCatalogue';
 export const PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE = 'NotificationTemplate';
 export const PREDEFINE_NAMESPACES = [
   PREDEFINE_NAMESPACE_UNIT,
+  PREDEFINE_NAMESPACE_PRIORITY,
   PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL,
   PREDEFINE_NAMESPACE_FEATURETYPE,
   PREDEFINE_NAMESPACE_EVENTINDICATOR,
@@ -157,6 +161,7 @@ export const PREDEFINE_NAMESPACES = [
 
 // predefine buckets
 export const PREDEFINE_BUCKET_UNIT = 'units';
+export const PREDEFINE_BUCKET_PRIORITY = 'priorities';
 export const PREDEFINE_BUCKET_ADMINISTRATIVELEVEL = 'administrativelevels';
 export const PREDEFINE_BUCKET_FEATURETYPE = 'featuretypes';
 export const PREDEFINE_BUCKET_EVENTINDICATOR = 'eventindicators';
@@ -188,6 +193,7 @@ export const PREDEFINE_BUCKET_EVENTACTIONCATALOGUE = 'eventcatalogues';
 export const PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE = 'notificationtemplates';
 export const PREDEFINE_BUCKETS = [
   PREDEFINE_BUCKET_UNIT,
+  PREDEFINE_BUCKET_PRIORITY,
   PREDEFINE_BUCKET_ADMINISTRATIVELEVEL,
   PREDEFINE_BUCKET_FEATURETYPE,
   PREDEFINE_BUCKET_EVENTINDICATOR,
@@ -221,6 +227,7 @@ export const PREDEFINE_BUCKETS = [
 
 // path names
 export const PATH_NAME_UNIT = 'unit';
+export const PATH_NAME_PRIORITY = 'priority';
 export const PATH_NAME_ADMINISTRATIVELEVEL = 'level';
 export const PATH_NAME_FEATURETYPE = 'type';
 export const PATH_NAME_EVENTINDICATOR = 'indicator';
@@ -270,6 +277,7 @@ export const PATH_NAME_EVENTCHANGELOGS = 'changelogs';
 
 // predefine defaults(name, number etc)
 export const PREDEFINE_UNIT_NAME = 'Unknown';
+export const PREDEFINE_PRIORITY_NAME = 'Unknown';
 export const PREDEFINE_ADMINISTRATIVELEVEL_NAME = 'Unknown';
 export const PREDEFINE_FEATURETYPE_NAME = 'Unknown';
 export const PREDEFINE_EVENTINDICATOR_NAME = 'Unknown';
@@ -300,6 +308,7 @@ export const PREDEFINE_EVENTACTIONCATALOGUE_NAME = 'Unknown';
 export const PREDEFINE_NOTIFICATIONTEMPLATE_NAME = 'Unknown';
 export const PREDEFINE_DEFAULTS = {
   [PREDEFINE_NAMESPACE_UNIT]: PREDEFINE_UNIT_NAME,
+  [PREDEFINE_NAMESPACE_PRIORITY]: PREDEFINE_PRIORITY_NAME,
   [PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL]: PREDEFINE_ADMINISTRATIVELEVEL_NAME,
   [PREDEFINE_NAMESPACE_FEATURETYPE]: PREDEFINE_FEATURETYPE_NAME,
   [PREDEFINE_NAMESPACE_EVENTINDICATOR]: PREDEFINE_EVENTINDICATOR_NAME,
@@ -402,6 +411,10 @@ export const PREDEFINE_RELATIONS = {
       PREDEFINE_NAMESPACE_EVENTSTATUS,
       PREDEFINE_NAMESPACE_VEHICLESTATUS,
     ],
+  },
+  priority: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_PRIORITY,
   },
   ownership: {
     ref: MODEL_NAME_PREDEFINE,
@@ -644,6 +657,10 @@ export const VEHICLE_DISPATCH_RELATIONS = {
   status: {
     ref: MODEL_NAME_PREDEFINE,
     namespace: PREDEFINE_NAMESPACE_VEHICLESTATUS,
+  },
+  priority: {
+    ref: MODEL_NAME_PREDEFINE,
+    namespace: PREDEFINE_NAMESPACE_PRIORITY,
   },
   reporter: { ref: MODEL_NAME_PARTY },
   dispatcher: { ref: MODEL_NAME_PARTY },

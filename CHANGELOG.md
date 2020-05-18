@@ -1,3 +1,13 @@
+#### 0.17.0 (2020-05-18)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([1a6a4c87](https://github.com/CodeTanzania/ewea-internals/commit/1a6a4c87de67a73ac24f60eee6a5e37ab6a4f030))
+
+##### New Features
+
+*  add generic priority namespace ([a2cb737d](https://github.com/CodeTanzania/ewea-internals/commit/a2cb737d6da98d67e394fe3365e1c5b10c96906d))
+
 #### 0.16.0 (2020-05-16)
 
 ##### Chores

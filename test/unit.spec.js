@@ -4,6 +4,7 @@ import {
   // models
   MODEL_NAME_PREDEFINE,
   MODEL_NAME_UNIT,
+  MODEL_NAME_PRIORITY,
   MODEL_NAME_ADMINISTRATIVELEVEL,
   MODEL_NAME_FEATURETYPE,
   MODEL_NAME_EVENTINDICATOR,
@@ -41,6 +42,7 @@ import {
   // collections
   COLLECTION_NAME_PREDEFINE,
   COLLECTION_NAME_UNIT,
+  COLLECTION_NAME_PRIORITY,
   COLLECTION_NAME_ADMINISTRATIVELEVEL,
   COLLECTION_NAME_FEATURETYPE,
   COLLECTION_NAME_EVENTINDICATOR,
@@ -77,6 +79,7 @@ import {
   COLLECTION_NAME_VEHICLEDISPATCH,
   // namespaces
   PREDEFINE_NAMESPACE_UNIT,
+  PREDEFINE_NAMESPACE_PRIORITY,
   PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL,
   PREDEFINE_NAMESPACE_FEATURETYPE,
   PREDEFINE_NAMESPACE_EVENTINDICATOR,
@@ -109,6 +112,7 @@ import {
   PREDEFINE_NAMESPACES,
   // buckets
   PREDEFINE_BUCKET_UNIT,
+  PREDEFINE_BUCKET_PRIORITY,
   PREDEFINE_BUCKET_ADMINISTRATIVELEVEL,
   PREDEFINE_BUCKET_FEATURETYPE,
   PREDEFINE_BUCKET_EVENTINDICATOR,
@@ -141,6 +145,7 @@ import {
   PREDEFINE_BUCKETS,
   // paths
   PATH_NAME_UNIT,
+  PATH_NAME_PRIORITY,
   PATH_NAME_ADMINISTRATIVELEVEL,
   PATH_NAME_FEATURETYPE,
   PATH_NAME_EVENTINDICATOR,
@@ -190,6 +195,7 @@ import {
   PREDEFINE_RELATIONS,
   // default names
   PREDEFINE_UNIT_NAME,
+  PREDEFINE_PRIORITY_NAME,
   PREDEFINE_ADMINISTRATIVELEVEL_NAME,
   PREDEFINE_FEATURETYPE_NAME,
   PREDEFINE_EVENTINDICATOR_NAME,
@@ -235,6 +241,7 @@ describe('internals', () => {
   it('should expose model names', () => {
     expect(MODEL_NAME_PREDEFINE).to.be.equal('Predefine');
     expect(MODEL_NAME_UNIT).to.be.equal('Predefine');
+    expect(MODEL_NAME_PRIORITY).to.be.equal('Predefine');
     expect(MODEL_NAME_ADMINISTRATIVELEVEL).to.be.equal('Predefine');
     expect(MODEL_NAME_FEATURETYPE).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTINDICATOR).to.be.equal('Predefine');
@@ -274,6 +281,7 @@ describe('internals', () => {
   it('should expose collection names', () => {
     expect(COLLECTION_NAME_PREDEFINE).to.be.equal('predefines');
     expect(COLLECTION_NAME_UNIT).to.be.equal('predefines');
+    expect(COLLECTION_NAME_PRIORITY).to.be.equal('predefines');
     expect(COLLECTION_NAME_ADMINISTRATIVELEVEL).to.be.equal('predefines');
     expect(COLLECTION_NAME_FEATURETYPE).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTINDICATOR).to.be.equal('predefines');
@@ -313,6 +321,7 @@ describe('internals', () => {
 
   it('should expose predefine namespaces', () => {
     expect(PREDEFINE_NAMESPACE_UNIT).to.be.equal('Unit');
+    expect(PREDEFINE_NAMESPACE_PRIORITY).to.be.equal('Priority');
     expect(PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL).to.be.equal(
       'AdministrativeLevel'
     );
@@ -352,6 +361,7 @@ describe('internals', () => {
     );
     expect(PREDEFINE_NAMESPACES).to.be.eql([
       PREDEFINE_NAMESPACE_UNIT,
+      PREDEFINE_NAMESPACE_PRIORITY,
       PREDEFINE_NAMESPACE_ADMINISTRATIVELEVEL,
       PREDEFINE_NAMESPACE_FEATURETYPE,
       PREDEFINE_NAMESPACE_EVENTINDICATOR,
@@ -386,6 +396,7 @@ describe('internals', () => {
 
   it('should expose predefine buckets', () => {
     expect(PREDEFINE_BUCKET_UNIT).to.be.equal('units');
+    expect(PREDEFINE_BUCKET_PRIORITY).to.be.equal('priorities');
     expect(PREDEFINE_BUCKET_ADMINISTRATIVELEVEL).to.be.equal(
       'administrativelevels'
     );
@@ -425,6 +436,7 @@ describe('internals', () => {
     );
     expect(PREDEFINE_BUCKETS).to.be.eql([
       PREDEFINE_BUCKET_UNIT,
+      PREDEFINE_BUCKET_PRIORITY,
       PREDEFINE_BUCKET_ADMINISTRATIVELEVEL,
       PREDEFINE_BUCKET_FEATURETYPE,
       PREDEFINE_BUCKET_EVENTINDICATOR,
@@ -459,6 +471,7 @@ describe('internals', () => {
 
   it('should expose path names', () => {
     expect(PATH_NAME_UNIT).to.be.equal('unit');
+    expect(PATH_NAME_PRIORITY).to.be.equal('priority');
     expect(PATH_NAME_ADMINISTRATIVELEVEL).to.be.equal('level');
     expect(PATH_NAME_FEATURETYPE).to.be.equal('type');
     expect(PATH_NAME_EVENTINDICATOR).to.be.equal('indicator');
@@ -510,6 +523,7 @@ describe('internals', () => {
   it('should expose predefine default names', () => {
     // default names
     expect(PREDEFINE_UNIT_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_PRIORITY_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_ADMINISTRATIVELEVEL_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_FEATURETYPE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_EVENTINDICATOR_NAME).to.be.equal('Unknown');
@@ -540,6 +554,7 @@ describe('internals', () => {
     expect(PREDEFINE_NOTIFICATIONTEMPLATE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_DEFAULTS).to.be.eql({
       Unit: 'Unknown',
+      Priority: 'Unknown',
       AdministrativeLevel: 'Unknown',
       FeatureType: 'Unknown',
       EventIndicator: 'Unknown',
@@ -588,6 +603,7 @@ describe('internals', () => {
     expect(PREDEFINE_RELATIONS.model).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.make).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.status).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.priority).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.ownership).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.owner).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.focals).to.exist.and.be.an('object');
@@ -695,6 +711,7 @@ describe('internals', () => {
     );
     expect(VEHICLE_DISPATCH_RELATIONS.crew).to.exist.and.be.an('object');
     expect(VEHICLE_DISPATCH_RELATIONS.status).to.exist.and.be.an('object');
+    expect(VEHICLE_DISPATCH_RELATIONS.priority).to.exist.and.be.an('object');
     expect(VEHICLE_DISPATCH_RELATIONS.reporter).to.exist.and.be.an('object');
     expect(VEHICLE_DISPATCH_RELATIONS.dispatcher).to.exist.and.be.an('object');
     expect(VEHICLE_DISPATCH_RELATIONS.canceler).to.exist.and.be.an('object');
