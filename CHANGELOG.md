@@ -1,3 +1,13 @@
+#### 0.17.1 (2020-05-18)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([22bb0556](https://github.com/CodeTanzania/ewea-internals/commit/22bb05569ccd816ba40efda020f26e163c3a12f7))
+
+##### Bug Fixes
+
+* **defaults:**  ensure feature namespace ([87a24508](https://github.com/CodeTanzania/ewea-internals/commit/87a24508d2b162ca42fbbc17f0bc82da49184a7b))
+
 #### 0.17.0 (2020-05-18)
 
 ##### Chores
