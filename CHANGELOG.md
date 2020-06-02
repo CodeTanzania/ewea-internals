@@ -1,3 +1,13 @@
+#### 0.18.0 (2020-06-02)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([910d653c](https://github.com/CodeTanzania/ewea-internals/commit/910d653c073ff89c2f158f92fb4e9b3870a6f70e))
+
+##### New Features
+
+*  add party occupation ([60d7b024](https://github.com/CodeTanzania/ewea-internals/commit/60d7b024bed94f7dde87366ba25f57f9afd325ef))
+
 #### 0.17.1 (2020-05-18)
 
 ##### Chores
