@@ -1,3 +1,9 @@
+#### 0.19.0 (2020-06-02)
+
+##### New Features
+
+*  expose case model & collection name ([1bd23456](https://github.com/CodeTanzania/ewea-internals/commit/1bd234566c1175bcfec900fde296f1591aaa254e))
+
 #### 0.18.0 (2020-06-02)
 
 ##### Chores
