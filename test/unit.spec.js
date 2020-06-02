@@ -40,6 +40,7 @@ import {
   MODEL_NAME_EVENT,
   MODEL_NAME_EVENTCHANGELOG,
   MODEL_NAME_VEHICLEDISPATCH,
+  MODEL_NAME_CASE,
   // collections
   COLLECTION_NAME_PREDEFINE,
   COLLECTION_NAME_UNIT,
@@ -79,6 +80,7 @@ import {
   COLLECTION_NAME_EVENT,
   COLLECTION_NAME_EVENTCHANGELOG,
   COLLECTION_NAME_VEHICLEDISPATCH,
+  COLLECTION_NAME_CASE,
   // namespaces
   PREDEFINE_NAMESPACE_UNIT,
   PREDEFINE_NAMESPACE_PRIORITY,
@@ -284,6 +286,7 @@ describe('internals', () => {
     expect(MODEL_NAME_EVENT).to.be.equal('Event');
     expect(MODEL_NAME_EVENTCHANGELOG).to.be.equal('EventChangeLog');
     expect(MODEL_NAME_VEHICLEDISPATCH).to.be.equal('VehicleDispatch');
+    expect(MODEL_NAME_CASE).to.be.equal('Case');
   });
 
   it('should expose collection names', () => {
@@ -326,6 +329,7 @@ describe('internals', () => {
     expect(COLLECTION_NAME_EVENTCHANGELOG).to.be.equal('eventchangelogs');
     expect(COLLECTION_NAME_EVENTCHANGELOG).to.be.equal('eventchangelogs');
     expect(COLLECTION_NAME_VEHICLEDISPATCH).to.be.equal('vehicledispatches');
+    expect(COLLECTION_NAME_CASE).to.be.equal('cases');
   });
 
   it('should expose predefine namespaces', () => {

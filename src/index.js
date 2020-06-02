@@ -54,6 +54,7 @@ export const MODEL_NAME_NOTIFICATIONTEMPLATE = 'Predefine';
 export const MODEL_NAME_EVENT = 'Event';
 export const MODEL_NAME_EVENTCHANGELOG = 'EventChangeLog';
 export const MODEL_NAME_VEHICLEDISPATCH = 'VehicleDispatch';
+export const MODEL_NAME_CASE = 'Case';
 
 // collection names
 export const COLLECTION_NAME_PREDEFINE = 'predefines';
@@ -94,6 +95,7 @@ export const COLLECTION_NAME_NOTIFICATIONTEMPLATE = 'predefines';
 export const COLLECTION_NAME_EVENT = 'events';
 export const COLLECTION_NAME_EVENTCHANGELOG = 'eventchangelogs';
 export const COLLECTION_NAME_VEHICLEDISPATCH = 'vehicledispatches';
+export const COLLECTION_NAME_CASE = 'cases';
 
 // predefine namespaces
 export const PREDEFINE_NAMESPACE_UNIT = 'Unit';
