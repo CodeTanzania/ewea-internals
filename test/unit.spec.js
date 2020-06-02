@@ -19,6 +19,7 @@ import {
   MODEL_NAME_PARTYGROUP,
   MODEL_NAME_PARTYROLE,
   MODEL_NAME_PARTYGENDER,
+  MODEL_NAME_PARTYOCCUPATION,
   MODEL_NAME_VEHICLETYPE,
   MODEL_NAME_VEHICLEMODEL,
   MODEL_NAME_VEHICLEMAKE,
@@ -57,6 +58,7 @@ import {
   COLLECTION_NAME_PARTYGROUP,
   COLLECTION_NAME_PARTYROLE,
   COLLECTION_NAME_PARTYGENDER,
+  COLLECTION_NAME_PARTYOCCUPATION,
   COLLECTION_NAME_VEHICLETYPE,
   COLLECTION_NAME_VEHICLEMODEL,
   COLLECTION_NAME_VEHICLEMAKE,
@@ -94,6 +96,7 @@ import {
   PREDEFINE_NAMESPACE_PARTYGROUP,
   PREDEFINE_NAMESPACE_PARTYROLE,
   PREDEFINE_NAMESPACE_PARTYGENDER,
+  PREDEFINE_NAMESPACE_PARTYOCCUPATION,
   PREDEFINE_NAMESPACE_VEHICLETYPE,
   PREDEFINE_NAMESPACE_VEHICLEMODEL,
   PREDEFINE_NAMESPACE_VEHICLEMAKE,
@@ -127,6 +130,7 @@ import {
   PREDEFINE_BUCKET_PARTYGROUP,
   PREDEFINE_BUCKET_PARTYROLE,
   PREDEFINE_BUCKET_PARTYGENDER,
+  PREDEFINE_BUCKET_PARTYOCCUPATION,
   PREDEFINE_BUCKET_VEHICLETYPE,
   PREDEFINE_BUCKET_VEHICLEMODEL,
   PREDEFINE_BUCKET_VEHICLEMAKE,
@@ -161,6 +165,7 @@ import {
   PATH_NAME_PARTYGROUPS,
   PATH_NAME_PARTYROLE,
   PATH_NAME_PARTYGENDER,
+  PATH_NAME_PARTYOCCUPATION,
   PATH_NAME_VEHICLETYPE,
   PATH_NAME_VEHICLEMODEL,
   PATH_NAME_VEHICLEMAKE,
@@ -210,6 +215,7 @@ import {
   PREDEFINE_PARTYGROUP_NAME,
   PREDEFINE_PARTYROLE_NAME,
   PREDEFINE_PARTYGENDER_NAME,
+  PREDEFINE_PARTYOCCUPATION_NAME,
   PREDEFINE_VEHICLETYPE_NAME,
   PREDEFINE_VEHICLEMODEL_NAME,
   PREDEFINE_VEHICLEMAKE_NAME,
@@ -230,6 +236,7 @@ import {
   EVENT_RELATIONS,
   EVENT_CHANGELOG_RELATIONS,
   VEHICLE_DISPATCH_RELATIONS,
+  CASE_RELATIONS,
   // population
   POPULATION_MAX_DEPTH,
   POPULATION_DEFAULT,
@@ -256,6 +263,7 @@ describe('internals', () => {
     expect(MODEL_NAME_PARTYGROUP).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYROLE).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYGENDER).to.be.equal('Predefine');
+    expect(MODEL_NAME_PARTYOCCUPATION).to.be.equal('Predefine');
     expect(MODEL_NAME_VEHICLETYPE).to.be.equal('Predefine');
     expect(MODEL_NAME_VEHICLEMODEL).to.be.equal('Predefine');
     expect(MODEL_NAME_VEHICLEMAKE).to.be.equal('Predefine');
@@ -296,6 +304,7 @@ describe('internals', () => {
     expect(COLLECTION_NAME_PARTYGROUP).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYROLE).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYGENDER).to.be.equal('predefines');
+    expect(COLLECTION_NAME_PARTYOCCUPATION).to.be.equal('predefines');
     expect(COLLECTION_NAME_VEHICLETYPE).to.be.equal('predefines');
     expect(COLLECTION_NAME_VEHICLEMODEL).to.be.equal('predefines');
     expect(COLLECTION_NAME_VEHICLEMAKE).to.be.equal('predefines');
@@ -338,6 +347,7 @@ describe('internals', () => {
     expect(PREDEFINE_NAMESPACE_PARTYGROUP).to.be.equal('PartyGroup');
     expect(PREDEFINE_NAMESPACE_PARTYROLE).to.be.equal('PartyRole');
     expect(PREDEFINE_NAMESPACE_PARTYGENDER).to.be.equal('PartyGender');
+    expect(PREDEFINE_NAMESPACE_PARTYOCCUPATION).to.be.equal('PartyOccupation');
     expect(PREDEFINE_NAMESPACE_VEHICLETYPE).to.be.equal('VehicleType');
     expect(PREDEFINE_NAMESPACE_VEHICLEMODEL).to.be.equal('VehicleModel');
     expect(PREDEFINE_NAMESPACE_VEHICLEMAKE).to.be.equal('VehicleMake');
@@ -376,6 +386,7 @@ describe('internals', () => {
       PREDEFINE_NAMESPACE_PARTYGROUP,
       PREDEFINE_NAMESPACE_PARTYROLE,
       PREDEFINE_NAMESPACE_PARTYGENDER,
+      PREDEFINE_NAMESPACE_PARTYOCCUPATION,
       PREDEFINE_NAMESPACE_VEHICLETYPE,
       PREDEFINE_NAMESPACE_VEHICLEMODEL,
       PREDEFINE_NAMESPACE_VEHICLEMAKE,
@@ -413,6 +424,7 @@ describe('internals', () => {
     expect(PREDEFINE_BUCKET_PARTYGROUP).to.be.equal('partygroups');
     expect(PREDEFINE_BUCKET_PARTYROLE).to.be.equal('partyroles');
     expect(PREDEFINE_BUCKET_PARTYGENDER).to.be.equal('partygenders');
+    expect(PREDEFINE_BUCKET_PARTYOCCUPATION).to.be.equal('partyoccupations');
     expect(PREDEFINE_BUCKET_VEHICLETYPE).to.be.equal('vehicletypes');
     expect(PREDEFINE_BUCKET_VEHICLEMODEL).to.be.equal('vehiclemodels');
     expect(PREDEFINE_BUCKET_VEHICLEMAKE).to.be.equal('vehiclemakes');
@@ -451,6 +463,7 @@ describe('internals', () => {
       PREDEFINE_BUCKET_PARTYGROUP,
       PREDEFINE_BUCKET_PARTYROLE,
       PREDEFINE_BUCKET_PARTYGENDER,
+      PREDEFINE_BUCKET_PARTYOCCUPATION,
       PREDEFINE_BUCKET_VEHICLETYPE,
       PREDEFINE_BUCKET_VEHICLEMODEL,
       PREDEFINE_BUCKET_VEHICLEMAKE,
@@ -488,6 +501,7 @@ describe('internals', () => {
     expect(PATH_NAME_PARTYROLE).to.be.equal('role');
     expect(PATH_NAME_PARTYROLES).to.be.equal('roles');
     expect(PATH_NAME_PARTYGENDER).to.be.equal('gender');
+    expect(PATH_NAME_PARTYOCCUPATION).to.be.equal('occupation');
     expect(PATH_NAME_VEHICLETYPE).to.be.equal('type');
     expect(PATH_NAME_VEHICLEMODEL).to.be.equal('model');
     expect(PATH_NAME_VEHICLEMAKE).to.be.equal('make');
@@ -538,6 +552,7 @@ describe('internals', () => {
     expect(PREDEFINE_PARTYGROUP_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYROLE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYGENDER_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_PARTYOCCUPATION_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_VEHICLETYPE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_VEHICLEMODEL_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_VEHICLEMAKE_NAME).to.be.equal('Unknown');
@@ -569,6 +584,7 @@ describe('internals', () => {
       PartyGroup: 'Unknown',
       PartyRole: 'Unknown',
       PartyGender: 'Unknown',
+      PartyOccupation: 'Unknown',
       VehicleModel: 'Unknown',
       VehicleType: 'Unknown',
       VehicleMake: 'Unknown',
@@ -718,6 +734,13 @@ describe('internals', () => {
     expect(VEHICLE_DISPATCH_RELATIONS.canceler).to.exist.and.be.an('object');
     expect(VEHICLE_DISPATCH_RELATIONS.resolver).to.exist.and.be.an('object');
     expect(VEHICLE_DISPATCH_RELATIONS.status).to.exist.and.be.an('object');
+  });
+
+  it('should expose case relations definition', () => {
+    expect(CASE_RELATIONS).to.exist.and.be.an('object');
+    expect(CASE_RELATIONS['victim.gender']).to.exist.and.be.an('object');
+    expect(CASE_RELATIONS['victim.occupation']).to.exist.and.be.an('object');
+    expect(CASE_RELATIONS['victim.area']).to.exist.and.be.an('object');
   });
 
   it('should expose population options', () => {
