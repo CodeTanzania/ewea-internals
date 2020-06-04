@@ -20,6 +20,7 @@ import {
   MODEL_NAME_PARTYROLE,
   MODEL_NAME_PARTYGENDER,
   MODEL_NAME_PARTYOCCUPATION,
+  MODEL_NAME_PARTYNATIONALITY,
   MODEL_NAME_VEHICLETYPE,
   MODEL_NAME_VEHICLEMODEL,
   MODEL_NAME_VEHICLEMAKE,
@@ -60,6 +61,7 @@ import {
   COLLECTION_NAME_PARTYROLE,
   COLLECTION_NAME_PARTYGENDER,
   COLLECTION_NAME_PARTYOCCUPATION,
+  COLLECTION_NAME_PARTYNATIONALITY,
   COLLECTION_NAME_VEHICLETYPE,
   COLLECTION_NAME_VEHICLEMODEL,
   COLLECTION_NAME_VEHICLEMAKE,
@@ -99,6 +101,7 @@ import {
   PREDEFINE_NAMESPACE_PARTYROLE,
   PREDEFINE_NAMESPACE_PARTYGENDER,
   PREDEFINE_NAMESPACE_PARTYOCCUPATION,
+  PREDEFINE_NAMESPACE_PARTYNATIONALITY,
   PREDEFINE_NAMESPACE_VEHICLETYPE,
   PREDEFINE_NAMESPACE_VEHICLEMODEL,
   PREDEFINE_NAMESPACE_VEHICLEMAKE,
@@ -133,6 +136,7 @@ import {
   PREDEFINE_BUCKET_PARTYROLE,
   PREDEFINE_BUCKET_PARTYGENDER,
   PREDEFINE_BUCKET_PARTYOCCUPATION,
+  PREDEFINE_BUCKET_PARTYNATIONALITY,
   PREDEFINE_BUCKET_VEHICLETYPE,
   PREDEFINE_BUCKET_VEHICLEMODEL,
   PREDEFINE_BUCKET_VEHICLEMAKE,
@@ -168,6 +172,7 @@ import {
   PATH_NAME_PARTYROLE,
   PATH_NAME_PARTYGENDER,
   PATH_NAME_PARTYOCCUPATION,
+  PATH_NAME_PARTYNATIONALITY,
   PATH_NAME_VEHICLETYPE,
   PATH_NAME_VEHICLEMODEL,
   PATH_NAME_VEHICLEMAKE,
@@ -218,6 +223,7 @@ import {
   PREDEFINE_PARTYROLE_NAME,
   PREDEFINE_PARTYGENDER_NAME,
   PREDEFINE_PARTYOCCUPATION_NAME,
+  PREDEFINE_PARTYNATIONALITY_NAME,
   PREDEFINE_VEHICLETYPE_NAME,
   PREDEFINE_VEHICLEMODEL_NAME,
   PREDEFINE_VEHICLEMAKE_NAME,
@@ -266,6 +272,7 @@ describe('internals', () => {
     expect(MODEL_NAME_PARTYROLE).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYGENDER).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYOCCUPATION).to.be.equal('Predefine');
+    expect(MODEL_NAME_PARTYNATIONALITY).to.be.equal('Predefine');
     expect(MODEL_NAME_VEHICLETYPE).to.be.equal('Predefine');
     expect(MODEL_NAME_VEHICLEMODEL).to.be.equal('Predefine');
     expect(MODEL_NAME_VEHICLEMAKE).to.be.equal('Predefine');
@@ -308,6 +315,7 @@ describe('internals', () => {
     expect(COLLECTION_NAME_PARTYROLE).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYGENDER).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYOCCUPATION).to.be.equal('predefines');
+    expect(COLLECTION_NAME_PARTYNATIONALITY).to.be.equal('predefines');
     expect(COLLECTION_NAME_VEHICLETYPE).to.be.equal('predefines');
     expect(COLLECTION_NAME_VEHICLEMODEL).to.be.equal('predefines');
     expect(COLLECTION_NAME_VEHICLEMAKE).to.be.equal('predefines');
@@ -352,6 +360,9 @@ describe('internals', () => {
     expect(PREDEFINE_NAMESPACE_PARTYROLE).to.be.equal('PartyRole');
     expect(PREDEFINE_NAMESPACE_PARTYGENDER).to.be.equal('PartyGender');
     expect(PREDEFINE_NAMESPACE_PARTYOCCUPATION).to.be.equal('PartyOccupation');
+    expect(PREDEFINE_NAMESPACE_PARTYNATIONALITY).to.be.equal(
+      'PartyNationality'
+    );
     expect(PREDEFINE_NAMESPACE_VEHICLETYPE).to.be.equal('VehicleType');
     expect(PREDEFINE_NAMESPACE_VEHICLEMODEL).to.be.equal('VehicleModel');
     expect(PREDEFINE_NAMESPACE_VEHICLEMAKE).to.be.equal('VehicleMake');
@@ -391,6 +402,7 @@ describe('internals', () => {
       PREDEFINE_NAMESPACE_PARTYROLE,
       PREDEFINE_NAMESPACE_PARTYGENDER,
       PREDEFINE_NAMESPACE_PARTYOCCUPATION,
+      PREDEFINE_NAMESPACE_PARTYNATIONALITY,
       PREDEFINE_NAMESPACE_VEHICLETYPE,
       PREDEFINE_NAMESPACE_VEHICLEMODEL,
       PREDEFINE_NAMESPACE_VEHICLEMAKE,
@@ -429,6 +441,7 @@ describe('internals', () => {
     expect(PREDEFINE_BUCKET_PARTYROLE).to.be.equal('partyroles');
     expect(PREDEFINE_BUCKET_PARTYGENDER).to.be.equal('partygenders');
     expect(PREDEFINE_BUCKET_PARTYOCCUPATION).to.be.equal('partyoccupations');
+    expect(PREDEFINE_BUCKET_PARTYNATIONALITY).to.be.equal('partynationalities');
     expect(PREDEFINE_BUCKET_VEHICLETYPE).to.be.equal('vehicletypes');
     expect(PREDEFINE_BUCKET_VEHICLEMODEL).to.be.equal('vehiclemodels');
     expect(PREDEFINE_BUCKET_VEHICLEMAKE).to.be.equal('vehiclemakes');
@@ -468,6 +481,7 @@ describe('internals', () => {
       PREDEFINE_BUCKET_PARTYROLE,
       PREDEFINE_BUCKET_PARTYGENDER,
       PREDEFINE_BUCKET_PARTYOCCUPATION,
+      PREDEFINE_BUCKET_PARTYNATIONALITY,
       PREDEFINE_BUCKET_VEHICLETYPE,
       PREDEFINE_BUCKET_VEHICLEMODEL,
       PREDEFINE_BUCKET_VEHICLEMAKE,
@@ -506,6 +520,7 @@ describe('internals', () => {
     expect(PATH_NAME_PARTYROLES).to.be.equal('roles');
     expect(PATH_NAME_PARTYGENDER).to.be.equal('gender');
     expect(PATH_NAME_PARTYOCCUPATION).to.be.equal('occupation');
+    expect(PATH_NAME_PARTYNATIONALITY).to.be.equal('nationality');
     expect(PATH_NAME_VEHICLETYPE).to.be.equal('type');
     expect(PATH_NAME_VEHICLEMODEL).to.be.equal('model');
     expect(PATH_NAME_VEHICLEMAKE).to.be.equal('make');
@@ -557,6 +572,7 @@ describe('internals', () => {
     expect(PREDEFINE_PARTYROLE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYGENDER_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYOCCUPATION_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_PARTYNATIONALITY_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_VEHICLETYPE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_VEHICLEMODEL_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_VEHICLEMAKE_NAME).to.be.equal('Unknown');
@@ -589,6 +605,7 @@ describe('internals', () => {
       PartyRole: 'Unknown',
       PartyGender: 'Unknown',
       PartyOccupation: 'Unknown',
+      PartyNationality: 'Unknown',
       VehicleModel: 'Unknown',
       VehicleType: 'Unknown',
       VehicleMake: 'Unknown',
@@ -642,6 +659,8 @@ describe('internals', () => {
     expect(PARTY_RELATIONS.ownership).to.exist.and.be.an('object');
     expect(PARTY_RELATIONS.role).to.exist.and.be.an('object');
     expect(PARTY_RELATIONS.gender).to.exist.and.be.an('object');
+    expect(PARTY_RELATIONS.nationality).to.exist.and.be.an('object');
+    expect(PARTY_RELATIONS.facility).to.exist.and.be.an('object');
   });
 
   it('should expose event relations definition', () => {
@@ -744,6 +763,7 @@ describe('internals', () => {
     expect(CASE_RELATIONS).to.exist.and.be.an('object');
     expect(CASE_RELATIONS['victim.gender']).to.exist.and.be.an('object');
     expect(CASE_RELATIONS['victim.occupation']).to.exist.and.be.an('object');
+    expect(CASE_RELATIONS['victim.nationality']).to.exist.and.be.an('object');
     expect(CASE_RELATIONS['victim.area']).to.exist.and.be.an('object');
   });
 
