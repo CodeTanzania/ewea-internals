@@ -1,3 +1,13 @@
+#### 0.20.0 (2020-06-04)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([bf1fac8c](https://github.com/CodeTanzania/ewea-internals/commit/bf1fac8c7d297c93bd7edb497404cbbd22be03a1))
+
+##### New Features
+
+*  add party nationality ([ffc2ced1](https://github.com/CodeTanzania/ewea-internals/commit/ffc2ced17addf05646ac3aa6ee3c6fca37141339))
+
 #### 0.19.0 (2020-06-02)
 
 ##### New Features
