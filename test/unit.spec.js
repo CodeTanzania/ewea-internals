@@ -15,6 +15,8 @@ import {
   MODEL_NAME_EVENTSTATUS,
   MODEL_NAME_EVENTURGENCY,
   MODEL_NAME_EVENTRESPONSE,
+  MODEL_NAME_CASESEVERITY,
+  MODEL_NAME_CASESTAGE,
   MODEL_NAME_PARTYOWNERSHIP,
   MODEL_NAME_PARTYGROUP,
   MODEL_NAME_PARTYROLE,
@@ -56,6 +58,8 @@ import {
   COLLECTION_NAME_EVENTSTATUS,
   COLLECTION_NAME_EVENTURGENCY,
   COLLECTION_NAME_EVENTRESPONSE,
+  COLLECTION_NAME_CASESEVERITY,
+  COLLECTION_NAME_CASESTAGE,
   COLLECTION_NAME_PARTYOWNERSHIP,
   COLLECTION_NAME_PARTYGROUP,
   COLLECTION_NAME_PARTYROLE,
@@ -96,6 +100,8 @@ import {
   PREDEFINE_NAMESPACE_EVENTSTATUS,
   PREDEFINE_NAMESPACE_EVENTURGENCY,
   PREDEFINE_NAMESPACE_EVENTRESPONSE,
+  PREDEFINE_NAMESPACE_CASESEVERITY,
+  PREDEFINE_NAMESPACE_CASESTAGE,
   PREDEFINE_NAMESPACE_PARTYOWNERSHIP,
   PREDEFINE_NAMESPACE_PARTYGROUP,
   PREDEFINE_NAMESPACE_PARTYROLE,
@@ -131,6 +137,8 @@ import {
   PREDEFINE_BUCKET_EVENTSTATUS,
   PREDEFINE_BUCKET_EVENTURGENCY,
   PREDEFINE_BUCKET_EVENTRESPONSE,
+  PREDEFINE_BUCKET_CASESEVERITY,
+  PREDEFINE_BUCKET_CASESTAGE,
   PREDEFINE_BUCKET_PARTYOWNERSHIP,
   PREDEFINE_BUCKET_PARTYGROUP,
   PREDEFINE_BUCKET_PARTYROLE,
@@ -166,6 +174,8 @@ import {
   PATH_NAME_EVENTSTATUS,
   PATH_NAME_EVENTURGENCY,
   PATH_NAME_EVENTRESPONSE,
+  PATH_NAME_CASESEVERITY,
+  PATH_NAME_CASESTAGE,
   PATH_NAME_PARTYOWNERSHIP,
   PATH_NAME_PARTYGROUP,
   PATH_NAME_PARTYGROUPS,
@@ -218,6 +228,8 @@ import {
   PREDEFINE_EVENTSTATUS_NAME,
   PREDEFINE_EVENTURGENCY_NAME,
   PREDEFINE_EVENTRESPONSE_NAME,
+  PREDEFINE_CASESEVERITY_NAME,
+  PREDEFINE_CASESTAGE_NAME,
   PREDEFINE_PARTYOWNERSHIP_NAME,
   PREDEFINE_PARTYGROUP_NAME,
   PREDEFINE_PARTYROLE_NAME,
@@ -267,6 +279,8 @@ describe('internals', () => {
     expect(MODEL_NAME_EVENTSTATUS).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTURGENCY).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTRESPONSE).to.be.equal('Predefine');
+    expect(MODEL_NAME_CASESEVERITY).to.be.equal('Predefine');
+    expect(MODEL_NAME_CASESTAGE).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYOWNERSHIP).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYGROUP).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTYROLE).to.be.equal('Predefine');
@@ -310,6 +324,8 @@ describe('internals', () => {
     expect(COLLECTION_NAME_EVENTSTATUS).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTURGENCY).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTRESPONSE).to.be.equal('predefines');
+    expect(COLLECTION_NAME_CASESEVERITY).to.be.equal('predefines');
+    expect(COLLECTION_NAME_CASESTAGE).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYOWNERSHIP).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYGROUP).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTYROLE).to.be.equal('predefines');
@@ -355,6 +371,8 @@ describe('internals', () => {
     expect(PREDEFINE_NAMESPACE_EVENTSTATUS).to.be.equal('EventStatus');
     expect(PREDEFINE_NAMESPACE_EVENTURGENCY).to.be.equal('EventUrgency');
     expect(PREDEFINE_NAMESPACE_EVENTRESPONSE).to.be.equal('EventResponse');
+    expect(PREDEFINE_NAMESPACE_CASESEVERITY).to.be.equal('CaseSeverity');
+    expect(PREDEFINE_NAMESPACE_CASESTAGE).to.be.equal('CaseStage');
     expect(PREDEFINE_NAMESPACE_PARTYOWNERSHIP).to.be.equal('PartyOwnership');
     expect(PREDEFINE_NAMESPACE_PARTYGROUP).to.be.equal('PartyGroup');
     expect(PREDEFINE_NAMESPACE_PARTYROLE).to.be.equal('PartyRole');
@@ -397,6 +415,8 @@ describe('internals', () => {
       PREDEFINE_NAMESPACE_EVENTSTATUS,
       PREDEFINE_NAMESPACE_EVENTURGENCY,
       PREDEFINE_NAMESPACE_EVENTRESPONSE,
+      PREDEFINE_NAMESPACE_CASESEVERITY,
+      PREDEFINE_NAMESPACE_CASESTAGE,
       PREDEFINE_NAMESPACE_PARTYOWNERSHIP,
       PREDEFINE_NAMESPACE_PARTYGROUP,
       PREDEFINE_NAMESPACE_PARTYROLE,
@@ -436,6 +456,8 @@ describe('internals', () => {
     expect(PREDEFINE_BUCKET_EVENTSTATUS).to.be.equal('eventstatuses');
     expect(PREDEFINE_BUCKET_EVENTURGENCY).to.be.equal('eventurgencies');
     expect(PREDEFINE_BUCKET_EVENTRESPONSE).to.be.equal('eventresponses');
+    expect(PREDEFINE_BUCKET_CASESEVERITY).to.be.equal('caseseverities');
+    expect(PREDEFINE_BUCKET_CASESTAGE).to.be.equal('casestages');
     expect(PREDEFINE_BUCKET_PARTYOWNERSHIP).to.be.equal('partyownerships');
     expect(PREDEFINE_BUCKET_PARTYGROUP).to.be.equal('partygroups');
     expect(PREDEFINE_BUCKET_PARTYROLE).to.be.equal('partyroles');
@@ -476,6 +498,8 @@ describe('internals', () => {
       PREDEFINE_BUCKET_EVENTSTATUS,
       PREDEFINE_BUCKET_EVENTURGENCY,
       PREDEFINE_BUCKET_EVENTRESPONSE,
+      PREDEFINE_BUCKET_CASESEVERITY,
+      PREDEFINE_BUCKET_CASESTAGE,
       PREDEFINE_BUCKET_PARTYOWNERSHIP,
       PREDEFINE_BUCKET_PARTYGROUP,
       PREDEFINE_BUCKET_PARTYROLE,
@@ -513,6 +537,8 @@ describe('internals', () => {
     expect(PATH_NAME_EVENTSTATUS).to.be.equal('status');
     expect(PATH_NAME_EVENTURGENCY).to.be.equal('urgency');
     expect(PATH_NAME_EVENTRESPONSE).to.be.equal('response');
+    expect(PATH_NAME_CASESEVERITY).to.be.equal('severity');
+    expect(PATH_NAME_CASESTAGE).to.be.equal('stage');
     expect(PATH_NAME_PARTYGROUP).to.be.equal('group');
     expect(PATH_NAME_PARTYOWNERSHIP).to.be.equal('ownership');
     expect(PATH_NAME_PARTYGROUPS).to.be.equal('groups');
@@ -567,6 +593,8 @@ describe('internals', () => {
     expect(PREDEFINE_EVENTSTATUS_NAME).to.be.equal('Actual');
     expect(PREDEFINE_EVENTURGENCY_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_EVENTRESPONSE_NAME).to.be.equal('None');
+    expect(PREDEFINE_CASESEVERITY_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_CASESTAGE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYOWNERSHIP_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYGROUP_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_PARTYROLE_NAME).to.be.equal('Unknown');
@@ -600,6 +628,8 @@ describe('internals', () => {
       EventStatus: 'Actual',
       EventUrgency: 'Unknown',
       EventResponse: 'None',
+      CaseSeverity: 'Unknown',
+      CaseStage: 'Unknown',
       PartyOwnership: 'Unknown',
       PartyGroup: 'Unknown',
       PartyRole: 'Unknown',
@@ -761,6 +791,8 @@ describe('internals', () => {
 
   it('should expose case relations definition', () => {
     expect(CASE_RELATIONS).to.exist.and.be.an('object');
+    expect(CASE_RELATIONS.severity).to.exist.and.be.an('object');
+    expect(CASE_RELATIONS.stage).to.exist.and.be.an('object');
     expect(CASE_RELATIONS['victim.gender']).to.exist.and.be.an('object');
     expect(CASE_RELATIONS['victim.occupation']).to.exist.and.be.an('object');
     expect(CASE_RELATIONS['victim.nationality']).to.exist.and.be.an('object');
