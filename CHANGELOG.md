@@ -1,3 +1,9 @@
+#### 0.21.1 (2020-06-15)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([4485de8b](https://github.com/CodeTanzania/ewea-internals/commit/4485de8bc53f5306181f8ba43b6be4b9bcf376aa))
+
 #### 0.20.0 (2020-06-08)
 
 ##### Chores
