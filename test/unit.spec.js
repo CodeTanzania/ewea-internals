@@ -262,6 +262,9 @@ import {
   POPULATION_DEFAULT,
   OPTION_PARTY_AUTOPOPULATE,
   OPTION_PERMISSION_AUTOPOPULATE,
+  // permissions
+  PERMISSION_SEED_RESOURCES,
+  PERMISSION_SEED_IGNORE,
 } from '../src';
 
 describe('internals', () => {
@@ -810,6 +813,20 @@ describe('internals', () => {
       select: { resource: 1, action: 1, wildcard: 1 },
       maxDepth: POPULATION_MAX_DEPTH,
     });
+  });
+
+  it('should set extra permission resources', () => {
+    expect(process.env.PERMISSION_SEED_RESOURCES).to.exist;
+    expect(getStrings('PERMISSION_SEED_RESOURCES')).to.be.eql(
+      PERMISSION_SEED_RESOURCES
+    );
+  });
+
+  it('should set permission resources ignore', () => {
+    expect(process.env.PERMISSION_SEED_IGNORE).to.exist;
+    expect(getStrings('PERMISSION_SEED_IGNORE')).to.be.eql(
+      PERMISSION_SEED_IGNORE
+    );
   });
 
   it('should set predefine namespaces', () => {

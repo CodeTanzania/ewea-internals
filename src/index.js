@@ -742,7 +742,27 @@ export const CASE_RELATIONS = {
   },
 };
 
+export const PERMISSION_SEED_RESOURCES = ['Agency', 'FocalPeople'];
+
+export const PERMISSION_SEED_IGNORE = [
+  'Audio',
+  'Campaign',
+  'Counter',
+  'Document',
+  'EventChangeLog',
+  'Image',
+  'File',
+  'Message',
+  'Party',
+  'Permission',
+  'Predefine',
+  'Role',
+  'Video',
+];
+
 // setup env
+process.env.PERMISSION_SEED_RESOURCES = join(PERMISSION_SEED_RESOURCES, ',');
+process.env.PERMISSION_SEED_IGNORE = join(PERMISSION_SEED_IGNORE, ',');
 process.env.PREDEFINE_NAMESPACES = join(PREDEFINE_NAMESPACES, ',');
 process.env.PREDEFINE_RELATIONS_IGNORED = join(PREDEFINE_NAMESPACES, ',');
 process.env.PREDEFINE_RELATIONS = stringify(PREDEFINE_RELATIONS);
