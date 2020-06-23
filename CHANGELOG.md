@@ -1,3 +1,13 @@
+#### 0.22.0 (2020-06-23)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([01c69304](https://github.com/CodeTanzania/ewea-internals/commit/01c69304ac3256c3a6e5cfca41da9ef72d2607fb))
+
+##### New Features
+
+*  set & ignore resource permissions ([f0028a27](https://github.com/CodeTanzania/ewea-internals/commit/f0028a275dc13488d2e1c9d4b8ed78f5e5a2ee65))
+
 #### 0.21.1 (2020-06-15)
 
 ##### Chores
