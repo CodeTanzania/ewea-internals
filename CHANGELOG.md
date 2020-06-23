@@ -1,3 +1,13 @@
+#### 0.22.1 (2020-06-23)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([bb9a8134](https://github.com/CodeTanzania/ewea-internals/commit/bb9a8134f143a03561ae90e874d1c365b8dd6f36))
+
+##### Refactors
+
+*  remove unused predefine namespaces ([0e965a6d](https://github.com/CodeTanzania/ewea-internals/commit/0e965a6d5e76c26d92e1df773e7a1ad7d9f040b7))
+
 #### 0.22.0 (2020-06-23)
 
 ##### Chores
