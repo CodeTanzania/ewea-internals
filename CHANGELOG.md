@@ -1,3 +1,17 @@
+#### 0.23.0 (2020-06-27)
+
+##### Chores
+
+* **deps:**
+  *  force latest version & audit fix ([780b1cbf](https://github.com/CodeTanzania/ewea-internals/commit/780b1cbf5616589b17a4a8b0371a442790f84942))
+  *  force latest version & audit fix ([1205a555](https://github.com/CodeTanzania/ewea-internals/commit/1205a555d101178ffa9c42c002c1027406589599))
+
+##### New Features
+
+*  add health facility domains ([d6cfe6bc](https://github.com/CodeTanzania/ewea-internals/commit/d6cfe6bc8149beef0a0c8d3ff531c295e6054cac))
+*  add health facility namespace ([e53ce382](https://github.com/CodeTanzania/ewea-internals/commit/e53ce3821d370431c20a606c6f0650465113eeec))
+*  expose predefine domains ([f3fb84ae](https://github.com/CodeTanzania/ewea-internals/commit/f3fb84ae073b2c681c2cc40b9a6b20d5c9e8b2ca))
+
 #### 0.22.1 (2020-06-23)
 
 ##### Chores
