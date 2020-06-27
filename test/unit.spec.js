@@ -38,6 +38,7 @@ import {
   MODEL_NAME_ADMINISTRATIVEAREA,
   MODEL_NAME_PARTY,
   MODEL_NAME_FEATURE,
+  MODEL_NAME_HEALTHFACILITY,
   MODEL_NAME_EVENTACTIONCATALOGUE,
   MODEL_NAME_NOTIFICATIONTEMPLATE,
   MODEL_NAME_EVENT,
@@ -80,6 +81,7 @@ import {
   COLLECTION_NAME_ADMINISTRATIVEAREA,
   COLLECTION_NAME_PARTY,
   COLLECTION_NAME_FEATURE,
+  COLLECTION_NAME_HEALTHFACILITY,
   COLLECTION_NAME_EVENTACTIONCATALOGUE,
   COLLECTION_NAME_NOTIFICATIONTEMPLATE,
   COLLECTION_NAME_EVENT,
@@ -119,6 +121,7 @@ import {
   PREDEFINE_NAMESPACE_EVENTQUESTION,
   PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
   PREDEFINE_NAMESPACE_FEATURE,
+  PREDEFINE_NAMESPACE_HEALTHFACILITY,
   PREDEFINE_NAMESPACE_EVENTACTIONCATALOGUE,
   PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE,
   PREDEFINE_NAMESPACES,
@@ -155,6 +158,7 @@ import {
   PREDEFINE_BUCKET_EVENTQUESTION,
   PREDEFINE_BUCKET_ADMINISTRATIVEAREA,
   PREDEFINE_BUCKET_FEATURE,
+  PREDEFINE_BUCKET_HEALTHFACILITY,
   PREDEFINE_BUCKET_EVENTACTIONCATALOGUE,
   PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
   PREDEFINE_BUCKETS,
@@ -209,6 +213,7 @@ import {
   PATH_NAME_PARTY_CUSTODIAN,
   PATH_NAME_PARTY_CUSTODIANS,
   PATH_NAME_FEATURE,
+  PATH_NAME_HEALTHFACILITY,
   PATH_NAME_NOTIFICATIONTEMPLATE,
   PATH_NAME_EVENT,
   PATH_NAME_EVENTCHANGELOG,
@@ -247,6 +252,7 @@ import {
   PREDEFINE_EVENTQUESTION_NAME,
   PREDEFINE_ADMINISTRATIVEAREA_NAME,
   PREDEFINE_FEATURE_NAME,
+  PREDEFINE_HEALTHFACILITY_NAME,
   PREDEFINE_EVENTACTIONCATALOGUE_NAME,
   PREDEFINE_NOTIFICATIONTEMPLATE_NAME,
   PREDEFINE_DEFAULTS,
@@ -304,6 +310,7 @@ describe('internals', () => {
     expect(MODEL_NAME_ADMINISTRATIVEAREA).to.be.equal('Predefine');
     expect(MODEL_NAME_PARTY).to.be.equal('Party');
     expect(MODEL_NAME_FEATURE).to.be.equal('Predefine');
+    expect(MODEL_NAME_HEALTHFACILITY).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENTACTIONCATALOGUE).to.be.equal('Predefine');
     expect(MODEL_NAME_NOTIFICATIONTEMPLATE).to.be.equal('Predefine');
     expect(MODEL_NAME_EVENT).to.be.equal('Event');
@@ -348,6 +355,7 @@ describe('internals', () => {
     expect(COLLECTION_NAME_ADMINISTRATIVEAREA).to.be.equal('predefines');
     expect(COLLECTION_NAME_PARTY).to.be.equal('parties');
     expect(COLLECTION_NAME_FEATURE).to.be.equal('predefines');
+    expect(COLLECTION_NAME_HEALTHFACILITY).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENTACTIONCATALOGUE).to.be.equal('predefines');
     expect(COLLECTION_NAME_NOTIFICATIONTEMPLATE).to.be.equal('predefines');
     expect(COLLECTION_NAME_EVENT).to.be.equal('events');
@@ -396,6 +404,7 @@ describe('internals', () => {
       'AdministrativeArea'
     );
     expect(PREDEFINE_NAMESPACE_FEATURE).to.be.equal('Feature');
+    expect(PREDEFINE_NAMESPACE_HEALTHFACILITY).to.be.equal('HealthFacility');
     expect(PREDEFINE_NAMESPACE_EVENTACTIONCATALOGUE).to.be.equal(
       'EventActionCatalogue'
     );
@@ -435,6 +444,7 @@ describe('internals', () => {
       PREDEFINE_NAMESPACE_EVENTQUESTION,
       PREDEFINE_NAMESPACE_ADMINISTRATIVEAREA,
       PREDEFINE_NAMESPACE_FEATURE,
+      PREDEFINE_NAMESPACE_HEALTHFACILITY,
       PREDEFINE_NAMESPACE_EVENTACTIONCATALOGUE,
       PREDEFINE_NAMESPACE_NOTIFICATIONTEMPLATE,
     ]);
@@ -477,6 +487,7 @@ describe('internals', () => {
       'administrativeareas'
     );
     expect(PREDEFINE_BUCKET_FEATURE).to.be.equal('features');
+    expect(PREDEFINE_BUCKET_HEALTHFACILITY).to.be.equal('healthfacilities');
     expect(PREDEFINE_BUCKET_EVENTACTIONCATALOGUE).to.be.equal(
       'eventcatalogues'
     );
@@ -516,6 +527,7 @@ describe('internals', () => {
       PREDEFINE_BUCKET_EVENTQUESTION,
       PREDEFINE_BUCKET_ADMINISTRATIVEAREA,
       PREDEFINE_BUCKET_FEATURE,
+      PREDEFINE_BUCKET_HEALTHFACILITY,
       PREDEFINE_BUCKET_EVENTACTIONCATALOGUE,
       PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
     ]);
@@ -574,6 +586,7 @@ describe('internals', () => {
     expect(PATH_NAME_PARTY_CUSTODIAN).to.be.equal('custodian');
     expect(PATH_NAME_PARTY_CUSTODIANS).to.be.equal('custodians');
     expect(PATH_NAME_FEATURE).to.be.equal('feature');
+    expect(PATH_NAME_HEALTHFACILITY).to.be.equal('facility');
     expect(PATH_NAME_NOTIFICATIONTEMPLATE).to.be.equal('template');
     expect(PATH_NAME_EVENT).to.be.equal('event');
     expect(PATH_NAME_EVENTCHANGELOG).to.be.equal('changelog');
@@ -614,6 +627,7 @@ describe('internals', () => {
     expect(PREDEFINE_EVENTQUESTION_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_ADMINISTRATIVEAREA_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_FEATURE_NAME).to.be.equal('Unknown');
+    expect(PREDEFINE_HEALTHFACILITY_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_EVENTACTIONCATALOGUE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_NOTIFICATIONTEMPLATE_NAME).to.be.equal('Unknown');
     expect(PREDEFINE_DEFAULTS).to.be.eql({
@@ -649,6 +663,7 @@ describe('internals', () => {
       EventQuestion: 'Unknown',
       AdministrativeArea: 'Unknown',
       Feature: 'Unknown',
+      HealthFacility: 'Unknown',
       EventActionCatalogue: 'Unknown',
       NotificationTemplate: 'Unknown',
     });
@@ -678,6 +693,7 @@ describe('internals', () => {
     expect(PREDEFINE_RELATIONS.focals).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.agencies).to.exist.and.be.an('object');
     expect(PREDEFINE_RELATIONS.custodians).to.exist.and.be.an('object');
+    expect(PREDEFINE_RELATIONS.facility).to.exist.and.be.an('object');
   });
 
   it('should expose party relations definition', () => {
