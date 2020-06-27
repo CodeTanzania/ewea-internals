@@ -158,6 +158,8 @@ import {
   PREDEFINE_BUCKET_EVENTACTIONCATALOGUE,
   PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
   PREDEFINE_BUCKETS,
+  // domains
+  PREDEFINE_DOMAINS,
   // paths
   PATH_NAME_UNIT,
   PATH_NAME_PRIORITY,
@@ -519,6 +521,10 @@ describe('internals', () => {
     ]);
   });
 
+  it('should expose prdefine domains', () => {
+    expect(PREDEFINE_DOMAINS).to.be.eql([...PREDEFINE_NAMESPACES]);
+  });
+
   it('should expose path names', () => {
     expect(PATH_NAME_UNIT).to.be.equal('unit');
     expect(PATH_NAME_PRIORITY).to.be.equal('priority');
@@ -824,6 +830,11 @@ describe('internals', () => {
   it('should set predefine namespaces', () => {
     expect(process.env.PREDEFINE_NAMESPACES).to.exist;
     expect(getStrings('PREDEFINE_NAMESPACES')).to.be.eql(PREDEFINE_NAMESPACES);
+  });
+
+  it('should set predefine domains', () => {
+    expect(process.env.PREDEFINE_DOMAINS).to.exist;
+    expect(getStrings('PREDEFINE_DOMAINS')).to.be.eql(PREDEFINE_DOMAINS);
   });
 
   it('should set predefine ignored relations', () => {
