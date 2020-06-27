@@ -252,6 +252,22 @@ export const PREDEFINE_BUCKETS = [
   PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
 ];
 
+// predefine domains
+export const PREDEFINE_DOMAIN_CLINIC = 'Clinic';
+export const PREDEFINE_DOMAIN_DISPENSARY = 'Dispensary';
+export const PREDEFINE_DOMAIN_HEALTHCENTER = 'HealthCenter';
+export const PREDEFINE_DOMAIN_HOSPITAL = 'Hospital';
+export const PREDEFINE_DOMAINS_HEALTHFACILITY = [
+  PREDEFINE_DOMAIN_CLINIC,
+  PREDEFINE_DOMAIN_DISPENSARY,
+  PREDEFINE_DOMAIN_HEALTHCENTER,
+  PREDEFINE_DOMAIN_HOSPITAL,
+];
+export const PREDEFINE_DOMAINS = [
+  ...PREDEFINE_DOMAINS_HEALTHFACILITY,
+  ...PREDEFINE_NAMESPACES,
+];
+
 // path names
 export const PATH_NAME_UNIT = 'unit';
 export const PATH_NAME_PRIORITY = 'priority';
@@ -768,8 +784,6 @@ export const PERMISSION_SEED_IGNORE = [
   'Role',
   'Video',
 ];
-
-export const PREDEFINE_DOMAINS = [...PREDEFINE_NAMESPACES];
 
 // setup env
 process.env.PERMISSION_SEED_RESOURCES = join(PERMISSION_SEED_RESOURCES, ',');

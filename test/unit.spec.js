@@ -163,6 +163,11 @@ import {
   PREDEFINE_BUCKET_NOTIFICATIONTEMPLATE,
   PREDEFINE_BUCKETS,
   // domains
+  PREDEFINE_DOMAIN_CLINIC,
+  PREDEFINE_DOMAIN_DISPENSARY,
+  PREDEFINE_DOMAIN_HEALTHCENTER,
+  PREDEFINE_DOMAIN_HOSPITAL,
+  PREDEFINE_DOMAINS_HEALTHFACILITY,
   PREDEFINE_DOMAINS,
   // paths
   PATH_NAME_UNIT,
@@ -534,7 +539,20 @@ describe('internals', () => {
   });
 
   it('should expose prdefine domains', () => {
-    expect(PREDEFINE_DOMAINS).to.be.eql([...PREDEFINE_NAMESPACES]);
+    expect(PREDEFINE_DOMAIN_CLINIC).to.be.equal('Clinic');
+    expect(PREDEFINE_DOMAIN_DISPENSARY).to.be.equal('Dispensary');
+    expect(PREDEFINE_DOMAIN_HEALTHCENTER).to.be.equal('HealthCenter');
+    expect(PREDEFINE_DOMAIN_HOSPITAL).to.be.equal('Hospital');
+    expect(PREDEFINE_DOMAINS_HEALTHFACILITY).to.be.eql([
+      PREDEFINE_DOMAIN_CLINIC,
+      PREDEFINE_DOMAIN_DISPENSARY,
+      PREDEFINE_DOMAIN_HEALTHCENTER,
+      PREDEFINE_DOMAIN_HOSPITAL,
+    ]);
+    expect(PREDEFINE_DOMAINS).to.be.eql([
+      ...PREDEFINE_DOMAINS_HEALTHFACILITY,
+      ...PREDEFINE_NAMESPACES,
+    ]);
   });
 
   it('should expose path names', () => {
