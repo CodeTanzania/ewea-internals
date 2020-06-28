@@ -253,6 +253,29 @@ export const PREDEFINE_BUCKETS = [
 ];
 
 // predefine domains
+
+// feature types
+export const PREDEFINE_DOMAIN_DRAINAGE = 'Drainage';
+export const PREDEFINE_DOMAIN_BUILDING = 'Building';
+export const PREDEFINE_DOMAIN_BUSINESS = 'Business';
+export const PREDEFINE_DOMAIN_SCHOOL = 'School';
+export const PREDEFINE_DOMAIN_GOVERNMENTINSTITUTION = 'GovernmentInstitution';
+export const PREDEFINE_DOMAIN_RELIGIOUSINSTITUTION = 'ReligiousInstitution';
+export const PREDEFINE_DOMAIN_SHOP = 'Shop';
+export const PREDEFINE_DOMAIN_TOURISMAREA = 'TourismArea';
+export const PREDEFINE_DOMAIN_PUBLICTOILET = 'PublicToilet';
+export const PREDEFINE_DOMAIN_WATERPOINT = 'WaterPoint';
+export const PREDEFINE_DOMAIN_ROAD = 'Road';
+export const PREDEFINE_DOMAIN_OPENAREA = 'OpenArea';
+export const PREDEFINE_DOMAIN_OFFICE = 'Office';
+export const PREDEFINE_DOMAIN_MARKET = 'Market';
+export const PREDEFINE_DOMAIN_EVACUATIONCENTER = 'EvacuationCenter';
+export const PREDEFINE_DOMAIN_EVACUATIONROUTE = 'EvacuationRoute';
+// TODO: Bus Station, Fire Station, Emergency Center,
+// TODO: Blood Bank, Ambulance Station
+// TODO: Evacuation Areas, Mortuary and Morgues
+
+// health facilities
 export const PREDEFINE_DOMAIN_CLINIC = 'Clinic';
 export const PREDEFINE_DOMAIN_DISPENSARY = 'Dispensary';
 export const PREDEFINE_DOMAIN_HEALTHCENTER = 'HealthCenter';
