@@ -1,3 +1,13 @@
+#### 0.23.1 (2020-07-04)
+
+##### Chores
+
+* **deps:**  force latest version & audit fix ([ddf68934](https://github.com/CodeTanzania/ewea-internals/commit/ddf6893466bf9504cead4be1816fbdcb332cc268))
+
+##### New Features
+
+*  add feature domains ([b3323d0b](https://github.com/CodeTanzania/ewea-internals/commit/b3323d0bcd13f7bdca1824cff9653aa33e7f9680))
+
 #### 0.23.0 (2020-06-27)
 
 ##### Chores
