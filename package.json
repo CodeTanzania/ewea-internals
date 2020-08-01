@@ -1,6 +1,6 @@
 {
   "name": "@codetanzania/ewea-internals",
-  "version": "0.23.1",
+  "version": "0.23.2",
   "description": "Default presets for EWEA",
   "main": "lib/index.js",
   "module": "es/index.js",
